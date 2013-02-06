@@ -6,6 +6,9 @@ from . import models
 
 class YearAdmin(admin.ModelAdmin):
     model = models.Year
+    list_display = ('year', 'start', 'end',)
+    search_fields = ('year',)
+    list_filter = ('year',)
 
 
 class BandYearInline(admin.TabularInline):
@@ -13,29 +16,10 @@ class BandYearInline(admin.TabularInline):
     extra = 0
 
 
-class SponsorCategoryYearInline(admin.TabularInline):
-    model = models.SponsorCategoryYear
-    extra = 0
-
-
-
-class SponsorAdmin(admin.ModelAdmin):
-    model = models.Sponsor
-    inlines = [
-        SponsorCategoryYearInline,
-    ]
-    list_display = ('name', 'link',)
-
-
-class CategoryAdmin(admin.ModelAdmin):
-    model = models.Category
-    list_display = ('name',)
-    list_filter = ('name',)
-
-
 class BandLinksInline(admin.TabularInline):
     model = models.BandLinks
     extra = 0
+
 
 class BandAdmin(admin.ModelAdmin):
     model = models.Band
@@ -43,12 +27,10 @@ class BandAdmin(admin.ModelAdmin):
         BandLinksInline,
         BandYearInline,
     ]    
-    list_display = ('name', 'description', 'genre', 'image')
+    list_display = ('name', 'description', 'genre', 'get_band_years')
     search_fields = ('name', 'genre')
-    list_filter = ('genre',)
+    list_filter = ('genre', 'bandyear__year', 'bandyear__stage')
 
 
 admin.site.register(models.Band, BandAdmin)
 admin.site.register(models.Year, YearAdmin)
-admin.site.register(models.Sponsor, SponsorAdmin)
-admin.site.register(models.Category, CategoryAdmin)
