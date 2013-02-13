@@ -18,3 +18,5 @@ def home(request):
         'images':images,
         'bands':bands,
         'years':years})
+
+    
