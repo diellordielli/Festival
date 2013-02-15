@@ -13,6 +13,22 @@
         <div class="header">
           <h1>Stolze Openair</h1>
         </div>
+        {% for mood in moods %}
+          <div class="mood">
+            {% if mood.image %}
+              <img src = "{{ mood.image.url }}" width="1068" height="300">
+            {% endif %}
+          </div>
+        {% endfor %}
+
+        {% for news in newss %}
+          <div class="news">
+            {{ news.name }}</br></br>
+            {{ news.time }}</br></br>
+            {{ news.description }}</br>
+          </div>
+        {% endfor %}
+        <br clear="both">
         {% for band in bands %}
           <div class="bandsingle">
             {% if band.image %}

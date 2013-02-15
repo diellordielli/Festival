@@ -82,3 +82,17 @@
                 outline: 4px solid black; 
                 padding-bottom: 4px; 
             }
+
+            .news {
+                position: relative;
+                margin-left: 20px;
+                padding: 50px 50px 50px 50px;
+                width: 960px;
+                outline: 4px solid black; 
+            }
+
+            .mood {
+                position: relative;
+                margin-left: 17px;
+                padding: 50px 0px 50px 0px;
+            }

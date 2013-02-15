@@ -122,6 +122,8 @@ INSTALLED_APPS = (
     'webapp.festival',
     'webapp.gallery',
     'webapp.sponsors',
+    'webapp.news',
+    'webapp.mood',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
