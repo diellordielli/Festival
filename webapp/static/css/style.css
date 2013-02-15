@@ -1,389 +1,84 @@
-#page-wrapper {
-  position: relative;
-  width: 980px;
-  /* centers the document */
-  margin: 0 auto;
-  /*
-  hides anything drawn off canvas.
-  remove overflow and height to see things drawn off canvas.
-  */
-  overflow: hidden;
-  height: 1760px;
-}
-/* This makes absolutely positioned elements like p, h1,
-     and some bootstrap elements placed properly. */
- #absolute-wrapper p, #absolute-wrapper h1, #absolute-wrapper h2, #absolute-wrapper h3, #absolute-wrapper h4, #absolute-wrapper h5, #absolute-wrapper h6 {
-  margin-top: 0 !important;
-}
-/* Set floating body text margins to 0 */
-[class*="dom-paragraph"] p {
-  margin: 0 0 10px 0;
-}
-.container-empty.container-empty-1 {
-  border-top: 2px solid #000000;
-  border-right: 2px solid #ffffff;
-  border-bottom: 2px solid #000000;
-  border-left: 2px solid #ffffff;
-  width: 975.5555553436279px;
-  height: 55.55555534362793px;
-  position: absolute;
-  top: 139px;
-  left: 0px;
-}
-.container-empty.container-empty-2 {
-  border: 2px solid #000000;
-  width: 237.77777767181396px;
-  height: 337.77777767181396px;
-  position: absolute;
-  top: 260px;
-  left: 60px;
-}
-.container-empty.container-empty-3 {
-  border: 2px solid #000000;
-  width: 217.77777767181396px;
-  height: 337.77777767181396px;
-  position: absolute;
-  top: 260px;
-  left: 700px;
-}
-.container-empty.container-empty-4 {
-  border: 2px solid #000000;
-  width: 271.77777767181396px;
-  height: 337.77777767181396px;
-  position: absolute;
-  top: 260px;
-  left: 364px;
-}
-.container-empty.container-empty-5 {
-  border: 1px solid #000000;
-  width: 217.77777767181396px;
-  height: 357.77777767181396px;
-  position: absolute;
-  top: 639px;
-  left: 699px;
-}
-.container-empty.container-empty-6 {
-  border: 1px solid #000000;
-  width: 237.77777767181396px;
-  height: 357.77777767181396px;
-  position: absolute;
-  top: 640px;
-  left: 60px;
-}
-.container-empty.container-empty-7 {
-  border: 1px solid #000000;
-  width: 265.77777767181396px;
-  height: 357.77777767181396px;
-  position: absolute;
-  top: 640px;
-  left: 372px;
-}
-.container-empty.container-empty-8 {
-  border-top: 2px solid #000000;
-  border-right: 2px solid #ffffff;
-  border-bottom: 2px solid #000000;
-  border-left: 2px solid #ffffff;
-  width: 975.5555553436279px;
-  height: 75.55555534362793px;
-  position: absolute;
-  top: 1040px;
-  left: 0px;
-}
-.container-empty.container-empty-9 {
-  border-top: 2px solid #000000;
-  border-right: 2px solid #ffffff;
-  border-bottom: 2px solid #000000;
-  border-left: 2px solid #ffffff;
-  width: 975.5555553436279px;
-  height: 75.55555534362793px;
-  position: absolute;
-  top: 1679px;
-  left: 0px;
-}
-.dom-paragraph p.p-1 {
-  font-family: Arial;
-  font-size: 13.333333969116211px;
-  line-height: 15.555556297302246px;
-}
-.dom-paragraph p.p-2 {
-  font-family: Arial;
-  font-size: 10px;
-  line-height: 15.555556297302246px;
-}
-.dom-paragraph p.p-3 {
-  font-family: lobster;
-  font-size: 20px;
-  line-height: 15.555556297302246px;
-  font-weight: bold;
-}
-.dom-paragraph.dom-paragraph-1 {
-  overflow: hidden;
-  width: 52px;
-  height: 28px;
-  position: absolute;
-  top: 488px;
-  left: 381px;
-}
-.dom-paragraph.dom-paragraph-10 {
-  overflow: hidden;
-  width: 180px;
-  height: 60px;
-  position: absolute;
-  top: 919px;
-  left: 718px;
-}
-.dom-paragraph.dom-paragraph-11 {
-  overflow: hidden;
-  width: 221px;
-  height: 61px;
-  position: absolute;
-  top: 919px;
-  left: 396px;
-}
-.dom-paragraph.dom-paragraph-12 {
-  overflow: hidden;
-  width: 200px;
-  height: 60px;
-  position: absolute;
-  top: 920px;
-  left: 80px;
-}
-.dom-paragraph.dom-paragraph-13 {
-  overflow: hidden;
-  width: 90px;
-  height: 60px;
-  position: absolute;
-  top: 1039px;
-  left: 790px;
-}
-.dom-paragraph.dom-paragraph-14 {
-  overflow: hidden;
-  width: 133px;
-  height: 44px;
-  position: absolute;
-  top: 1039px;
-  left: 487px;
-}
-.dom-paragraph.dom-paragraph-15 {
-  overflow: hidden;
-  width: 68px;
-  height: 56px;
-  position: absolute;
-  top: 1039px;
-  left: 641px;
-}
-.dom-paragraph.dom-paragraph-16 {
-  overflow: hidden;
-  width: 62px;
-  height: 44px;
-  position: absolute;
-  top: 1059px;
-  left: 578px;
-}
-.dom-paragraph.dom-paragraph-17 {
-  overflow: hidden;
-  width: 139px;
-  height: 42px;
-  position: absolute;
-  top: 1059px;
-  left: 381px;
-}
-.dom-paragraph.dom-paragraph-18 {
-  overflow: hidden;
-  width: 107px;
-  height: 44px;
-  position: absolute;
-  top: 1059px;
-  left: 213px;
-}
-.dom-paragraph.dom-paragraph-19 {
-  overflow: hidden;
-  width: 95px;
-  height: 44px;
-  position: absolute;
-  top: 1059px;
-  left: 705px;
-}
-.dom-paragraph.dom-paragraph-2 {
-  overflow: hidden;
-  width: 50px;
-  height: 20px;
-  position: absolute;
-  top: 488px;
-  left: 80px;
-}
-.dom-paragraph.dom-paragraph-20 {
-  overflow: hidden;
-  width: 102px;
-  height: 44px;
-  position: absolute;
-  top: 1039px;
-  left: 298px;
-}
-.dom-paragraph.dom-paragraph-21 {
-  overflow: hidden;
-  width: 126px;
-  height: 39px;
-  position: absolute;
-  top: 1040px;
-  left: 114px;
-}
-.dom-paragraph.dom-paragraph-22 {
-  overflow: hidden;
-  width: 100px;
-  height: 48px;
-  position: absolute;
-  top: 1676px;
-  left: 591px;
-}
-.dom-paragraph.dom-paragraph-23 {
-  overflow: hidden;
-  width: 140px;
-  height: 40px;
-  position: absolute;
-  top: 1676px;
-  left: 300px;
-}
-.dom-paragraph.dom-paragraph-24 {
-  overflow: hidden;
-  width: 100px;
-  height: 46px;
-  position: absolute;
-  top: 1696px;
-  left: 180px;
-}
-.dom-paragraph.dom-paragraph-25 {
-  overflow: hidden;
-  width: 106px;
-  height: 49px;
-  position: absolute;
-  top: 1696px;
-  left: 454px;
-}
-.dom-paragraph.dom-paragraph-26 {
-  overflow: hidden;
-  width: 111px;
-  height: 40px;
-  position: absolute;
-  top: 1696px;
-  left: 709px;
-}
-.dom-paragraph.dom-paragraph-3 {
-  overflow: hidden;
-  width: 80px;
-  height: 20px;
-  position: absolute;
-  top: 488px;
-  left: 721px;
-}
-.dom-paragraph.dom-paragraph-4 {
-  overflow: hidden;
-  width: 200px;
-  height: 60px;
-  position: absolute;
-  top: 520px;
-  left: 80px;
-}
-.dom-paragraph.dom-paragraph-5 {
-  overflow: hidden;
-  width: 220px;
-  height: 60px;
-  position: absolute;
-  top: 520px;
-  left: 380px;
-}
-.dom-paragraph.dom-paragraph-6 {
-  overflow: hidden;
-  width: 180px;
-  height: 60px;
-  position: absolute;
-  top: 520px;
-  left: 720px;
-}
-.dom-paragraph.dom-paragraph-7 {
-  overflow: hidden;
-  width: 119px;
-  height: 20px;
-  position: absolute;
-  top: 887px;
-  left: 719px;
-}
-.dom-paragraph.dom-paragraph-8 {
-  overflow: hidden;
-  width: 99px;
-  height: 20px;
-  position: absolute;
-  top: 888px;
-  left: 81px;
-}
-.dom-paragraph.dom-paragraph-9 {
-  overflow: hidden;
-  width: 108px;
-  height: 20px;
-  position: absolute;
-  top: 888px;
-  left: 396px;
-}
-li a.a-1 {
-  font-family:"lobster";
-  color: #000000;
-  font-size: 20.000001907348633px;
-  text-shadow: 0px 0px 0px #ffffff;
-}
-li.li-1 {
-  width: 69px;
-  height: 20px;
-  position: absolute;
-  top: 163px;
-  left: 128px;
-}
-li.li-2 {
-  width: 88px;
-  height: 26px;
-  position: absolute;
-  top: 163px;
-  left: 200px;
-}
-li.li-3 {
-  width: 89px;
-  height: 20px;
-  position: absolute;
-  top: 163px;
-  left: 279px;
-}
-#absolute-wrapper {
-  position: relative;
-  width: 980px;
-  /* centers the document */
-  margin: 0 auto;
-  /* hack to stick to top of page */
-  height: 1px;
-}
-.page-header {
-  border: none;
-  -moz-box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.701961);
-  -webkit-box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.701961);
-  -o-box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.701961);
-  box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.701961);
-  width: 230px;
-  height: 51.00694465637207px;
-  position: absolute;
-  top: 40px;
-  left: 368px;
-}
-.page-header h1 {
-  font-family:"lobster";
-  text-align: center;
-}
-.brand {
-  font-family:"lobster";
-  color: #000000;
-  font-size: 25.1851863861084px;
-  text-shadow: 0px 0px 0px #ffffff;
-  width: 61.33px;
-  height: 21px;
-  position: absolute;
-  top: 158px;
-  left: 57px;
-}
+            body {
+                background: #000000;
+                width: 1100px;
+                margin: 0px auto;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                color: #1C1C1C;
+            }
 
+            #main {
+                position: relative;
+                width: 700px;
+                height: auto;
+                margin: 162px auto;
+            }
+
+
+
+            #main h2{
+                position: absolute;
+                margin-top: -100px;
+                margin-left: 65px;
+                font-family: Arial;
+                font-style: italic;
+                font-size: 63px;
+                font-weight: bold;
+                letter-spacing: -3px;
+                color: #7A7977;                     
+            }
+
+            .header {
+                text-align: center;
+                font-size: 20px;
+            }
+
+            .page {
+                position: relative;
+                width: 1100px;
+                height: 0 auto;
+                padding: 50px 0px 20px 0px;
+                margin-top: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 20px;
+                background-color: #FFFFFF;
+            }
+
+            .bandsingle {
+                position: relative;
+                float: left;
+                margin-top: 20px;
+                margin-left: 20px;
+                margin-bottom: 10px;
+                width: 260px;
+                height: 400px;
+                padding: 40px 40px 0px 40px;        
+                background-color: #FFFFFF;
+                outline: 4px solid black; 
+                padding-bottom: 4px; 
+            }
+
+            .sponsor {
+                padding: 0px 20px 20px 80px;
+            }
+
+            .sponsorlist {
+                position: relative;
+                margin: 0px 0px 60px 0px;
+                padding: 60px 40px 0px 0px;
+                display: inline;
+            }
+
+            .gallery {
+                position: relative;
+                float: left;
+                margin-top: 40px;
+                margin-left: 20px;
+                width: 227px;
+                height: 180px;
+                padding: 20px 0px 0px 20px;        
+                background-color: #FFFFFF;
+                outline: 4px solid black; 
+                padding-bottom: 4px; 
+            }

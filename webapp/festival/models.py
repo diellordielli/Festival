@@ -17,7 +17,7 @@ class Band(models.Model):
         for by in self.bandyear_set.all():
             answer += '%s %s' % (by.year, by.stage) + ', '
         return answer
-    
+
 
 class BandLinks(models.Model):
     FACEBOOK = "FB"
@@ -43,7 +43,6 @@ class BandLinks(models.Model):
     class Meta:
         verbose_name_plural = "Band Links"
 
-
     def __unicode__(self):
         return u"%s %s" % (self.link, self.band)
 
@@ -55,7 +54,7 @@ class Year(models.Model):
     logo = models.ImageField(upload_to="years", blank=True)
     bands = models.ManyToManyField(Band,
         related_name="years", through="BandYear")
-    
+
     class Meta:
         ordering = ["year"]
 
@@ -71,7 +70,6 @@ class BandYear(models.Model):
         (HAUPTBUEHNE, 'Hauptbühne'),
         (ZELTBUEHNE, 'Zeltbühne'),
     )
-
 
     stage = models.CharField(max_length=20, choices=LINK_TYPES)
     time = models.DateTimeField()

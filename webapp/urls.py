@@ -20,7 +20,14 @@ urlpatterns = patterns('',
     # Home
     url(r'^$', 'webapp.views.home', name='home'),
 
+
 )
 
 if settings.DEBUG:
     urlpatterns += staticfiles_urlpatterns()
+    urlpatterns += patterns('',
+        url(r'^upload/(?P<path>.*)$', 'django.views.static.serve', {
+            'document_root': settings.MEDIA_ROOT,
+            'show_indexes': True,
+        }),
+    )

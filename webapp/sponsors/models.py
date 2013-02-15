@@ -1,6 +1,6 @@
 from django.db import models
 
-from ..festival.models import Band, Year
+from ..festival.models import Year
 
 
 class Sponsor(models.Model):
@@ -41,4 +41,3 @@ class SponsorCategoryYear(models.Model):
 
     def __unicode__(self):
         return u"%s %s" % (self.year, self.category)
-
