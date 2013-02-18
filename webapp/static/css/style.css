@@ -78,6 +78,16 @@
                 background-color: #4169E1
             }
 
+            .circlebutton3 {
+                position: relative;
+                width: 100px;
+                height: 100px;
+                border-radius: 50px;
+                margin-top: -50px;
+                margin-left: 458px;
+                background-color: #4169E1
+            }
+
             .buttonband {
                 position: absolute;
                 margin-top: 20px;
@@ -90,6 +100,13 @@
                 margin-top: 20px;
                 margin-left: 4px;
                 color: #FFFFFF;
+            }
+
+            .buttonsponsors {
+                position: absolute;
+                margin-top: 10px;
+                margin-left: 13px;
+                color: #FFFFFF;                
             }
 
             .bandsingle {
@@ -105,13 +122,20 @@
                 padding-bottom: 4px; 
             }
 
+            .gallerybg {
+                margin-top: -50px;
+                width: 1011px;
+                height: 520px;
+                background-color: #D3D3D3;
+            }
+
             .gallery {
                 position: relative;
                 float: left;
-                margin-top: 40px;
-                margin-left: 35px;
-                width: 271px;
-                height: 181px;
+                margin-top: 85px;
+                margin-left: 88px;
+                width: 200px;
+                height: 300px;
                 padding: 10px 10px 0px 10px;        
                 background-color: #FFFFFF;
             }

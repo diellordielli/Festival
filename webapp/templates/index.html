@@ -15,7 +15,7 @@
           <a href="http://vimeo.com/stolzeopenair" target="_blank"><img src="{{ STATIC_URL }}img/Vimeo.jpg" /></a>
         </div>
 
-        {% for year in years %}
+        {% for year in thisyears %}
           <div class="logo">
             {% if year.logo %}
               <img src = "{{ year.logo.url }}">
@@ -76,12 +76,28 @@
           </div>
         </div>
 
-        {% for image in images %}
-          <div class="gallery">
-            {% if image.image %}
-              <img src = "{{ image.image.url }}" margin-left: "auto" margin-right: "auto" width="271" height="181">
-            {% endif %}
-           </div>
+        <div class="gallerybg">
+          {% for image in yearcovers  %}
+            <div class="gallery">
+              {% if image.image %}
+                <img src = "{{ image.image.url }}" margin-left: "auto" margin-right: "auto" width="200" height="300">
+              {% endif %}
+             </div>
+          {% endfor %}
+        </div>  
+        <div class="circlebutton3">
+          <div class="buttonsponsors">
+            <h2>SPON-
+            SOREN</h2>
+          </div>
+        </div>
+
+        {% for sponsor in sponsors %}
+          <div class="bandsingle">
+            {% if sponsor.logo %}
+              <a href="{{ sponsor.link }}" target="_blank"><img src = "{{ sponsor.logo.url }}" margin-left: "auto" margin-right: "auto" width="228" height="58"></a>
+            {% endif %}</br></br>
+          </div>
         {% endfor %}
 
         <br clear="both">
