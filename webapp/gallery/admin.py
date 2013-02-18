@@ -11,7 +11,7 @@ class CategoryAdmin(admin.ModelAdmin):
 
 class ImageAdmin(admin.ModelAdmin):
     model = models.Image
-    list_display = ('name', 'band', 'year',)
+    list_display = ('name', 'band', 'year', 'is_yearcover',)
     search_fields = ('name', 'band', 'year',)
     list_filter = ('name', 'band', 'year',)
 

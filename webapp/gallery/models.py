@@ -1,3 +1,4 @@
+from django.core.exceptions import ValidationError
 from django.db import models
 
 from ..festival.models import Band, Year
@@ -23,6 +24,12 @@ class Image(models.Model):
         related_name="images", null=True, blank=True)
     year = models.ForeignKey(Year)
     categories = models.ManyToManyField(Category, blank=True)
+    is_yearcover = models.BooleanField(default=False)
+
+    def clean(self):
+        if self.is_yearcover:
+            self.year.image_set.filter(is_yearcover=True)\
+                    .update(is_yearcover=False)
 
     def __unicode__(self):
         return u"%s %s %s" % (self.name, self.band, self.description)

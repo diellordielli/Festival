@@ -9,16 +9,46 @@
   </head>
   <body>
       <div class="page">
-        <div class="header">
-          <h1>Stolze Openair</h1>
+        <div class="social">
+          <a href="http://www.facebook.com/stolze.openair" target="_blank"><img src="{{ STATIC_URL }}img/Facebook.jpg" /></a>
+          <a href="https://twitter.com/StolzeOpenair/" target="_blank"><img src="{{ STATIC_URL }}img/Twitter.jpg" /></a>
+          <a href="http://vimeo.com/stolzeopenair" target="_blank"><img src="{{ STATIC_URL }}img/Vimeo.jpg" /></a>
         </div>
-        {% for mood in moods %}
-          <div class="mood">
-            {% if mood.image %}
-              <img src = "{{ mood.image.url }}" width="1068" height="300">
+
+        {% for year in years %}
+          <div class="logo">
+            {% if year.logo %}
+              <img src = "{{ year.logo.url }}">
             {% endif %}
           </div>
         {% endfor %}
+
+        <div class="nav">
+          <hr>
+          <div class="navigationleft">
+            <h3>HOME<h3><h3>BANDS<h3><h3>GALERIE<h3>
+          </div>
+          <hr>
+        </div>
+        <div class="navigationright">
+          <h3>SPONSOREN</h3><h3>KONTAKT</h3>
+        </div>
+
+        {% for mood in moods %}
+          <div class="mood">
+            {% if mood.image %}
+              <img src = "{{ mood.image.url }}" width="1011" height="451">
+            {% endif %}
+          </div>
+        {% endfor %}
+
+        <div class="circlebutton">
+          <div class="buttonband">
+            <h2>BANDS</h2>
+          </div>
+        </div>
+
+
         {% for news in newss %}
           <div class="news">
             {{ news.name }}</br></br>
@@ -26,39 +56,37 @@
             {{ news.description }}</br>
           </div>
         {% endfor %}
+
         <br clear="both">
+
         {% for band in bands %}
           <div class="bandsingle">
             {% if band.image %}
-              <img src = "{{ band.image.url }}" margin-left: "auto" margin-right: "auto" width="258" height="231">
+              <img src = "{{ band.image.url }}" margin-left: "auto" margin-right: "auto" width="271" height="181">
             {% endif %}</br></br>
-            {{ band.name }}</br></br>
-            {% for year in band.bandyear_set.all %}
-              Stage: {{ year.get_stage_display }}</br></br>
-              Datum: {{ year.time|date:"D, d M, H:i" }} Uhr</br></br>
-            {% endfor %}
-            Genre: {{ band.genre }}</br></br>
           </div>
         {% endfor %}
+
         <br clear="both">
         <br><br>
-        <hr color="#000000" size="4"><br>
-        <div class="sponsor">
-          {% for sponsor in sponsors %}
-            <div class="sponsorlist">
-              <a href="">{{ sponsor.name }}</a>
-            </div>
-          {% endfor %}
+
+        <div class="circlebutton2">
+          <div class="buttongallery">
+            <h2>GALERIE</h2>
+          </div>
         </div>
-        <hr color="#000000" size="4">
+
         {% for image in images %}
           <div class="gallery">
             {% if image.image %}
-              <img src = "{{ image.image.url }}" margin-left: "auto" margin-right: "auto" width="208" height="165">
+              <img src = "{{ image.image.url }}" margin-left: "auto" margin-right: "auto" width="271" height="181">
             {% endif %}
            </div>
         {% endfor %}
+
         <br clear="both">
+        <br>
+
       </div>
   </body>
 </html>
