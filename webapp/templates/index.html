@@ -10,7 +10,7 @@
   </head>
   <body>
       <div class="page">
-        <div class="social">
+        <div class="socialicons">
           <a href="http://www.facebook.com/stolze.openair" target="_blank"><img src="{{ STATIC_URL }}img/Facebook.jpg" /></a>
           <a href="https://twitter.com/StolzeOpenair/" target="_blank"><img src="{{ STATIC_URL }}img/Twitter.jpg" /></a>
           <a href="http://vimeo.com/stolzeopenair" target="_blank"><img src="{{ STATIC_URL }}img/Vimeo.jpg" /></a>
@@ -25,16 +25,21 @@
         {% endfor %}
 
         <div class="nav">
-          <hr>
-          <div class="navigationleft">
-            <h3>HOME<h3><h3>BANDS<h3><h3>GALERIE<h3>
-          </div>
-          <hr>
+          <hr style="position:absolute; margin-top:-15px; width: 400px;">
+            <div class="navigationleft">
+              <a href="http://127.0.0.1:8000/" style="text-decoration: none; color: #000000"><h3>HOME</h3></a>
+              <a href="#bands" style="text-decoration: none; color: #000000"><h3>BANDS</h3></a>
+              <a href="#gallery" style="text-decoration: none; color: #000000"><h3>GALERIE</h3></a>
+            </div>
+          <hr style="position:absolute; margin-top:13px; width: 400px;">
+            <div class="navigationright">
+              <hr style="position:absolute; margin-top: -15px; margin-left: -47px; width: 405px;">
+              <a href="#sponsor" style="text-decoration: none; color: #000000"><h3>SPONSOREN</h3></a>
+              <a href="" style="text-decoration: none; color: #000000;"><h3>KONTAKT</h3></a>
+              <hr style="position:absolute; margin-top: 13px; margin-left: -47px; width: 405px;">
+            </div>
         </div>
-        <div class="navigationright">
-          <h3>SPONSOREN</h3><h3>KONTAKT</h3>
-        </div>
-
+        <br>
         {% for mood in moods %}
           <div class="mood">
             {% if mood.image %}
@@ -43,10 +48,8 @@
           </div>
         {% endfor %}
 
-        <div class="circlebutton">
-          <div class="buttonband">
-            <h2>BANDS</h2>
-          </div>
+        <div id="bands" class="circlebutton">
+            <h2 style="position:relative; margin-top:37px; margin-left:13px; color: #FFFFFF;">BANDS</h2>
         </div>
 
 
@@ -62,22 +65,35 @@
 
         {% for band in bands %}
           <div class="bandsingle">
-            {% if band.image %}
-              <img src = "{{ band.image|cropscale:"271x181" }}">
-            {% endif %}</br></br>
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+              <div class="flipper">
+                <div class="front">
+                  {% if band.image %}
+                    <img src = "{{ band.image|cropscale:"271x181" }}">
+                  {% endif %}</br></br>
+                </div>
+                <div class="back">
+                  <p style="color: #6495ED;">{{band.name}}</p>
+                  <hr>
+                  {% for year in band.bandyear_set.all %}
+                    Stage: {{ year.get_stage_display }}</br></br>
+                    Datum: {{ year.time|date:"D, d M, H:i" }} Uhr</br></br>
+                  {% endfor %}
+                  Genre: {{band.genre}}
+                </div>
+              </div>
+            </div>
           </div>
         {% endfor %}
 
         <br clear="both">
-        <br><br>
+        <br><br><br><br>
 
-        <div class="circlebutton2">
-          <div class="buttongallery">
-            <h2>GALERIE</h2>
-          </div>
+        <div id="gallery" class="circlebutton" style="position:absolute; margin-top:-48px;">
+            <h2 style="position:relative; margin-top:37px; margin-left:3px; color: #FFFFFF;">GALERIE</h2>
         </div>
 
-        <div class="gallerybg">
+        <div class="greybackground">
           {% for image in yearcovers  %}
             <div class="gallery">
               {% if image.image %}
@@ -85,22 +101,20 @@
               {% endif %}
              </div>
           {% endfor %}
+          <br clear="both">
         </div>
 
-        <br clear="both">
 
-        <div class="circlebutton3">
-          <div class="buttonsponsors">
-            <h2>SPON-
+        <div id="sponsor" class="circlebutton">
+            <h2 style="position:relative; margin-top:28px; margin-left:13px; color: #FFFFFF;">SPON-
             SOREN</h2>
-          </div>
         </div>
         <br clear="both">
 
         {% for sponsor in sponsors %}
           <div class="sponsor">
             {% if sponsor.logo %}
-              <a href="{{ sponsor.link }}" target="_blank"><img src = "{{ sponsor.logo|thumbnail:"228x9999" }}"></a>
+              <a href="{{ sponsor.link }}" target="_blank"><img src = "{{ sponsor.logo|thumbnail:"180x9999" }}"></a>
             {% endif %}</br></br>
           </div>
         {% endfor %}
