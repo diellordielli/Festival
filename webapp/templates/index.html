@@ -1,3 +1,4 @@
+{% load feincms_thumbnails %}
 <!DOCTYPE HTML>
 <html lang="en">
   
@@ -62,7 +63,7 @@
         {% for band in bands %}
           <div class="bandsingle">
             {% if band.image %}
-              <img src = "{{ band.image.url }}" margin-left: "auto" margin-right: "auto" width="271" height="181">
+              <img src = "{{ band.image|cropscale:"271x181" }}">
             {% endif %}</br></br>
           </div>
         {% endfor %}
@@ -80,22 +81,26 @@
           {% for image in yearcovers  %}
             <div class="gallery">
               {% if image.image %}
-                <img src = "{{ image.image.url }}" margin-left: "auto" margin-right: "auto" width="200" height="300">
+                <img src = "{{ image.image|cropscale:"200x300" }}">
               {% endif %}
              </div>
           {% endfor %}
-        </div>  
+        </div>
+
+        <br clear="both">
+
         <div class="circlebutton3">
           <div class="buttonsponsors">
             <h2>SPON-
             SOREN</h2>
           </div>
         </div>
+        <br clear="both">
 
         {% for sponsor in sponsors %}
-          <div class="bandsingle">
+          <div class="sponsor">
             {% if sponsor.logo %}
-              <a href="{{ sponsor.link }}" target="_blank"><img src = "{{ sponsor.logo.url }}" margin-left: "auto" margin-right: "auto" width="228" height="58"></a>
+              <a href="{{ sponsor.link }}" target="_blank"><img src = "{{ sponsor.logo|thumbnail:"228x9999" }}"></a>
             {% endif %}</br></br>
           </div>
         {% endfor %}

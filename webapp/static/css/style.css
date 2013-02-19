@@ -123,9 +123,7 @@
             }
 
             .gallerybg {
-                margin-top: -50px;
-                width: 1011px;
-                height: 520px;
+                position: relative;
                 background-color: #D3D3D3;
             }
 
@@ -134,8 +132,6 @@
                 float: left;
                 margin-top: 85px;
                 margin-left: 88px;
-                width: 200px;
-                height: 300px;
                 padding: 10px 10px 0px 10px;        
                 background-color: #FFFFFF;
             }
@@ -146,4 +142,17 @@
                 padding: 50px 50px 50px 50px;
                 width: 960px;
                 outline: 4px solid black; 
+            }
+
+            .sponsor {
+                position: relative;
+                float: left;
+                margin-top: 20px;
+                margin-left: 35px;
+                margin-bottom: 10px;
+                width: 271px;
+                height: 181px;
+                padding: 10px 10px 0px 10px;        
+                background-color: #FFFFFF;
+                padding-bottom: 4px; 
             }
