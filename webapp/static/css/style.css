@@ -42,6 +42,8 @@ h3 {
 
 .nav a {
     margin-right: 24px;
+    text-decoration: none;
+    color: #000000;
 }
 
 .navigationleft {
@@ -57,6 +59,32 @@ h3 {
     margin-left: 647px;
 }
 
+.hr1 {
+    position: absolute;
+    margin-top: -15px;
+    width: 400px;
+}
+
+.hr2 {
+    position: absolute;
+    margin-top: 13px;
+    width: 400px;
+}
+
+.hr3 {
+    position: absolute;
+    margin-top: -15px;
+    margin-left: -47px;
+    width: 405px;
+}
+
+.hr4 {
+    position: absolute;
+    margin-top: 13px;
+    margin-left: -47px;
+    width: 405px;
+}
+
 .mood {
     position: relative;
     padding: 35px 0px 50px 0px;
@@ -70,6 +98,35 @@ h3 {
     margin-top: -103px;
     margin-left: 458px;
     background-color: #4169E1;
+}
+
+#bands h2 {
+    position: absolute;
+    margin-top: 37px;
+    margin-left: 13px;
+    color: #FFFFFF;
+}
+
+#gallery {
+    margin-top: -49px;
+}
+
+#gallery h2 {
+    position: absolute;
+    margin-top: 37px;
+    margin-left: 3px;
+    color: #FFFFFF;
+}
+
+#sponsor {
+    position: absolute;
+    margin-top: -95px;
+    color: #FFFFFF;
+}
+
+#sponsor h2 {
+    margin-top: 25px;
+    margin-left: 13px;
 }
 
 .bandsingle {
@@ -120,9 +177,6 @@ h3 {
     background-color: #FFFFFF;
     padding-bottom: 4px; 
 }
-
-
-
 
 /* entire container, keeps perspective */
 .flip-container {
