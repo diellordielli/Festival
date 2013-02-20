@@ -26,10 +26,12 @@ class BandAdmin(admin.ModelAdmin):
     inlines = [
         BandLinksInline,
         BandYearInline,
-    ]    
+        ]
+
     list_display = ('name', 'description', 'genre', 'get_band_years')
     search_fields = ('name', 'genre')
     list_filter = ('genre', 'bandyear__year', 'bandyear__stage')
+    prepopulated_fields = {"slug": ("name",)}
 
 
 admin.site.register(models.Band, BandAdmin)

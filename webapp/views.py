@@ -2,6 +2,7 @@ from datetime import datetime
 
 from django.shortcuts import render
 
+
 from .sponsors.models import Sponsor, Category
 from .gallery.models import Image
 from .festival.models import Band, BandYear, BandLinks, Year
@@ -35,4 +36,12 @@ def home(request):
         'years': years,
         'thisyears': thisyears,
         'yearcovers': yearcovers,
+        })
+
+
+def get_band(request, band):
+    band = Band.objects.get(slug=band)
+
+    return render(request, 'bandsingle.html', {
+        'band': band,
         })

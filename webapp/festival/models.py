@@ -7,6 +7,7 @@ class Band(models.Model):
     description = models.TextField(blank=True)
     genre = models.CharField(max_length=200)
     image = models.ImageField(upload_to="bands", blank=True)
+    slug = models.SlugField(default="-")
 
     def __unicode__(self):
         return u"%s" % (self.name)
@@ -17,6 +18,10 @@ class Band(models.Model):
         for by in self.bandyear_set.all():
             answer += '%s %s' % (by.year, by.stage) + ', '
         return answer
+
+    @models.permalink
+    def get_absolute_url(self):
+        return ("get_band", (), {"band": self.slug})
 
 
 class BandLinks(models.Model):

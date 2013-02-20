@@ -20,6 +20,9 @@ urlpatterns = patterns('',
     # Home
     url(r'^$', 'webapp.views.home', name='home'),
 
+    # Bandsingle
+    url(r'^band/(?P<band>[-a-z0-9]+)/$', 'webapp.views.get_band', name='get_band'),
+
 
 )
 

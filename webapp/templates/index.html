@@ -43,7 +43,7 @@
         {% for mood in moods %}
           <div class="mood">
             {% if mood.image %}
-              <img src = "{{ mood.image.url }}" width="1011" height="451">
+              <img src = "{{ mood.image.url }}">
             {% endif %}
           </div>
         {% endfor %}
@@ -69,17 +69,18 @@
               <div class="flipper">
                 <div class="front">
                   {% if band.image %}
-                    <img src = "{{ band.image|cropscale:"271x181" }}">
+                    <a href="{{ band.get_absolute_url }}"><img src = "{{ band.image|cropscale:"271x181" }}"></a>
                   {% endif %}</br></br>
                 </div>
                 <div class="back">
-                  <p style="color: #6495ED;">{{band.name}}</p>
+                  <a href="{{ band.get_absolute_url }}">
+                    {{band.name}}
                   <hr>
                   {% for year in band.bandyear_set.all %}
                     Stage: {{ year.get_stage_display }}</br></br>
                     Datum: {{ year.time|date:"D, d M, H:i" }} Uhr</br></br>
                   {% endfor %}
-                  Genre: {{band.genre}}
+                  Genre: {{band.genre}}</a>
                 </div>
               </div>
             </div>
