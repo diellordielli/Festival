@@ -243,3 +243,7 @@ h3 {
     color: #6495ED;
     background-color: #D3D3D3;
 }
+
+.back a {
+    text-decoration: none;
+}

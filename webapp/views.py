@@ -41,7 +41,16 @@ def home(request):
 
 def get_band(request, band):
     band = Band.objects.get(slug=band)
+    now = datetime.now()
+    thisyears = Year.objects.filter(year=now.year)
+    images = Image.objects.all()
+    bands = Band.objects.all()
+    bandyears = BandYear.objects.all()
 
     return render(request, 'bandsingle.html', {
         'band': band,
+        'thisyears': thisyears,
+        'images': images,
+        'bands': bands,
+        'bandyears': bandyears,
         })

@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/style.css">
+  <title>stolze-openair.ch</title>
+</head>
+
+<body>
+  <div class="page">
+    <div class="socialicons">
+      <a href="http://www.facebook.com/stolze.openair" target="_blank"><img src="{{ STATIC_URL }}img/Facebook.jpg" /></a>
+      <a href="https://twitter.com/StolzeOpenair/" target="_blank"><img src="{{ STATIC_URL }}img/Twitter.jpg" /></a>
+      <a href="http://vimeo.com/stolzeopenair" target="_blank"><img src="{{ STATIC_URL }}img/Vimeo.jpg" /></a>
+    </div>
+    {% for year in thisyears %}
+      <div class="logo">
+        {% if year.logo %}
+          <img src = "{{ year.logo.url }}">
+        {% endif %}
+      </div>
+    {% endfor %}
+    <div class="nav">
+      <hr class="hr1">
+      <div class="navigationleft">
+        <a href="http://127.0.0.1:8000/"><h3>HOME</h3></a>
+        <a href="#bands"><h3>BANDS</h3></a>
+        <a href="#gallery"><h3>GALERIE</h3></a>
+      </div>
+      <hr class="hr2">
+      <div class="navigationright">
+        <hr class="hr3">
+        <a href="#sponsor"><h3>SPONSOREN</h3></a>
+        <a href=""><h3>KONTAKT</h3></a>
+        <hr class="hr4">
+      </div>
+    </div>
+    {% block band %}
+    {% endblock %}
+    {% block content %}
+    {% endblock %}
+    <br>
+  </div>
+</body>
+</html>

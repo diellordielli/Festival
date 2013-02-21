@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load feincms_thumbnails %}
+
+{% block band %}
+{% for band in bands %}
+  {% if band.image %}
+    <a href="{{ band.get_absolute_url }}"><img src = "{{ band.image|cropscale:"271x181" }}"></a>
+  {% endif %}</br></br>
+{% endfor %}
+{% for year in band.bandyear_set.all %}
+    Datum: {{ year.time|date:"D, d M, H:i" }} Uhr</br></br>
+{% endfor %}
+{% endblock %}
