@@ -16,8 +16,19 @@ class Band(models.Model):
         answer = ""
 
         for by in self.bandyear_set.all():
-            answer += '%s %s' % (by.year, by.stage) + ', '
+            answer += '%s %s %s' % (by.year,
+                by.get_stage_display(), by.time) + ', '
         return answer
+
+    def get_stage_time(self):
+        """ gets the next or last stage time """
+
+        bandyear = self.bandyear_set.latest('time')
+
+        if bandyear:
+            return bandyear.time
+        else:
+            return None
 
     @models.permalink
     def get_absolute_url(self):
@@ -65,6 +76,10 @@ class Year(models.Model):
 
     def __unicode__(self):
         return u"%s" % (self.year)
+
+    @models.permalink
+    def get_gallery_url(self):
+        return ("get_gallery", (), {"year": self.year})
 
 
 class BandYear(models.Model):

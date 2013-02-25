@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% load feincms_thumbnails %}
+{% block gallery %}
+    {% for image in images %}
+        <div class="gallerysingle">
+            {% if image.image %}
+                <img src = "{{ image.image|cropscale:"271x181" }}">
+            {% endif %}
+        </div>
+    {% endfor %}
+{% endblock %}

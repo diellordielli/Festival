@@ -1,13 +1,26 @@
 {% extends "base.html" %}
 {% load feincms_thumbnails %}
-
 {% block band %}
-{% for band in bands %}
-  {% if band.image %}
-    <a href="{{ band.get_absolute_url }}"><img src = "{{ band.image|cropscale:"271x181" }}"></a>
-  {% endif %}</br></br>
-{% endfor %}
-{% for year in band.bandyear_set.all %}
-    Datum: {{ year.time|date:"D, d M, H:i" }} Uhr</br></br>
-{% endfor %}
+    <div class="bandsingleimg">
+      {% if band.image %}
+        <img src = "{{ band.image|cropscale:"869x343" }}">
+      {% endif %}</br></br>
+    </div>
+    <br clear="both">
+    
+    <div class="bandsingleinfo">
+      {% for year in band.bandyear_set.all %}
+          WO: {{ year.get_stage_display }}</br></br>
+          WANN: {{ year.time|date:"D, d M, H:i" }} Uhr</br></br>
+      {% endfor %}
+      GENRE: {{ band.genre }}
+    </div>
+    <div class="bandsingletext">
+      {{ band.name }}</br></br>
+      {{ band.description }}</br></br>
+    </div>
+  <hr class="hr5">
+  <br clear="both">
+  <hr class="hr6">
 {% endblock %}
+

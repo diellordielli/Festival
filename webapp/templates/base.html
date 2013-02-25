@@ -25,17 +25,19 @@
       <hr class="hr1">
       <div class="navigationleft">
         <a href="http://127.0.0.1:8000/"><h3>HOME</h3></a>
-        <a href="#bands"><h3>BANDS</h3></a>
-        <a href="#gallery"><h3>GALERIE</h3></a>
+        <a href="http://127.0.0.1:8000/#bands"><h3>BANDS</h3></a>
+        <a href="http://127.0.0.1:8000/#gallery"><h3>GALERIE</h3></a>
       </div>
       <hr class="hr2">
       <div class="navigationright">
         <hr class="hr3">
-        <a href="#sponsor"><h3>SPONSOREN</h3></a>
-        <a href=""><h3>KONTAKT</h3></a>
+        <a href="http://127.0.0.1:8000/#sponsor"><h3>SPONSOREN</h3></a>
+        <a href="http://127.0.0.1:8000/"><h3>KONTAKT</h3></a>
         <hr class="hr4">
       </div>
     </div>
+    {% block gallery %}
+    {% endblock %}
     {% block band %}
     {% endblock %}
     {% block content %}

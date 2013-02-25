@@ -23,7 +23,8 @@ urlpatterns = patterns('',
     # Bandsingle
     url(r'^band/(?P<band>[-a-z0-9]+)/$', 'webapp.views.get_band', name='get_band'),
 
-
+    # Gallery
+    url(r'^gallery/(?P<year>\d+)/$', 'webapp.views.get_gallery', name='get_gallery'),
 )
 
 if settings.DEBUG:
