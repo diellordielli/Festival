@@ -86,15 +86,21 @@ h3 {
 }
 
 .hr5 {
-    float: right;
-    margin-top: 15px;
-    margin-right: 40px;
-    height: 160px;
+    position: absolute;
+    height: 100%;
+    left: 65%;
 }
 
 .hr6 {
     position: relative;
     width: 1011px;
+}
+
+.hrnews {
+    position: relative;
+    width: 800px;
+    height: 1px;
+    background-color: #00CC99;
 }
 
 .mood {
@@ -115,32 +121,43 @@ h3 {
 }
 
 #bands h2 {
-    position: absolute;
-    margin-top: 37px;
-    margin-left: 13px;
-    color: #FFFFFF;
-}
-
-#gallery {
-    margin-top: -49px;
+    position: relative;
+    width: 1011px;
+    padding-top: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: #00CC99;
 }
 
 #gallery h2 {
-    position: absolute;
-    margin-top: 37px;
-    margin-left: 3px;
-    color: #FFFFFF;
-}
-
-#sponsor {
-    position: absolute;
-    margin-top: -95px;
-    color: #FFFFFF;
+    position: relative;
+    width: 1011px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: #00CC99;
 }
 
 #sponsor h2 {
-    margin-top: 25px;
-    margin-left: 13px;
+    position: relative;
+    width: 1011px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    text-align: center;
+    color: #00CC99;
+}
+
+#kontakt h2 {
+    position: relative;
+    width: 1011px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    text-align: center;
+    color: #00CC99;
 }
 
 .bandsingle {
@@ -187,13 +204,25 @@ h3 {
     background-color: #FFFFFF;
 }
 
+.newstitle {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 0px 0px 0px;
+    width: 800px;
+    color: #00CC99;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;     
+}
 
 .news {
     position: relative;
-    margin-left: 20px;
-    padding: 50px 50px 50px 50px;
-    width: 960px;
-    outline: 4px solid black; 
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 0px 0px 0px;
+    width: 565px;
+    text-align: center;
 }
 
 .sponsor {
@@ -208,6 +237,11 @@ h3 {
     padding-bottom: 4px; 
 }
 
+.bandinfo {
+    padding: 0 70px;
+    position: relative;
+}
+
 .bandsingleimg {
     position: relative;
     margin-top: 70px;
@@ -216,14 +250,57 @@ h3 {
 
 .bandsingletext {
     float: left;
-    width: 600px;
-    margin-left: 70px;
+    width: 70%;
 }
 
 .bandsingleinfo {
-    float: right;
-    margin-top: 33px;
-    margin-right: 90px;
+    float: left;
+    width: 30%;
+}
+
+.grouper {
+    position: relative;
+    padding: 35px 0px 0px 43px;
+    font-size: 20px;
+}
+
+.groupersponsors {
+    position: relative;
+    margin-left: 35px;
+    font-size: 20px;
+}
+
+.map {
+    margin-top: 60px;
+    -webkit-filter: grayscale(70%);
+    opacity: 0.6;
+}
+
+.maptext {
+    position: relative;
+    margin-top: -490px;
+    margin-left: 80px;
+    list-style: none;
+    pointer-events: none;
+}
+
+.maptitle {
+    color: #00CC99;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.mapinfo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.mapaddress {
+    font-size: 25px;
+}
+
+.mappc {
+    font-size: 20px;
 }
 
 /* entire container, keeps perspective */

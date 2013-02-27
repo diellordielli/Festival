@@ -20,9 +20,20 @@ class Sponsor(models.Model):
             answer += '%s %s' % (scy.year, scy.category) + ', '
         return answer
 
+    def get_sponsor_category(self):
+
+        category = self.categories.latest("sponsorcategoryyear__year__year")
+
+        if category:
+            return category.name
+        else:
+            return None
+
 
 class Category(models.Model):
     name = models.CharField(max_length=200)
+    sponsors = models.ManyToManyField(Sponsor, related_name="categories",
+        through="SponsorCategoryYear")
 
     class Meta:
         verbose_name_plural = "Categories"

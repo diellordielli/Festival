@@ -3,7 +3,7 @@ from datetime import datetime
 from django.shortcuts import render
 
 
-from .sponsors.models import Sponsor, Category
+from .sponsors.models import Sponsor, Category, SponsorCategoryYear
 from .gallery.models import Image
 from .festival.models import Band, BandYear, BandLinks, Year
 from .news.models import News
@@ -14,7 +14,9 @@ def home(request):
     now = datetime.now()
     current_year = Year.objects.get(year=now.year)
     sponsors = Sponsor.objects.all()
+    sponsors = Sponsor.objects.filter(years=current_year).order_by('sponsorcategoryyear__category')
     categories = Category.objects.all()
+    sponsorcategoryyears = SponsorCategoryYear.objects.all()
     images = Image.objects.all()
     bands = Band.objects.filter(years=current_year).order_by('bandyear__time')
     bandyears = BandYear.objects.all()
@@ -28,6 +30,7 @@ def home(request):
     return render(request, 'index.html', {
         'sponsors': sponsors,
         'categories': categories,
+        'sponsorcategoryyears': sponsorcategoryyears,
         'images': images,
         'bands': bands,
         'bandyears': bandyears,
@@ -57,12 +60,12 @@ def get_band(request, band):
 
 def get_gallery(request, year):
     now = datetime.now()
-    images = Image.objects.all()
-    years = Year.objects.filter(year=)
+    year = Year.objects.get(year=year)
+    images = year.image_set.all()
     thisyears = Year.objects.filter(year=now.year)
+
 
     return render(request, 'gallery.html', {
         'images': images,
-        'years': years,
         'thisyears': thisyears,
         })
