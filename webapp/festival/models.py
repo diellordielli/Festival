@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 from django.db import models
-from django.core.exceptions import ValidationError
 
 
 class Band(models.Model):
@@ -17,8 +16,7 @@ class Band(models.Model):
         answer = ""
 
         for by in self.bandyear_set.all():
-            answer += '%s %s %s' % (by.year,
-                by.get_stage_display(), by.time) + ', '
+            answer += '%s %s %s' % (by.year, by.get_stage_display(), by.time) + ', '
         return answer
 
     def get_stage_time(self):

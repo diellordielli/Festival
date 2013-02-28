@@ -22,67 +22,94 @@ h3 {
     background-color: #FFFFFF;
 }
 
+.headerbg {
+    position: fixed;
+    margin-top: -60px;
+    height: 200px;
+    width: 100%;
+    background-color: #FFFFFF;
+    z-index: 1;
+}
+
 .socialicons {
-    position: absolute;
+    position: fixed;
     margin-top: -20px;
     margin-left: 880px;
+    z-index: 1;
+    background-color: #FFFFFF;
 }
 
 .logo {
-    position: relative;
+    position: fixed;
     width: 161px;
-    margin-top: -30px;
-    margin-left: auto;
+    margin-top: -50px;
+    margin-left: 23.3%;
     margin-right: auto;
+    background-color: #FFFFFF;
+    z-index: 1;
     }
 
 .nav {
-    margin-top: -70px;
+    margin-top: 60px;
+    background-color: #FFFFFF;
 }
 
 .nav a {
     margin-right: 24px;
     text-decoration: none;
     color: #000000;
+    background-color: #FFFFFF;
 }
 
 .navigationleft {
-    position: relative;
-    margin-top: 0px;
+    position: fixed;
+    margin-top: -20px;
     margin-left: 40px;
     padding: 0px 0px 0px 0px;
+    z-index: 1;
+    background-color: #FFFFFF;
 }
 
 .navigationright {
-    position: absolute;
+    position: fixed;
     margin-top: -20px;
     margin-left: 650px;
+    z-index: 1;
+    background-color: #FFFFFF;
 }
 
 .hr1 {
-    position: absolute;
-    margin-top: -15px;
+    position: fixed;
+    margin-top: -35px;
     width: 400px;
+    z-index: 1;
+    background-color: #FFFFFF;
 }
 
 .hr2 {
-    position: absolute;
-    margin-top: 13px;
+    position: fixed;
+    margin-top: 10px;
     width: 400px;
+    z-index: 1;
+    background-color: #FFFFFF;
 }
 
 .hr3 {
-    position: absolute;
+    position: fixed;
     margin-top: -15px;
     margin-left: -47px;
     width: 405px;
+    z-index: 1;
+    background-color: #FFFFFF;
 }
 
 .hr4 {
-    position: absolute;
+    position: fixed;
     margin-top: 13px;
     margin-left: -47px;
     width: 405px;
+    z-index: 1;
+    background-color: #FFFFFF;
 }
 
 .hr5 {
@@ -223,6 +250,13 @@ h3 {
     padding: 0px 0px 0px 0px;
     width: 565px;
     text-align: center;
+}
+
+.newsimage {
+    position: relative;
+    width: 1011px;
+    margin-top: 20px;
+    margin-left: 240px;
 }
 
 .sponsor {
