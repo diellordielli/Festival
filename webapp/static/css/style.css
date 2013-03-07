@@ -86,8 +86,8 @@ h3 {
     position: fixed;
     margin-top: -35px;
     width: 400px;
-    z-index: 1;
-    background-color: #FFFFFF;
+    z-index: 2;
+    background-color: #000000;
 }
 
 .show-narrow {
@@ -98,8 +98,8 @@ h3 {
     position: fixed;
     margin-top: 10px;
     width: 400px;
-    z-index: 1;
-    background-color: #FFFFFF;
+    z-index: 2;
+    background-color: #000000;
 }
 
 .hr3 {
@@ -107,8 +107,8 @@ h3 {
     margin-top: -15px;
     margin-left: -47px;
     width: 405px;
-    z-index: 1;
-    background-color: #FFFFFF;
+    z-index: 2;
+    background-color: #000000;
 }
 
 .hr4 {
@@ -116,8 +116,8 @@ h3 {
     margin-top: 13px;
     margin-left: -47px;
     width: 405px;
-    z-index: 1;
-    background-color: #FFFFFF;
+    z-index: 2;
+    background-color: #000000;
 }
 
 .hr5 {
@@ -219,19 +219,27 @@ h3 {
 #navlefticon {
     position: absolute;
     margin-top: 200px;
-    margin-left: 10px;
+    margin-left: -6px;
+    display: none;
 }
 
 #navrighticon {
     position: absolute;
-    margin-left: 932px;
+    margin-left: -6px;
     margin-top: 200px;
+    display: none;
+}
+
+.slider-dots img {
+    height: 13px;
+    width: 13px;
 }
 
 .greybackground {
-    max-width: 800px;
+    position: relative;
+    max-width: 830px;
     width: 100%;
-    height: 300px;
+    height: 320px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
@@ -242,10 +250,11 @@ h3 {
 
 .greybackground2 {
     position: absolute;
-    max-width: 30px;
+    max-width: 55px;
     width: 100%;
-    height: 300px;
-    margin-left: 104px;
+    height: 320px;
+    margin-top: 16px;
+    margin-left: 35px;
     margin-right: auto;
     margin-bottom: 50px;
     padding-bottom: 150px;
@@ -255,10 +264,11 @@ h3 {
 
 .greybackground3 {
     position: absolute;
-    max-width: 25px;
+    max-width: 55px;
     width: 100%;
-    height: 300px;
-    margin-left: 880px;
+    height: 320px;
+    margin-top: 16px;
+    margin-left: 920px;
     margin-right: auto;
     margin-bottom: 50px;
     padding-bottom: 150px;
@@ -267,24 +277,26 @@ h3 {
 }
 
 .gallery {
-    position: relative;
     float: left;
     margin-top: 85px;
-    margin-left: 26px;
-    left: 18px;
-    width: auto;
-    height: 100%;
-    margin-bottom: 0px;
+    margin-left: 36px;
     padding: 10px 10px 0px 10px;        
     background-color: #FFFFFF;
     -moz-box-shadow: 10px 10px 5px #888;
     -webkit-box-shadow: 10px 10px 5px #888;
     box-shadow: 10px 10px 5px #888;
+    text-align: center;
+    font-weight: bold;
 }
 
+.gallery:nth-child(3n+3) {
+    margin-right: 50px;
+}
+
+
 .scroller {
-    margin-left: 0px;
-    width: 10000px;
+    position: absolute;
+    margin-right: 30px;
 }
 
 .gallerysingle {

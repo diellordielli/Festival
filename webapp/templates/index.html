@@ -76,29 +76,34 @@
 <div id="gallery">
     <h2>GALERIE</h2>
 </div>
-
-<a id="navlefticon" href="#">
-  <img src="{{ STATIC_URL }}img/navigation-left.png" />
-</a>
-<a id="navrighticon" href="#">
-  <img src="{{ STATIC_URL }}img/navigation-right.png" />
-</a>
-<div class="greybackground2">
-</div>
-<div class="greybackground3">
-</div>
-<div class="greybackground">
-  <div class="scroller">
-    {% for image in yearcovers %}
-      <div class="gallery">
-          {% if image.image %}
-            <a href="{{ image.year.get_gallery_url }}"><img src = "{{ image.image|cropscale:"200x300" }}"></a>
-          {% endif %}
-      </div>
-    {% endfor %}
-    <br clear="both">
+<div class="galleryall">
+  <div class="greybackground2">
+    <a id="navlefticon" href="#">
+      <img src="{{ STATIC_URL }}img/navigation-left.png" />
+    </a>
   </div>
-</div>
+  <div class="greybackground3">
+    <a id="navrighticon" href="#">
+      <img src="{{ STATIC_URL }}img/navigation-right.png" />
+    </a>
+  </div>
+  <div class="slider-dots"> 
+    <img class="dot" src="{{ STATIC_URL }}img/dot.png" />
+  </div>
+  <div class="greybackground container">
+    <div class="scroller">
+      {% for image in yearcovers %}
+        <div class="gallery">
+            {% if image.image %}
+              <a href="{{ image.year.get_gallery_url }}"><img src = "{{ image.image|cropscale:"200x300" }}"></a>
+            {% endif %}
+            <br>{{ image.year }}
+        </div>
+      {% endfor %}
+      <br clear="both">
+    </div>
+  </div>
+  </div>
 <div id="sponsor">
     <h2>SPONSOREN</h2>
 </div>
