@@ -17,65 +17,65 @@ $(document).ready(function() {
         $dot.clone().data('dotindex', i).appendTo('.slider-dots'); 
     }
 
+    $(window).on('resize', function(event) {
+        console.log(this, event, $(".container").width());
+    });
+
     $dot.addClass('active');
 
     $(".scroller").width(totalWidth);
 
-    $('#navrighticon').on('click', function(event) {
+    $('.greybackground3').on('click', function(event) {
         event.preventDefault();
         var newLeft = $('.scroller').get(0).offsetLeft - visibleWidth;
-        console.log(newLeft, -totalWidth);
+
         if (newLeft <= -totalWidth) {
             newLeft = 0;
         }
+        var navpos = -newLeft / visibleWidth;
+
+        $('.dot').removeClass('active');
+        $('.dot:eq('+navpos+')').addClass('active');
 
         $('.scroller').animate({'left': newLeft}, carouselOptions.speed);
     });
 
-    $('#navrighticon').on('click', function(event) {
-        $('.dot').removeClass('active');
-        $(this).addClass('active');
-    });   
-
-    $('#navlefticon').on('click', function(event) {
+    $('.greybackground2').on('click', function(event) {
         event.preventDefault();
         var newLeft = $('.scroller').get(0).offsetLeft + visibleWidth;
 
         if (newLeft > 0) {
             newLeft = -separators * visibleWidth;
         }
+        var navpos = -newLeft / visibleWidth;
+
+        $('.dot').removeClass('active');
+        $('.dot:eq('+navpos+')').addClass('active');
 
         $('.scroller').animate({'left': newLeft}, carouselOptions.speed);
     });
+
 
     $('.dot').on('click', function(event) {
         var dotindex = $(this).data('dotindex');
         var dotplace = dotindex * visibleWidth;
-
-        console.log(dotindex);
-
         var newLeft = -dotplace;
         $('.scroller').animate({'left': newLeft}, carouselOptions.speed);
         $('.dot').removeClass('active');
         $(this).addClass('active');
-
     });
 
     $('.galleryall').on('mouseenter', function(event) {
         $('#navlefticon').show();
-        $('.greybackground2').css({'opacity': '0.6'});
-    });
-    $('.galleryall').on('mouseleave', function(event) {
-        $('#navlefticon').hide();
-        $('.greybackground2').css({'opacity': '1'});
-    });
-
-    $('.galleryall').on('mouseenter', function(event) {
         $('#navrighticon').show();
+        $('.greybackground2').css({'opacity': '0.6'});
         $('.greybackground3').css({'opacity': '0.6'});
     });
     $('.galleryall').on('mouseleave', function(event) {
+        $('#navlefticon').hide();
         $('#navrighticon').hide();
+        $('.greybackground2').css({'opacity': '1'});
         $('.greybackground3').css({'opacity': '1'});
     });
+
 });
