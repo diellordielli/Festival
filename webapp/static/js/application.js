@@ -78,4 +78,43 @@ $(document).ready(function() {
         $('.greybackground3').css({'opacity': '1'});
     });
 
+    $('.helfercircle').on('click', function(event) {
+        $('.mail1').fadeIn("slow");
+    });
+
+    $('.goennercircle').on('click', function(event) {
+        $('.mail2').fadeIn("slow");
+    });
+
+    $('.pressecircle').on('click', function(event) {
+        $('.mail3').fadeIn("slow");
+    });
+
+    $('.sponsoringcircle').on('click', function(event) {
+        $('.mail4').fadeIn("slow");
+    });
+
+    $('.mailclose').on('click', function(event) {
+        $('.mail1').fadeOut("slow");
+    });
+    $('.mailclose').on('click', function(event) {
+        $('.mail2').fadeOut("slow");
+    });
+    $('.mailclose').on('click', function(event) {
+        $('.mail3').fadeOut("slow");
+    });
+    $('.mailclose').on('click', function(event) {
+        $('.mail4').fadeOut("slow");
+    });
+
+
+
+    $('.newstitle').on('click', function(event) {
+        $('.newsshow').fadeIn("slow");
+    });
+
+    $('.newstitle').on('click', function(event) {
+        $('.newsshow').fadeOut("slow");
+    });
+
 });

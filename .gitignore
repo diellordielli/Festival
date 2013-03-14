@@ -4,3 +4,4 @@
 /upload
 *.json
 venv
+webapp/static/webfontkit

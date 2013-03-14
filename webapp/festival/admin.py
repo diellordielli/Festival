@@ -26,7 +26,7 @@ class BandAdmin(admin.ModelAdmin):
     inlines = [
         BandLinksInline,
         BandYearInline,
-        ]
+    ]
 
     list_display = ('name', 'description', 'genre', 'get_band_years')
     search_fields = ('name', 'genre')

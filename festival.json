@@ -1,1 +1,545 @@
-[{"pk": 1, "model": "festival.band", "fields": {"genre": "Indie/Rock/Soul", "image": "bands/250_1.jpg", "name": "Fatboy", "slug": "fatboy", "description": "Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy "}}, {"pk": 2, "model": "festival.band", "fields": {"genre": "Alternative/Indie/Live-Elektronic", "image": "bands/Coldeve.jpg", "name": "Coldeve", "slug": "coldeve", "description": ""}}, {"pk": 3, "model": "festival.band", "fields": {"genre": "Indie/Rock/Soul", "image": "bands/Alvin_Zealot.png", "name": "Alvin Zealot", "slug": "alvinzealot", "description": ""}}, {"pk": 4, "model": "festival.band", "fields": {"genre": "Elektro/Pop/Techno", "image": "bands/Jeans_Team.jpg", "name": "Jeans Team", "slug": "jeansteam", "description": ""}}, {"pk": 5, "model": "festival.band", "fields": {"genre": "Sph\u00e4rischer PopGarage", "image": "bands/Lo_Fat_Orchestra.jpg", "name": "Lo Fat Orchestra", "slug": "lofatorchestra", "description": ""}}, {"pk": 6, "model": "festival.band", "fields": {"genre": "Mundartrock/Funk/Hip-Hop", "image": "bands/Dabu_Fantastic.jpg", "name": "Dabu Fantastic", "slug": "dabufantastic", "description": ""}}, {"pk": 1, "model": "festival.bandlinks", "fields": {"type": "WS", "link": "http://www.fatboy.ch/", "band": 1}}, {"pk": 2, "model": "festival.bandlinks", "fields": {"type": "WS", "link": "http://www.coldeve.ch/", "band": 2}}, {"pk": 3, "model": "festival.bandlinks", "fields": {"type": "WS", "link": "http://www.az.ch/", "band": 3}}, {"pk": 4, "model": "festival.bandlinks", "fields": {"type": "WS", "link": "http://www.jeansteam.ch/", "band": 4}}, {"pk": 5, "model": "festival.bandlinks", "fields": {"type": "WS", "link": "http://www.lfo.ch/", "band": 5}}, {"pk": 6, "model": "festival.bandlinks", "fields": {"type": "WS", "link": "http://www.dabu.ch/", "band": 6}}, {"pk": 1, "model": "festival.year", "fields": {"logo": "years/Logo.jpg", "start": "2013-02-06", "end": "2013-02-06", "year": 2013}}, {"pk": 2, "model": "festival.year", "fields": {"logo": "years/2012.jpg", "start": "2013-02-18", "end": "2013-02-18", "year": 2012}}, {"pk": 3, "model": "festival.year", "fields": {"logo": "years/2011.png", "start": "2013-02-18", "end": "2013-02-18", "year": 2011}}, {"pk": 4, "model": "festival.year", "fields": {"logo": "years/2010.jpg", "start": "2013-02-18", "end": "2013-02-18", "year": 2010}}, {"pk": 5, "model": "festival.year", "fields": {"logo": "years/2009.jpg", "start": "2013-02-18", "end": "2013-02-18", "year": 2009}}, {"pk": 6, "model": "festival.year", "fields": {"logo": "", "start": "2013-02-19", "end": "2013-02-19", "year": 2008}}, {"pk": 7, "model": "festival.year", "fields": {"logo": "", "start": "2013-02-19", "end": "2013-02-19", "year": 2007}}, {"pk": 8, "model": "festival.year", "fields": {"logo": "", "start": "2013-03-06", "end": "2013-03-06", "year": 2006}}, {"pk": 9, "model": "festival.year", "fields": {"logo": "", "start": "2013-03-08", "end": "2013-03-08", "year": 2005}}, {"pk": 1, "model": "festival.bandyear", "fields": {"band": 1, "time": "2013-02-21T11:17:55Z", "year": 1, "stage": "HB"}}, {"pk": 2, "model": "festival.bandyear", "fields": {"band": 2, "time": "2013-02-14T13:19:01Z", "year": 1, "stage": "HB"}}, {"pk": 3, "model": "festival.bandyear", "fields": {"band": 3, "time": "2012-02-14T15:31:38Z", "year": 2, "stage": "HB"}}, {"pk": 4, "model": "festival.bandyear", "fields": {"band": 4, "time": "2013-02-14T13:32:25Z", "year": 1, "stage": "ZB"}}, {"pk": 5, "model": "festival.bandyear", "fields": {"band": 5, "time": "2013-02-21T14:52:13Z", "year": 1, "stage": "ZB"}}, {"pk": 6, "model": "festival.bandyear", "fields": {"band": 6, "time": "2013-02-14T14:53:41Z", "year": 1, "stage": "HB"}}, {"pk": 1, "model": "gallery.category", "fields": {"name": "Bands", "description": ""}}, {"pk": 1, "model": "gallery.image", "fields": {"name": "fdsasfsdf", "is_yearcover": false, "image": "gallery/coldeve2.jpg", "band": 2, "year": 1, "date": "2013-02-14T18:16:31Z", "categories": [1], "description": ""}}, {"pk": 2, "model": "gallery.image", "fields": {"name": "sgdfsdfsfds", "is_yearcover": false, "image": "gallery/stolze-wiese-2012.jpg", "band": 3, "year": 1, "date": "2013-02-15T10:31:06Z", "categories": [1], "description": ""}}, {"pk": 3, "model": "gallery.image", "fields": {"name": "gfdsdfg", "is_yearcover": false, "image": "gallery/images.jpg", "band": null, "year": 2, "date": "2013-02-15T10:50:19Z", "categories": [1], "description": ""}}, {"pk": 4, "model": "gallery.image", "fields": {"name": "sfdg", "is_yearcover": false, "image": "gallery/ongatu-henrici-2012-09-11-ongatu-0-1113212906.jpg", "band": null, "year": 6, "date": "2013-02-15T10:50:31Z", "categories": [], "description": ""}}, {"pk": 5, "model": "gallery.image", "fields": {"name": "sdgfsdg", "is_yearcover": false, "image": "gallery/5835856593_45dbd53c5d.jpg", "band": null, "year": 9, "date": "2013-02-15T10:50:43Z", "categories": [1], "description": ""}}, {"pk": 6, "model": "gallery.image", "fields": {"name": "asdfsadf", "is_yearcover": false, "image": "gallery/je1170370002.jpg", "band": null, "year": 5, "date": "2013-02-15T10:51:16Z", "categories": [], "description": ""}}, {"pk": 8, "model": "gallery.image", "fields": {"name": "asfdsf", "is_yearcover": true, "image": "gallery/5835856593_45dbd53c5d_1.jpg", "band": null, "year": 8, "date": "2013-02-15T10:52:04Z", "categories": [], "description": ""}}, {"pk": 9, "model": "gallery.image", "fields": {"name": "YearCover 2012", "is_yearcover": true, "image": "gallery/2012_2.jpg", "band": null, "year": 2, "date": "2013-03-06T10:28:06Z", "categories": [], "description": ""}}, {"pk": 10, "model": "gallery.image", "fields": {"name": "YearCover 2011", "is_yearcover": true, "image": "gallery/2011_1.png", "band": null, "year": 3, "date": "2013-03-06T10:28:36Z", "categories": [], "description": ""}}, {"pk": 11, "model": "gallery.image", "fields": {"name": "YearCover 2010", "is_yearcover": true, "image": "gallery/2010_2.jpg", "band": null, "year": 4, "date": "2013-03-06T10:28:58Z", "categories": [], "description": ""}}, {"pk": 12, "model": "gallery.image", "fields": {"name": "YearCover 2009", "is_yearcover": true, "image": "gallery/2009_1.jpg", "band": null, "year": 5, "date": "2013-03-06T10:29:22Z", "categories": [], "description": ""}}, {"pk": 13, "model": "gallery.image", "fields": {"name": "YearCover 2008", "is_yearcover": true, "image": "gallery/2008_1.jpg", "band": null, "year": 6, "date": "2013-03-06T10:29:41Z", "categories": [], "description": ""}}, {"pk": 14, "model": "gallery.image", "fields": {"name": "YearCover 2007", "is_yearcover": true, "image": "gallery/2007_2.jpg", "band": null, "year": 7, "date": "2013-03-06T10:29:58Z", "categories": [], "description": ""}}, {"pk": 1, "model": "sponsors.sponsor", "fields": {"logo": "sponsors/Stadt_Z\u00fcrich.JPG", "link": "http://www.stadt-zuerich.ch/sd/de/index.html", "name": "Stadt Z\u00fcrich"}}, {"pk": 2, "model": "sponsors.sponsor", "fields": {"logo": "sponsors/feinheit.jpg", "link": "http://www.feinheit.ch/", "name": "FEINHEIT"}}, {"pk": 3, "model": "sponsors.sponsor", "fields": {"logo": "sponsors/mascotte.jpg", "link": "http://www.mascotte.ch/", "name": "Mascotte"}}, {"pk": 4, "model": "sponsors.sponsor", "fields": {"logo": "sponsors/qv_oberstrass.jpg", "link": "http://www.qvo.ch/", "name": "Quartierverein Oberstrass"}}, {"pk": 5, "model": "sponsors.sponsor", "fields": {"logo": "sponsors/riffraff.jpg", "link": "http://www.riffraff.ch/", "name": "RIFFRAFF"}}, {"pk": 7, "model": "sponsors.sponsor", "fields": {"logo": "sponsors/zkb.jpg", "link": "http://www.zkb.ch/", "name": "ZKB"}}, {"pk": 1, "model": "sponsors.category", "fields": {"name": "GROSSER BRUDER"}}, {"pk": 3, "model": "sponsors.category", "fields": {"name": "KLEINE SCHWESTER"}}, {"pk": 1, "model": "sponsors.sponsorcategoryyear", "fields": {"category": 1, "sponsor": 1, "year": 1}}, {"pk": 2, "model": "sponsors.sponsorcategoryyear", "fields": {"category": 1, "sponsor": 2, "year": 1}}, {"pk": 3, "model": "sponsors.sponsorcategoryyear", "fields": {"category": 1, "sponsor": 3, "year": 1}}, {"pk": 4, "model": "sponsors.sponsorcategoryyear", "fields": {"category": 1, "sponsor": 4, "year": 1}}, {"pk": 5, "model": "sponsors.sponsorcategoryyear", "fields": {"category": 1, "sponsor": 5, "year": 1}}, {"pk": 7, "model": "sponsors.sponsorcategoryyear", "fields": {"category": 1, "sponsor": 7, "year": 1}}, {"pk": 1, "model": "news.news", "fields": {"image": "news/Jeans_Team.jpg", "time": "2013-02-26T11:19:08Z", "name": "WIR SUCHEN NOCH HELFER", "description": "Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer"}}, {"pk": 1, "model": "mood.mood", "fields": {"image": "mood/Mood.jpg", "name": "Stolzewiese", "description": ""}}]
+[{
+    "pk": 1,
+    "model": "festival.band",
+    "fields": {
+        "genre": "Indie/Rock/Soul",
+        "image": "bands/250_1.jpg",
+        "name": "Fatboy",
+        "slug": "fatboy",
+        "description": "Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy Fatboy "
+    }
+}, {
+    "pk": 2,
+    "model": "festival.band",
+    "fields": {
+        "genre": "Alternative/Indie/Live-Elektronic",
+        "image": "bands/Coldeve.jpg",
+        "name": "Coldeve",
+        "slug": "coldeve",
+        "description": ""
+    }
+}, {
+    "pk": 3,
+    "model": "festival.band",
+    "fields": {
+        "genre": "Indie/Rock/Soul",
+        "image": "bands/Alvin_Zealot.png",
+        "name": "Alvin Zealot",
+        "slug": "alvinzealot",
+        "description": ""
+    }
+}, {
+    "pk": 4,
+    "model": "festival.band",
+    "fields": {
+        "genre": "Elektro/Pop/Techno",
+        "image": "bands/Jeans_Team.jpg",
+        "name": "Jeans Team",
+        "slug": "jeansteam",
+        "description": ""
+    }
+}, {
+    "pk": 5,
+    "model": "festival.band",
+    "fields": {
+        "genre": "Sph\u00e4rischer PopGarage",
+        "image": "bands/Lo_Fat_Orchestra.jpg",
+        "name": "Lo Fat Orchestra",
+        "slug": "lofatorchestra",
+        "description": ""
+    }
+}, {
+    "pk": 6,
+    "model": "festival.band",
+    "fields": {
+        "genre": "Mundartrock/Funk/Hip-Hop",
+        "image": "bands/Dabu_Fantastic.jpg",
+        "name": "Dabu Fantastic",
+        "slug": "dabufantastic",
+        "description": ""
+    }
+}, {
+    "pk": 1,
+    "model": "festival.bandlinks",
+    "fields": {
+        "type": "WS",
+        "link": "http://www.fatboy.ch/",
+        "band": 1
+    }
+}, {
+    "pk": 2,
+    "model": "festival.bandlinks",
+    "fields": {
+        "type": "WS",
+        "link": "http://www.coldeve.ch/",
+        "band": 2
+    }
+}, {
+    "pk": 3,
+    "model": "festival.bandlinks",
+    "fields": {
+        "type": "WS",
+        "link": "http://www.az.ch/",
+        "band": 3
+    }
+}, {
+    "pk": 4,
+    "model": "festival.bandlinks",
+    "fields": {
+        "type": "WS",
+        "link": "http://www.jeansteam.ch/",
+        "band": 4
+    }
+}, {
+    "pk": 5,
+    "model": "festival.bandlinks",
+    "fields": {
+        "type": "WS",
+        "link": "http://www.lfo.ch/",
+        "band": 5
+    }
+}, {
+    "pk": 6,
+    "model": "festival.bandlinks",
+    "fields": {
+        "type": "WS",
+        "link": "http://www.dabu.ch/",
+        "band": 6
+    }
+}, {
+    "pk": 1,
+    "model": "festival.year",
+    "fields": {
+        "logo": "years/Logo.jpg",
+        "start": "2013-02-06",
+        "end": "2013-02-06",
+        "year": 2013
+    }
+}, {
+    "pk": 2,
+    "model": "festival.year",
+    "fields": {
+        "logo": "years/2012.jpg",
+        "start": "2013-02-18",
+        "end": "2013-02-18",
+        "year": 2012
+    }
+}, {
+    "pk": 3,
+    "model": "festival.year",
+    "fields": {
+        "logo": "years/2011.png",
+        "start": "2013-02-18",
+        "end": "2013-02-18",
+        "year": 2011
+    }
+}, {
+    "pk": 4,
+    "model": "festival.year",
+    "fields": {
+        "logo": "years/2010.jpg",
+        "start": "2013-02-18",
+        "end": "2013-02-18",
+        "year": 2010
+    }
+}, {
+    "pk": 5,
+    "model": "festival.year",
+    "fields": {
+        "logo": "years/2009.jpg",
+        "start": "2013-02-18",
+        "end": "2013-02-18",
+        "year": 2009
+    }
+}, {
+    "pk": 6,
+    "model": "festival.year",
+    "fields": {
+        "logo": "",
+        "start": "2013-02-19",
+        "end": "2013-02-19",
+        "year": 2008
+    }
+}, {
+    "pk": 7,
+    "model": "festival.year",
+    "fields": {
+        "logo": "",
+        "start": "2013-02-19",
+        "end": "2013-02-19",
+        "year": 2007
+    }
+}, {
+    "pk": 8,
+    "model": "festival.year",
+    "fields": {
+        "logo": "",
+        "start": "2013-03-06",
+        "end": "2013-03-06",
+        "year": 2006
+    }
+}, {
+    "pk": 9,
+    "model": "festival.year",
+    "fields": {
+        "logo": "",
+        "start": "2013-03-08",
+        "end": "2013-03-08",
+        "year": 2005
+    }
+}, {
+    "pk": 1,
+    "model": "festival.bandyear",
+    "fields": {
+        "band": 1,
+        "time": "2013-02-21T11:17:55Z",
+        "year": 1,
+        "stage": "HB"
+    }
+}, {
+    "pk": 2,
+    "model": "festival.bandyear",
+    "fields": {
+        "band": 2,
+        "time": "2013-02-14T13:19:01Z",
+        "year": 1,
+        "stage": "HB"
+    }
+}, {
+    "pk": 3,
+    "model": "festival.bandyear",
+    "fields": {
+        "band": 3,
+        "time": "2012-02-14T15:31:38Z",
+        "year": 2,
+        "stage": "HB"
+    }
+}, {
+    "pk": 4,
+    "model": "festival.bandyear",
+    "fields": {
+        "band": 4,
+        "time": "2013-02-14T13:32:25Z",
+        "year": 1,
+        "stage": "ZB"
+    }
+}, {
+    "pk": 5,
+    "model": "festival.bandyear",
+    "fields": {
+        "band": 5,
+        "time": "2013-02-21T14:52:13Z",
+        "year": 1,
+        "stage": "ZB"
+    }
+}, {
+    "pk": 6,
+    "model": "festival.bandyear",
+    "fields": {
+        "band": 6,
+        "time": "2013-02-14T14:53:41Z",
+        "year": 1,
+        "stage": "HB"
+    }
+}, {
+    "pk": 1,
+    "model": "gallery.category",
+    "fields": {
+        "name": "Bands",
+        "description": ""
+    }
+}, {
+    "pk": 1,
+    "model": "gallery.image",
+    "fields": {
+        "name": "fdsasfsdf",
+        "is_yearcover": false,
+        "image": "gallery/coldeve2.jpg",
+        "band": 2,
+        "year": 1,
+        "date": "2013-02-14T18:16:31Z",
+        "categories": [1],
+        "description": ""
+    }
+}, {
+    "pk": 2,
+    "model": "gallery.image",
+    "fields": {
+        "name": "sgdfsdfsfds",
+        "is_yearcover": false,
+        "image": "gallery/stolze-wiese-2012.jpg",
+        "band": 3,
+        "year": 1,
+        "date": "2013-02-15T10:31:06Z",
+        "categories": [1],
+        "description": ""
+    }
+}, {
+    "pk": 3,
+    "model": "gallery.image",
+    "fields": {
+        "name": "gfdsdfg",
+        "is_yearcover": false,
+        "image": "gallery/images.jpg",
+        "band": null,
+        "year": 2,
+        "date": "2013-02-15T10:50:19Z",
+        "categories": [1],
+        "description": ""
+    }
+}, {
+    "pk": 4,
+    "model": "gallery.image",
+    "fields": {
+        "name": "sfdg",
+        "is_yearcover": false,
+        "image": "gallery/ongatu-henrici-2012-09-11-ongatu-0-1113212906.jpg",
+        "band": null,
+        "year": 6,
+        "date": "2013-02-15T10:50:31Z",
+        "categories": [],
+        "description": ""
+    }
+}, {
+    "pk": 5,
+    "model": "gallery.image",
+    "fields": {
+        "name": "sdgfsdg",
+        "is_yearcover": false,
+        "image": "gallery/5835856593_45dbd53c5d.jpg",
+        "band": null,
+        "year": 9,
+        "date": "2013-02-15T10:50:43Z",
+        "categories": [1],
+        "description": ""
+    }
+}, {
+    "pk": 6,
+    "model": "gallery.image",
+    "fields": {
+        "name": "asdfsadf",
+        "is_yearcover": false,
+        "image": "gallery/je1170370002.jpg",
+        "band": null,
+        "year": 5,
+        "date": "2013-02-15T10:51:16Z",
+        "categories": [],
+        "description": ""
+    }
+}, {
+    "pk": 8,
+    "model": "gallery.image",
+    "fields": {
+        "name": "asfdsf",
+        "is_yearcover": true,
+        "image": "gallery/5835856593_45dbd53c5d_1.jpg",
+        "band": null,
+        "year": 8,
+        "date": "2013-02-15T10:52:04Z",
+        "categories": [],
+        "description": ""
+    }
+}, {
+    "pk": 9,
+    "model": "gallery.image",
+    "fields": {
+        "name": "YearCover 2012",
+        "is_yearcover": true,
+        "image": "gallery/2012_2.jpg",
+        "band": null,
+        "year": 2,
+        "date": "2013-03-06T10:28:06Z",
+        "categories": [],
+        "description": ""
+    }
+}, {
+    "pk": 10,
+    "model": "gallery.image",
+    "fields": {
+        "name": "YearCover 2011",
+        "is_yearcover": true,
+        "image": "gallery/2011_1.png",
+        "band": null,
+        "year": 3,
+        "date": "2013-03-06T10:28:36Z",
+        "categories": [],
+        "description": ""
+    }
+}, {
+    "pk": 11,
+    "model": "gallery.image",
+    "fields": {
+        "name": "YearCover 2010",
+        "is_yearcover": true,
+        "image": "gallery/2010_2.jpg",
+        "band": null,
+        "year": 4,
+        "date": "2013-03-06T10:28:58Z",
+        "categories": [],
+        "description": ""
+    }
+}, {
+    "pk": 12,
+    "model": "gallery.image",
+    "fields": {
+        "name": "YearCover 2009",
+        "is_yearcover": true,
+        "image": "gallery/2009_1.jpg",
+        "band": null,
+        "year": 5,
+        "date": "2013-03-06T10:29:22Z",
+        "categories": [],
+        "description": ""
+    }
+}, {
+    "pk": 13,
+    "model": "gallery.image",
+    "fields": {
+        "name": "YearCover 2008",
+        "is_yearcover": true,
+        "image": "gallery/2008_1.jpg",
+        "band": null,
+        "year": 6,
+        "date": "2013-03-06T10:29:41Z",
+        "categories": [],
+        "description": ""
+    }
+}, {
+    "pk": 14,
+    "model": "gallery.image",
+    "fields": {
+        "name": "YearCover 2007",
+        "is_yearcover": true,
+        "image": "gallery/2007_2.jpg",
+        "band": null,
+        "year": 7,
+        "date": "2013-03-06T10:29:58Z",
+        "categories": [],
+        "description": ""
+    }
+}, {
+    "pk": 1,
+    "model": "sponsors.sponsor",
+    "fields": {
+        "logo": "sponsors/Stadt_Z\u00fcrich.JPG",
+        "link": "http://www.stadt-zuerich.ch/sd/de/index.html",
+        "name": "Stadt Z\u00fcrich"
+    }
+}, {
+    "pk": 2,
+    "model": "sponsors.sponsor",
+    "fields": {
+        "logo": "sponsors/feinheit.jpg",
+        "link": "http://www.feinheit.ch/",
+        "name": "FEINHEIT"
+    }
+}, {
+    "pk": 3,
+    "model": "sponsors.sponsor",
+    "fields": {
+        "logo": "sponsors/mascotte.jpg",
+        "link": "http://www.mascotte.ch/",
+        "name": "Mascotte"
+    }
+}, {
+    "pk": 4,
+    "model": "sponsors.sponsor",
+    "fields": {
+        "logo": "sponsors/qv_oberstrass.jpg",
+        "link": "http://www.qvo.ch/",
+        "name": "Quartierverein Oberstrass"
+    }
+}, {
+    "pk": 5,
+    "model": "sponsors.sponsor",
+    "fields": {
+        "logo": "sponsors/riffraff.jpg",
+        "link": "http://www.riffraff.ch/",
+        "name": "RIFFRAFF"
+    }
+}, {
+    "pk": 7,
+    "model": "sponsors.sponsor",
+    "fields": {
+        "logo": "sponsors/zkb.jpg",
+        "link": "http://www.zkb.ch/",
+        "name": "ZKB"
+    }
+}, {
+    "pk": 1,
+    "model": "sponsors.category",
+    "fields": {
+        "name": "GROSSER BRUDER"
+    }
+}, {
+    "pk": 3,
+    "model": "sponsors.category",
+    "fields": {
+        "name": "KLEINE SCHWESTER"
+    }
+}, {
+    "pk": 1,
+    "model": "sponsors.sponsorcategoryyear",
+    "fields": {
+        "category": 1,
+        "sponsor": 1,
+        "year": 1
+    }
+}, {
+    "pk": 2,
+    "model": "sponsors.sponsorcategoryyear",
+    "fields": {
+        "category": 1,
+        "sponsor": 2,
+        "year": 1
+    }
+}, {
+    "pk": 3,
+    "model": "sponsors.sponsorcategoryyear",
+    "fields": {
+        "category": 3,
+        "sponsor": 3,
+        "year": 1
+    }
+}, {
+    "pk": 4,
+    "model": "sponsors.sponsorcategoryyear",
+    "fields": {
+        "category": 1,
+        "sponsor": 4,
+        "year": 1
+    }
+}, {
+    "pk": 5,
+    "model": "sponsors.sponsorcategoryyear",
+    "fields": {
+        "category": 3,
+        "sponsor": 5,
+        "year": 1
+    }
+}, {
+    "pk": 7,
+    "model": "sponsors.sponsorcategoryyear",
+    "fields": {
+        "category": 1,
+        "sponsor": 7,
+        "year": 1
+    }
+}, {
+    "pk": 1,
+    "model": "news.news",
+    "fields": {
+        "image": "news/Jeans_Team.jpg",
+        "time": "2013-02-26T11:19:08Z",
+        "name": "WIR SUCHEN NOCH HELFER",
+        "description": "Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer Wir suchen noch Helfer"
+    }
+}, {
+    "pk": 1,
+    "model": "mood.mood",
+    "fields": {
+        "image": "mood/Mood.jpg",
+        "name": "Stolzewiese",
+        "description": ""
+    }
+}]

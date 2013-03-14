@@ -21,13 +21,16 @@ h3 {
     margin-right: auto;
     margin-bottom: 20px;
     background-color: #FFFFFF;
+    font-family: terminal_dosismedium;
+    font-size: 18px;
 }
 
 .headerbg {
     position: fixed;
     margin-top: -60px;
-    height: 200px;
-    max-width: 1011px;
+    margin-left: -200px;
+    height: 220px;
+    max-width: 1511px;
     width: 100%;
     background-color: #FFFFFF;
     z-index: 2;
@@ -35,8 +38,8 @@ h3 {
 
 .socialicons {
     position: fixed;
-    margin-top: -20px;
-    margin-left: 920px;
+    margin-top: 0px;
+    left: 73%;    
     z-index: 2;
 }
 
@@ -47,7 +50,7 @@ h3 {
 
 .logo {
     position: fixed;
-    margin-top: -50px;
+    margin-top: -20px;
     left: 50%;
     margin-left: -80px;
     z-index: 2;
@@ -63,29 +66,32 @@ h3 {
 }
 
 .nav a {
-    margin-right: 24px;
+    font-family: terminal_dosislight;
+    font-size: 21px;
+    margin-right: 15px;
     text-decoration: none;
     color: #000000;
 }
 
 .navigationleft {
     position: fixed;
-    margin-top: -20px;
-    margin-left: 40px;
+    margin-top: 30px;
+    left: 24.7%;
     z-index: 2;
 }
 
 .navigationright {
     position: fixed;
-    margin-top: -20px;
-    margin-left: 650px;
+    margin-top: 30px;
+    left: 59%;
     z-index: 2;
 }
 
 .hr1 {
     position: fixed;
-    margin-top: -35px;
-    width: 400px;
+    margin-top: 20px;
+    left: 15.3%;
+    width: 520px;
     z-index: 2;
     background-color: #000000;
 }
@@ -96,26 +102,27 @@ h3 {
 
 .hr2 {
     position: fixed;
-    margin-top: 10px;
-    width: 400px;
+    margin-top: 70px;
+    left: 15.3%;
+    width: 520px;
     z-index: 2;
     background-color: #000000;
 }
 
 .hr3 {
     position: fixed;
-    margin-top: -15px;
-    margin-left: -47px;
-    width: 405px;
+    margin-top: 20px;
+    left: 56%;
+    width: 550px;
     z-index: 2;
     background-color: #000000;
 }
 
 .hr4 {
     position: fixed;
-    margin-top: 13px;
-    margin-left: -47px;
-    width: 405px;
+    margin-top: 70px;
+    left: 56%;
+    width: 550px;
     z-index: 2;
     background-color: #000000;
 }
@@ -143,20 +150,45 @@ h3 {
     padding: 65px 0px 50px 0px;
     width: 100%;
     height: 451;
+    left: -13%;
 }
 
 .mood img {
-    width: 100%;
+    width: 1300px;
+    height: 550px;
 }
 
-.circlebutton {
+.moodtitle {
     position: absolute;
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    margin-top: -103px;
-    margin-left: 458px;
-    background-color: #4169E1;
+    margin-top: -550px;
+    left: -5%;
+    font-size: 73px;
+    color: #7f0094;
+    text-transform: uppercase;
+}
+
+.newsletter {
+    position: absolute;
+    margin-top: -450px;
+    left: 48%;
+}
+
+.buttontitle {
+    position: absolute;
+    margin-top: 30px;
+    left: 12%;
+    font-size: 55px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    -webkit-transform: rotate(-20deg); 
+    -moz-transform: rotate(-20deg); 
+}
+
+.newscircle {
+  width: 208px;
+  height: 208px;
+  border-radius: 104px;
+  background-color: #06ddb7;
 }
 
 #bands h2 {
@@ -164,9 +196,11 @@ h3 {
     max-width: 1011px;
     width: 100%;
     padding-top: 20px;
-    font-size: 30px;
+    font-family: terminal_dosisregular;
+    font-size: 35px;
+    text-transform: uppercase;
     text-align: center;
-    color: #00CC99;
+    color: #06ddb7;
 }
 
 #gallery h2 {
@@ -176,9 +210,11 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 20px;
-    font-size: 30px;
+    font-family: terminal_dosisregular;
+    font-size: 35px;
+    text-transform: uppercase;
     text-align: center;
-    color: #00CC99;
+    color: #06ddb7;
 }
 
 #sponsor h2 {
@@ -187,9 +223,11 @@ h3 {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    font-size: 30px;
+    font-family: terminal_dosisregular;
+    font-size: 35px;
+    text-transform: uppercase;
     text-align: center;
-    color: #00CC99;
+    color: #06ddb7;
 }
 
 #kontakt h2 {
@@ -198,9 +236,11 @@ h3 {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    font-size: 30px;
+    font-family: terminal_dosisregular;
+    font-size: 35px;
+    text-transform: uppercase;
     text-align: center;
-    color: #00CC99;
+    color: #06ddb7;
 }
 
 .bandsingle {
@@ -250,12 +290,12 @@ h3 {
 .dot {
     position: relative;
     margin-top: 5px;
-    width: 15px;
-    height: 15px;
-    border-radius: 50px;
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
     opacity: 0.3;
     display: inline-block;
-    margin-right: 15px;
+    margin-right: 7px;
     box-shadow: inset 0px 0px 4px 4px #000000;
     -webkit-box-shadow: inset 0px 0px 4px 4px #000000;
     cursor: pointer;
@@ -264,6 +304,7 @@ h3 {
 .galleryall {
     max-width: 940px;
     width: 100%;
+    margin-left: 35px;
 }
 
 .greybackground {
@@ -336,16 +377,24 @@ h3 {
     background-color: #FFFFFF;
 }
 
+
 .newstitle {
     position: relative;
     margin-left: auto;
     margin-right: auto;
     padding: 0px 0px 0px 0px;
     width: 100%;
-    color: #00CC99;
-    font-size: 60px;
+    font-family:'Rockwell W01', Times, serif;
+    color: #30E3C3;
+    font-size: 70px;
+    text-transform: uppercase;
     font-weight: bold;
-    text-align: center;     
+    text-align: center;
+    cursor: pointer;     
+}
+
+.newsshow {
+    display: none;
 }
 
 .news {
@@ -409,12 +458,29 @@ h3 {
     width: 30%;
 }
 
+.bandname {
+    color: #7ac3bc;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.bandhr {
+    border: 2px solid white !important;
+    width: 200px;
+}
+
+
+.bandtext {
+    color: #000000;
+}
+
 .grouper {
     position: relative;
     padding: 35px 0px 0px 43px;
     max-width: 1011px;
     width: 100%;
     font-size: 20px;
+    text-transform: uppercase;
 }
 
 .groupersponsors {
@@ -422,12 +488,13 @@ h3 {
     margin-left: 35px;
     max-width: 1011px;
     width: 100%;
-    font-size: 20px;
+    font-size: 25px;
+    text-transform: uppercase;
 }
 
 .map {
     margin-top: 60px;
-    -webkit-filter: grayscale(70%);
+    -webkit-filter: grayscale(90%);
     width: 100%;
     height: 100%;
     opacity: 0.6;
@@ -436,7 +503,7 @@ h3 {
 .maptext {
     position: relative;
     margin-top: -490px;
-    margin-left: 80px;
+    margin-left: 0px;
     list-style: none;
     max-width: 1011px;
     width: 100%;;
@@ -445,30 +512,270 @@ h3 {
 
 .maptitle {
     color: #00CC99;
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 50px;
     max-width: 1011px;
+    font-weight: bold;
     width: 100%;
+    text-transform: uppercase;
 }
 
 .mapinfo {
-    font-size: 25px;
+    font-size: 35px;
     font-weight: bold;
     max-width: 1011px;
     width: 100%;
+    text-transform: uppercase;
 }
 
 .mapaddress {
-    font-size: 25px;
+    font-size: 30px;
     max-width: 1011px;
     width: 100%;
+    text-transform: uppercase;
 }
 
 .mappc {
-    font-size: 20px;
+    font-size: 25px;
     max-width: 1011px;
     width: 100%;
+    text-transform: uppercase;
 }
+
+.maplinks {
+    margin-top: 30px;
+    color: #7F0094;
+    text-decoration: none;
+    font-family: terminal_dosissemibold;
+}
+
+.maplinks a {
+    margin-right: 40px;
+    color: #7F0094;
+    text-decoration: none;
+    font-family: terminal_dosissemibold;
+}
+
+.contacttitle {
+    margin-top: 250px;
+    font-family: terminal_dosismedium;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.person {
+    margin-top: 35px;
+    width: 100%;
+    max-width: 1011px;
+    font-family: terminal_dosismedium;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #06ddb7;
+    padding-bottom: 50px;
+}
+
+.personsingle {
+    float: left;
+    margin-right: 30px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 120px;
+}
+
+.contactbuttons {
+    position: absolute;
+    margin-top: 50px;
+    left: 80%;
+}
+
+.helfer {
+    position: absolute;
+    margin-top: 35px;
+    left: 7%;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    -webkit-transform: rotate(-20deg); 
+    -moz-transform: rotate(-20deg);  
+    text-decoration: none;
+}
+
+.helfercircle {
+    position: relative;
+    width: 110px;
+    height: 110px;
+    margin-top: 0px;
+    left: -40%;
+    border-radius: 55px;
+    background-color: #03d5b0;
+    cursor: pointer;    
+}
+
+.goenner {
+    position: absolute;
+    margin-top: 35px;
+    left: 6%;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    -webkit-transform: rotate(-20deg); 
+    -moz-transform: rotate(-20deg);
+    text-decoration: none;
+}
+
+.goennercircle {
+    position: relative;
+    width: 110px;
+    height: 110px;
+    margin-top: -60px;
+    left: 50%;
+    border-radius: 55px;
+    background-color: #7f0094;
+    cursor: pointer;    
+}
+
+.sponsoring {
+    position: absolute;
+    margin-top: 40px;
+    text-align: center;
+    left: 7%;
+    font-size: 23px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    -webkit-transform: rotate(-20deg); 
+    -moz-transform: rotate(-20deg);
+    text-decoration: none;
+}
+
+.sponsoringcircle {
+    position: relative;
+    width: 130px;
+    height: 130px;
+    margin-top: 10px;
+    left: 45%;
+    border-radius: 65px;
+    background-color: #7ac3bc;
+    cursor: pointer;    
+}
+
+.presse {
+    position: absolute;
+    margin-top: 30px;
+    text-align: center;
+    left: 10%;
+    font-size: 23px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    -webkit-transform: rotate(-20deg); 
+    -moz-transform: rotate(-20deg);
+    text-decoration: none;
+}
+
+.pressecircle {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    margin-top: -180px;
+    left: -15%;
+    border-radius: 45px;
+    background-color: #dadadc;
+    cursor: pointer;    
+}
+
+.emailtitle {
+    margin-top: 80px;
+    font-family: terminal_dosismedium;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding-bottom: 35px;
+}
+
+.emailsingle {
+    float: left;
+    margin-right: 100px;
+    padding-bottom: 15px;
+    width: 340px;
+}
+
+.emailsingle a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.hrend {
+    position: relative;
+    margin-top: 300px;
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: #000000;
+}
+
+.mail1, .mail2, .mail3, .mail4 {
+    display: none;
+}
+
+.mailclose {
+    position: relative;
+    margin-top: 50px;
+    left: 95%;
+    cursor: pointer;
+}
+
+.mailtitle {
+    margin-top: -60px;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #7AC3BC;
+}
+
+.mailtext {
+    width: 750px;
+    line-height: 1.5;
+}
+
+.formular {
+    float: left;
+    margin-right: 10px;
+    text-transform: uppercase;
+    width: 750px;
+}
+
+.formfield {
+    float: left;
+    margin-right: 60px;
+    margin-bottom: 30px;
+    width: 310px;
+}
+
+.button{
+    margin-left: 600px;    
+    padding: 2px 3px 2px 3px;
+    font: 100% terminal_dosisregular, serif; 
+    text-align:center; 
+    text-decoration:none; 
+    color: #D9E7E9;
+    background: #7AC3BC;
+    -webkit-border-radius: 20px;
+    -moz-border-radius:  20px;
+    border-radius:  20px;
+    text-transform: uppercase;
+}
+
+.button:active{     
+    color: #1F4A53;
+    background: #7AC3BC;
+}
+
+input {
+    -webkit-box-shadow: inset 0 0 4px  #000,
+    -moz-box-shadow: inset 0 0 4px  #000,
+    box-shadow: inset 0 0 4px  #000,
+    padding: 5px;
+    background: #DADADC;
+    -webkit-border-radius: 20px;
+    -moz-border-radius:  20px;
+}
+
 
 /* entire container, keeps perspective */
 .flip-container {
@@ -530,8 +837,7 @@ h3 {
     height: 181px;
     width: 271px;
     text-align: center;
-    color: #6495ED;
-    background-color: #D3D3D3;
+    background-color: #dcdcdc;
 }
 
 .back a {

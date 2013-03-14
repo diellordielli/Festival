@@ -8,6 +8,7 @@ from .gallery.models import Image
 from .festival.models import Band, BandYear, BandLinks, Year
 from .news.models import News
 from .mood.models import Mood
+from .contact.models import Contact, Person
 
 
 def home(request):
@@ -26,6 +27,8 @@ def home(request):
     years = Year.objects.all()
     thisyears = Year.objects.filter(year=now.year)
     yearcovers = Image.objects.filter(is_yearcover=True).order_by("year__year")
+    contacts = Contact.objects.all()
+    persons = Person.objects.all()
 
     return render(request, 'index.html', {
         'sponsors': sponsors,
@@ -40,7 +43,9 @@ def home(request):
         'years': years,
         'thisyears': thisyears,
         'yearcovers': yearcovers,
-        })
+        'contacts': contacts,
+        'persons': persons,
+    })
 
 
 def get_band(request, band):
@@ -55,7 +60,7 @@ def get_band(request, band):
         'thisyears': thisyears,
         'images': images,
         'bandyears': bandyears,
-        })
+    })
 
 
 def get_gallery(request, year):
@@ -64,8 +69,7 @@ def get_gallery(request, year):
     images = year.image_set.all()
     thisyears = Year.objects.filter(year=now.year)
 
-
     return render(request, 'gallery.html', {
         'images': images,
         'thisyears': thisyears,
-        })
+    })
