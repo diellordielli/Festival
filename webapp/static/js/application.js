@@ -8,8 +8,8 @@ $(document).ready(function() {
         imageWidth = $(".scroller > .gallery:first").outerWidth(true),
         visibleImages = Math.floor($(".container").width() / imageWidth),
         separators = Math.floor(totalImages / visibleImages), 
-        totalWidth = (imageWidth * totalImages) + (separators * 50),
-        visibleWidth = (visibleImages * imageWidth) + 50,
+        totalWidth = (imageWidth * totalImages) + (separators * 10),
+        visibleWidth = (visibleImages * imageWidth) + 10,
         $dot = $('.dot'),
         imageDots = Math.ceil(totalImages/visibleImages);
 
@@ -18,7 +18,7 @@ $(document).ready(function() {
     }
 
     $(window).on('resize', function(event) {
-        console.log(this, event, $(".container").width());
+        //console.log(this, event, $(".container").width());
     });
 
     $dot.addClass('active');
@@ -79,42 +79,65 @@ $(document).ready(function() {
     });
 
     $('.helfercircle').on('click', function(event) {
-        $('.mail1').fadeIn("slow");
+        $('#helfer-form').fadeIn("slow", function(){
+            target = $('#helfer-form');
+            scroll_to_target(target);
+        });
     });
 
     $('.goennercircle').on('click', function(event) {
-        $('.mail2').fadeIn("slow");
+        $('#goenner-form').fadeIn("slow", function(){
+            target = $('#goenner-form');
+            scroll_to_target(target);
+        });
     });
 
     $('.pressecircle').on('click', function(event) {
-        $('.mail3').fadeIn("slow");
-    });
+        $('#presse-form').fadeIn("slow", function(){
+            target = $('#presse-form');
+            scroll_to_target(target);
+        });    });
 
     $('.sponsoringcircle').on('click', function(event) {
-        $('.mail4').fadeIn("slow");
+        $('#sponsoring-form').fadeIn("slow", function(){
+            target = $('#sponsoring-form');
+            scroll_to_target(target);
+        });        
     });
 
     $('.mailclose').on('click', function(event) {
-        $('.mail1').fadeOut("slow");
+        $('#helfer-form').fadeOut("slow");
     });
     $('.mailclose').on('click', function(event) {
-        $('.mail2').fadeOut("slow");
+        $('#goenner-form').fadeOut("slow");
     });
     $('.mailclose').on('click', function(event) {
-        $('.mail3').fadeOut("slow");
+        $('#presse-form').fadeOut("slow");
     });
     $('.mailclose').on('click', function(event) {
-        $('.mail4').fadeOut("slow");
+        $('#sponsoring-form').fadeOut("slow");
     });
 
-
-
-    $('.newstitle').on('click', function(event) {
+    $('#mehrinfos').on('click', function(event) {
         $('.newsshow').fadeIn("slow");
+        $('#mehrinfos').css({'display': 'none'});
     });
 
-    $('.newstitle').on('click', function(event) {
-        $('.newsshow').fadeOut("slow");
+    function scroll_to_target(target){
+        $('html,body').animate({
+                 scrollTop: target.offset().top - 210
+            }, 1000);
+    }
+    
+    $('.navtoggleup').on('click', function(event) {
+        $('.navigation a').fadeIn("slow");
+        $('.navtoggleup').hide();
+        $('.navigation a').css({'display': 'block'});
     });
+
+    $('.navtoggleup').on('click', function(event) {
+        $('.navtoggledown').show();
+    });
+
 
 });

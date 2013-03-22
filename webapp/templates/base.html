@@ -4,7 +4,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/style.css">
+  <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/main.css">
+  <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/style2.css">
   <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}webfontkit/stylesheet.css">
   <link type="text/css" rel="stylesheet" href="http://fast.fonts.com/cssapi/8b4ef91c-5f05-4c36-ae88-051dad5dee5d.css"/>
   <title>stolze-openair.ch</title>
@@ -12,46 +14,65 @@
 
 <body>
   <div class="page">
-  <div class="headerbg">
-  </div>
-    <div class="socialicons">
-      <a href="http://www.facebook.com/stolze.openair" target="_blank"><img src="{{ STATIC_URL }}img/Facebook.jpg" /></a>
-      <a href="https://twitter.com/StolzeOpenair/" target="_blank"><img src="{{ STATIC_URL }}img/Twitter.jpg" /></a>
-      <a href="http://vimeo.com/stolzeopenair" target="_blank"><img src="{{ STATIC_URL }}img/Vimeo.jpg" /></a>
+    <div class="headerbg">
+      <div class="socialicons">
+        <a href="http://www.facebook.com/stolze.openair" target="_blank"><img src="{{ STATIC_URL }}img/Facebook.jpg" /></a>
+        <a href="https://twitter.com/StolzeOpenair/" target="_blank"><img src="{{ STATIC_URL }}img/Twitter.jpg" /></a>
+        <a href="http://vimeo.com/stolzeopenair" target="_blank"><img src="{{ STATIC_URL }}img/Vimeo.jpg" /></a>
+      </div>
+
+
+      <div class="navigation">
+        <div class="navigationleft">
+          <hr class="hrlefttop">
+          <br>
+          <div class="navtoggleup">
+            <img src="{{ STATIC_URL }}img/up.png" />
+          </div>
+          <div class="navtoggledown">
+            <img src="{{ STATIC_URL }}img/down.png" />
+          </div>
+          <a href="/">HOME</a>
+          <a href="/#bands">LINE-UP</a>
+          <a href="/#gallery">GALERIE</a>
+          <div class="navhidden">
+            <a href="">SPONSOREN</a>
+            <a href="">KONTAKT</a>
+          </div>
+          <br>
+          <hr class="hrleftdown">
+        </div>
+        <div class="navigationright">
+          <hr class="hrrighttop">
+          <br>
+          <a href="/#sponsor">SPONSOREN</a>
+          <a href="/#kontakt">KONTAKT</a>
+          <br>
+          <hr class="hrrightdown">
+        </div>
+      </div>
+      {% for year in thisyears %}
+        <div class="logo">
+          {% if year.logo|thumbnail:"161x161" %}
+            <img src = "{{ year.logo.url }}">
+          {% endif %}
+        </div>
+      {% endfor %}
     </div>
-    {% for year in thisyears %}
-      <div class="logo">
-        {% if year.logo|thumbnail:"161x161" %}
-          <img src = "{{ year.logo.url }}">
-        {% endif %}
-      </div>
-    {% endfor %}
-    <div class="nav">
-      <hr class="hr1">
-      <div class="navigationleft">
-        <a href="/"><h3>HOME</h3></a>
-        <a href="/#bands"><h3>LINE-UP</h3></a>
-        <a href="/#gallery"><h3>GALERIE</h3></a>
-        <a class="show-narrow" href="/#sponsor"><h3>SPONSOREN</h3></a>
-        <a class="show-narrow" href="/#kontakt"><h3>KONTAKT</h3></a>
-      </div>
-      <hr class="hr2">
-      <hr class="hr3">
-      <div class="navigationright">
-        <a href="/#sponsor"><h3>SPONSOREN</h3></a>
-        <a href="/"><h3>KONTAKT</h3></a>
-      </div>
-      <hr class="hr4">
-    </div>
-    {% block band %}
-    {% endblock %}
-    {% block content %}
-    {% endblock %}
-    {% block gallery %}
-    {% endblock %}
-    <br>
-  </div>
+
+{% block content %}
+{% endblock %}
+{% block band %}
+{% endblock %}
+{% block gallery %}
+{% endblock %}
+</div>
+
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
 <script src="{{ STATIC_URL }}js/application.js"></script>
+<script src="{{ STATIC_URL }}js/smoothscroll.js"></script>
+<script src="{{ STATIC_URL }}js/resize.js"></script>
+<!--<script src="{{ STATIC_URL }}js/newsslider.js"></script>-->
 </body>
 </html>

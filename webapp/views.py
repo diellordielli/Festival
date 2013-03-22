@@ -23,7 +23,7 @@ def home(request):
     bandyears = BandYear.objects.all()
     bandlinks = BandLinks.objects.all()
     newss = News.objects.all()
-    moods = Mood.objects.all()
+    mood = Mood.objects.latest('id')
     years = Year.objects.all()
     thisyears = Year.objects.filter(year=now.year)
     yearcovers = Image.objects.filter(is_yearcover=True).order_by("year__year")
@@ -39,7 +39,7 @@ def home(request):
         'bandyears': bandyears,
         'bandlinks': bandlinks,
         'newss': newss,
-        'moods': moods,
+        'mood': mood,
         'years': years,
         'thisyears': thisyears,
         'yearcovers': yearcovers,

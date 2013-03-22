@@ -27,13 +27,14 @@ h3 {
 
 .headerbg {
     position: fixed;
-    margin-top: -60px;
+    margin-top: -59px;
     margin-left: -200px;
-    height: 220px;
+    height: 159px;
     max-width: 1511px;
     width: 100%;
     background-color: #FFFFFF;
-    z-index: 2;
+    padding-top: 35px;
+    z-index: 9;
 }
 
 .socialicons {
@@ -96,7 +97,7 @@ h3 {
     background-color: #000000;
 }
 
-.show-narrow {
+#show-narrow {
     display: none;
 }
 
@@ -141,13 +142,51 @@ h3 {
 .hrnews {
     position: relative;
     width: 99%;
-    height: 1px;
-    background-color: #00CC99;
+    border: 1px solid #00CC99;
+}
+
+.hrshadow, .hrshadow2, .hrshadow3, .hrshadow4 {
+    position: absolute;
+    width: 128.2%;
+    margin-left: -12.8%;
+    border: 0;
+    height: 0;
+    box-shadow: 0 0 7px 1px black;
+}
+
+.hrshadow {
+    margin-top: -58px;
+    z-index: 0;
+}
+
+.hrshadow2 {
+    margin-top: -61px;
+}
+
+
+.hrshadow3 {
+    margin-top: -60px;
+    z-index: 0;
+}
+
+.hrshadow4 {
+    margin-top: -55px;
+    z-index: 2;
+}
+
+hr.overlay-fake {
+    margin-top: -61px;
+    position: absolute;
+    width: 128.2%;
+    margin-left: -12.8%;
+    border: 0;
+    height: 10px;
+    background-color: white;
 }
 
 .mood {
     position: relative;
-    padding: 65px 0px 50px 0px;
+    padding: 115px 0px 50px 0px;
     width: 100%;
     height: 451;
     left: -13%;
@@ -155,28 +194,34 @@ h3 {
 
 .mood img {
     width: 1300px;
-    height: 550px;
+    height: 500px;
+    -webkit-box-shadow: 0px 7px 6px grey;
+    -moz-box-shadow: 0px 7px 6px grey;
+    box-shadow: 0px 7px 6px grey;
 }
 
 .moodtitle {
     position: absolute;
-    margin-top: -550px;
+    margin-top: -500px;
     left: -5%;
-    font-size: 73px;
+    font-size: 70px;
+    font-family: terminal_dosissemibold;
     color: #7f0094;
     text-transform: uppercase;
 }
 
 .newsletter {
     position: absolute;
-    margin-top: -450px;
+    margin-top: -400px;
     left: 48%;
 }
 
 .buttontitle {
     position: absolute;
-    margin-top: 30px;
-    left: 12%;
+    margin-top: 38px;
+    left: 7%;
+    line-height: 1.1;
+    letter-spacing: 2px;
     font-size: 55px;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -185,62 +230,90 @@ h3 {
 }
 
 .newscircle {
-  width: 208px;
-  height: 208px;
-  border-radius: 104px;
-  background-color: #06ddb7;
+    width: 208px;
+    height: 208px;
+    border-radius: 104px;
+    background-color: #06ddb7;
 }
 
 #bands h2 {
     position: relative;
     max-width: 1011px;
-    width: 100%;
-    padding-top: 20px;
-    font-family: terminal_dosisregular;
+    width: 20%;
+    padding: 10px 0px 25px 0px;
+    font-family: terminal_dosismedium;
     font-size: 35px;
     text-transform: uppercase;
-    text-align: center;
+    font-weight: normal;
+    letter-spacing: 2px;
     color: #06ddb7;
+    background-color: #FFFFFF;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -50px;
+    z-index: 2;
 }
 
 #gallery h2 {
     position: relative;
     max-width: 1011px;
-    width: 100%;
+    width: 20%;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 20px;
-    font-family: terminal_dosisregular;
+    padding: 10px 0px 25px 0px;
+    font-family: terminal_dosismedium;
     font-size: 35px;
     text-transform: uppercase;
     text-align: center;
+    font-weight: normal;
+    letter-spacing: 2px;
     color: #06ddb7;
+    background-color: #DCDCDC;
+    border-radius: 10px 10px 0px 0px;
+    margin-top: 10px;
+    z-index: 2;
 }
 
 #sponsor h2 {
     position: relative;
     max-width: 1011px;
-    width: 100%;
+    width: 25%;
     margin-left: auto;
     margin-right: auto;
-    font-family: terminal_dosisregular;
+    font-family: terminal_dosismedium;
     font-size: 35px;
     text-transform: uppercase;
     text-align: center;
+    font-weight: normal;
+    letter-spacing: 2px;
     color: #06ddb7;
+    background-color: #FFFFFF;
+    padding: 10px 0px 25px 0px;
+    border-radius: 10px 10px 0px 0px;
+    margin-top: -82px;
+    z-index: 3;
 }
 
 #kontakt h2 {
     position: relative;
     max-width: 1011px;
-    width: 100%;
+    width: 20%;
     margin-left: auto;
     margin-right: auto;
-    font-family: terminal_dosisregular;
+    font-family: terminal_dosismedium;
     font-size: 35px;
     text-transform: uppercase;
     text-align: center;
+    font-weight: normal;
+    letter-spacing: 2px;
     color: #06ddb7;
+    padding: 10px 0px 25px 0px;
+    background-color: #F1F0EF;
+    border-radius: 10px 10px 0px 0px;
+    margin-top: 0px;
+    z-index: 3;
 }
 
 .bandsingle {
@@ -258,12 +331,26 @@ h3 {
 
 #navlefticon {
     position: absolute;
-    margin-top: 220px;
+    margin-top: 250px;
     margin-left: -6px;
     display: none;
 }
 
 #navrighticon {
+    position: absolute;
+    margin-left: -6px;
+    margin-top: 250px;
+    display: none;
+}
+
+#navlefticon2 {
+    position: absolute;
+    margin-top: 220px;
+    margin-left: -6px;
+    display: none;
+}
+
+#navrighticon2 {
     position: absolute;
     margin-left: -6px;
     margin-top: 220px;
@@ -272,7 +359,7 @@ h3 {
 
 .slider-dots {
     position: relative;
-    margin-top: -80px;
+    margin-top: -140px;
     margin-bottom: 100px;
     text-align: center;
 }
@@ -305,60 +392,85 @@ h3 {
     max-width: 940px;
     width: 100%;
     margin-left: 35px;
+    margin-top: -60px;
 }
 
 .greybackground {
     position: relative;
-    max-width: 830px;
-    width: 100%;
-    height: 320px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 1300px;
+    width: 126.5%;
+    height: 450px;
+    left: -11.9%;
     margin-bottom: 50px;
     padding-bottom: 150px;
-    background-color: #D3D3D3;
-    overflow: hidden;     
+    background-color: #dcdcdc;
+    overflow: hidden;
+    z-index: 1;
 }
 
 .greybackground2, .greybackground3 {
     position: absolute;
     max-width: 55px;
     width: 100%;
-    height: 320px;
+    height: 450px;
     margin-top: 0px;
     margin-right: auto;
     margin-bottom: 50px;
     padding-bottom: 150px;
-    background-color: #D3D3D3;
+    background-color: #dcdcdc;
+    z-index: 1;
+    cursor: pointer;
+}
+
+
+.greybackground4, .greybackground5 {
+    position: absolute;
+    max-width: 55px;
+    width: 100%;
+    height: 350px;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding-bottom: 150px;
+    background-color: #dcdcdc;
     z-index: 1;
     cursor: pointer;
 }
 
 .greybackground2 {
-    left: 3.6%;
+    left: -13%;
 }
 
 .greybackground3 {
-    left: 91%;
+    left: 110%;
+}
+
+.greybackground4 {
+    left: -13%;
+}
+
+.greybackground5 {
+    left: 110%;
 }
 
 .gallery {
     float: left;
     margin-top: 85px;
-    margin-left: 36px;
-    padding: 10px 10px 0px 10px;        
-    background-color: #FFFFFF;
-    -moz-box-shadow: 10px 10px 5px #888;
-    -webkit-box-shadow: 10px 10px 5px #888;
-    box-shadow: 10px 10px 5px #888;
+    margin-left: 128px;
+    margin-right: 100px;
+    padding: 0px 0px 0px 0px;        
+    background-color: #dcdcdc;
     text-align: center;
     font-weight: bold;
 }
 
-.gallery:nth-child(3n+3) {
-    margin-right: 50px;
+.galleryyear {
+    margin-bottom: -10px;
+    font-size: 18px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #06ddb7;
 }
-
 
 .scroller {
     position: absolute;
@@ -377,6 +489,36 @@ h3 {
     background-color: #FFFFFF;
 }
 
+.newsall {
+    max-width: 1300px;
+    width: 100%;
+    margin-left: 35px;
+}
+
+.newsbg {
+    position: relative;
+    margin-top: px;
+    max-width: 1300px;
+    width: 117.7%;
+    height: 500px;
+    left: -11%;
+    background-color: #dcdcdc;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.newsscroller {
+    position: absolute;
+    width: 9000px;
+    margin-left: 140px;
+
+}
+
+.newsonly {
+    float: left;
+    width: 870px;
+    margin-right: 200px; 
+}
 
 .newstitle {
     position: relative;
@@ -385,12 +527,21 @@ h3 {
     padding: 0px 0px 0px 0px;
     width: 100%;
     font-family:'Rockwell W01', Times, serif;
-    color: #30E3C3;
+    color: #06DDB7;
     font-size: 70px;
     text-transform: uppercase;
     font-weight: bold;
+    letter-spacing: 5px;
     text-align: center;
     cursor: pointer;     
+}
+
+#mehrinfos {
+    text-align: center;
+    text-transform: uppercase;
+    color: #06DDB7;
+    font-size: 25px;
+    cursor: pointer;
 }
 
 .newsshow {
@@ -459,27 +610,37 @@ h3 {
 }
 
 .bandname {
-    color: #7ac3bc;
+    margin-top: 25px;
+    color: #06ddb7;
     font-weight: bold;
     text-transform: uppercase;
 }
 
 .bandhr {
-    border: 2px solid white !important;
+    margin-top: 5px;
+    border: 1px solid white;
     width: 200px;
 }
 
 
 .bandtext {
+    margin-top: -5px;
     color: #000000;
+}
+
+.bandsingleall {
+    margin-top: -50px;
+    margin-bottom: 30px;
 }
 
 .grouper {
     position: relative;
-    padding: 35px 0px 0px 43px;
+    padding: 83px 0px 0px 42px;
     max-width: 1011px;
     width: 100%;
-    font-size: 20px;
+    font-size: 25px;
+    font-family: terminal_dosismedium;
+    font-weight: normal;
     text-transform: uppercase;
 }
 
@@ -493,7 +654,7 @@ h3 {
 }
 
 .map {
-    margin-top: 60px;
+    margin-top: -56px;
     -webkit-filter: grayscale(90%);
     width: 100%;
     height: 100%;
@@ -502,7 +663,7 @@ h3 {
 
 .maptext {
     position: relative;
-    margin-top: -490px;
+    margin-top: -400px;
     margin-left: 0px;
     list-style: none;
     max-width: 1011px;
@@ -514,35 +675,48 @@ h3 {
     color: #00CC99;
     font-size: 50px;
     max-width: 1011px;
-    font-weight: bold;
+    font-family: terminal_dosissemibold;
     width: 100%;
+    padding-bottom: 15px;
     text-transform: uppercase;
 }
 
 .mapinfo {
     font-size: 35px;
-    font-weight: bold;
     max-width: 1011px;
     width: 100%;
+    font-family: terminal_dosissemibold;
+    padding-bottom: 10px;
     text-transform: uppercase;
 }
 
 .mapaddress {
-    font-size: 30px;
+    font-size: 35px;
+    font-family: terminal_dosisregular;
+    max-width: 1011px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.mapmail {
+    font-size: 35px;
     max-width: 1011px;
     width: 100%;
-    text-transform: uppercase;
+    padding-bottom: 20px;
+    font-family: terminal_dosissemibold;
 }
 
 .mappc {
     font-size: 25px;
     max-width: 1011px;
     width: 100%;
+    font-family: terminal_dosisregular;
     text-transform: uppercase;
 }
 
 .maplinks {
-    margin-top: 30px;
+    margin-top: 75px;
+    margin-bottom: -200px;
     color: #7F0094;
     text-decoration: none;
     font-family: terminal_dosissemibold;
@@ -575,7 +749,7 @@ h3 {
 
 .personsingle {
     float: left;
-    margin-right: 30px;
+    margin-right: 48px;
     padding-bottom: 20px;
     font-weight: bold;
     text-transform: uppercase;
@@ -584,7 +758,7 @@ h3 {
 
 .contactbuttons {
     position: absolute;
-    margin-top: 50px;
+    margin-top: -50px;
     left: 80%;
 }
 
@@ -654,6 +828,7 @@ h3 {
     margin-top: 10px;
     left: 45%;
     border-radius: 65px;
+    text-align: center;
     background-color: #7ac3bc;
     cursor: pointer;    
 }
@@ -678,12 +853,11 @@ h3 {
     margin-top: -180px;
     left: -15%;
     border-radius: 45px;
-    background-color: #dadadc;
+    background-color: #dcdcdc;
     cursor: pointer;    
 }
 
 .emailtitle {
-    margin-top: 80px;
     font-family: terminal_dosismedium;
     font-size: 25px;
     text-transform: uppercase;
@@ -695,6 +869,11 @@ h3 {
     margin-right: 100px;
     padding-bottom: 15px;
     width: 340px;
+}
+
+.onlycategory {
+    display: inline-block;
+    text-transform: uppercase;
 }
 
 .emailsingle a {
@@ -710,7 +889,7 @@ h3 {
     background-color: #000000;
 }
 
-.mail1, .mail2, .mail3, .mail4 {
+#helfer-form, #goenner-form, #presse-form, #sponsoring-form {
     display: none;
 }
 
@@ -724,53 +903,53 @@ h3 {
 .mailtitle {
     margin-top: -60px;
     font-size: 25px;
+    color: #06DDB7;
     text-transform: uppercase;
-    color: #7AC3BC;
 }
 
 .mailtext {
+    margin-bottom: 40px;
     width: 750px;
     line-height: 1.5;
 }
 
 .formular {
     float: left;
-    margin-right: 10px;
+    width: 1011px;
     text-transform: uppercase;
-    width: 750px;
 }
 
 .formfield {
     float: left;
-    margin-right: 60px;
-    margin-bottom: 30px;
-    width: 310px;
+    margin-bottom: 25px;
+    width: 400px;
 }
 
 .button{
-    margin-left: 600px;    
-    padding: 2px 3px 2px 3px;
-    font: 100% terminal_dosisregular, serif; 
+    margin-left: 630px;    
+    padding: 0px 10px 0px 10px;
+    font: 100% terminal_dosissemibold, serif; 
     text-align:center; 
     text-decoration:none; 
-    color: #D9E7E9;
+    color: #FFFFFF;
     background: #7AC3BC;
-    -webkit-border-radius: 20px;
-    -moz-border-radius:  20px;
-    border-radius:  20px;
     text-transform: uppercase;
 }
 
 .button:active{     
     color: #1F4A53;
-    background: #7AC3BC;
+    background: #06ddb7;
+}
+
+label {
+    width: 120px;
+    margin-right: 10px;
+    display: inline-block;
 }
 
 input {
-    -webkit-box-shadow: inset 0 0 4px  #000,
-    -moz-box-shadow: inset 0 0 4px  #000,
-    box-shadow: inset 0 0 4px  #000,
-    padding: 5px;
+    border: none;
+    padding: 3px;
     background: #DADADC;
     -webkit-border-radius: 20px;
     -moz-border-radius:  20px;
@@ -922,7 +1101,7 @@ input {
         background-color: #FFFFFF;
     }
 
-    .show-narrow {
+    #show-narrow {
         display: inline;
     }
 

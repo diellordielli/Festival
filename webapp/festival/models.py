@@ -5,7 +5,7 @@ from django.db import models
 class Band(models.Model):
     name = models.CharField(max_length=200)
     description = models.TextField(blank=True)
-    genre = models.CharField(max_length=200)
+    genre = models.CharField(max_length=200, help_text="Trenne Genres mit '/'")
     image = models.ImageField(upload_to="bands", blank=True)
     slug = models.SlugField(default="-")
 
@@ -28,6 +28,9 @@ class Band(models.Model):
             return bandyear.time
         else:
             return None
+
+    def dotted_genres(self):
+        return u' • '.join(self.genre.split('/'))
 
     @models.permalink
     def get_absolute_url(self):
