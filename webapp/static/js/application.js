@@ -8,8 +8,8 @@ $(document).ready(function() {
         imageWidth = $(".scroller > .gallery:first").outerWidth(true),
         visibleImages = Math.floor($(".container").width() / imageWidth),
         separators = Math.floor(totalImages / visibleImages), 
-        totalWidth = (imageWidth * totalImages) + (separators * 10),
-        visibleWidth = (visibleImages * imageWidth) + 10,
+        totalWidth = (imageWidth * totalImages),
+        visibleWidth = (visibleImages * imageWidth),
         $dot = $('.dot'),
         imageDots = Math.ceil(totalImages/visibleImages);
 
@@ -65,20 +65,24 @@ $(document).ready(function() {
         $(this).addClass('active');
     });
 
-    $('.galleryall').on('mouseenter', function(event) {
+    $('.regiongreyg').on('mouseenter', function(event) {
         $('#navlefticon').show();
         $('#navrighticon').show();
-        $('.greybackground2').css({'opacity': '0.6'});
-        $('.greybackground3').css({'opacity': '0.6'});
+        $('.greybackground2').css({'background-color': '0.9'});
+        $('.greybackground3').css({'background-color': '0.9'});
     });
-    $('.galleryall').on('mouseleave', function(event) {
+
+    $('.regiongreyg').on('mouseleave', function(event) {
         $('#navlefticon').hide();
         $('#navrighticon').hide();
-        $('.greybackground2').css({'opacity': '1'});
-        $('.greybackground3').css({'opacity': '1'});
+        $('.greybackground2').css({'background-color': '#DCDCDC'});
+        $('.greybackground3').css({'background-color': '#DCDCDC'});
     });
 
     $('.helfercircle').on('click', function(event) {
+        $('#goenner-form').hide();
+        $('#presse-form').hide();
+        $('#sponsoring-form').hide();
         $('#helfer-form').fadeIn("slow", function(){
             target = $('#helfer-form');
             scroll_to_target(target);
@@ -86,6 +90,9 @@ $(document).ready(function() {
     });
 
     $('.goennercircle').on('click', function(event) {
+        $('#helfer-form').hide();
+        $('#presse-form').hide();
+        $('#sponsoring-form').hide();
         $('#goenner-form').fadeIn("slow", function(){
             target = $('#goenner-form');
             scroll_to_target(target);
@@ -93,12 +100,19 @@ $(document).ready(function() {
     });
 
     $('.pressecircle').on('click', function(event) {
+        $('#goenner-form').hide();
+        $('#helfer-form').hide();
+        $('#sponsoring-form').hide();
         $('#presse-form').fadeIn("slow", function(){
             target = $('#presse-form');
             scroll_to_target(target);
-        });    });
+        });    
+    });
 
     $('.sponsoringcircle').on('click', function(event) {
+        $('#goenner-form').hide();
+        $('#presse-form').hide();
+        $('#helfer-form').hide();
         $('#sponsoring-form').fadeIn("slow", function(){
             target = $('#sponsoring-form');
             scroll_to_target(target);
@@ -108,12 +122,15 @@ $(document).ready(function() {
     $('.mailclose').on('click', function(event) {
         $('#helfer-form').fadeOut("slow");
     });
+
     $('.mailclose').on('click', function(event) {
         $('#goenner-form').fadeOut("slow");
     });
+
     $('.mailclose').on('click', function(event) {
         $('#presse-form').fadeOut("slow");
     });
+    
     $('.mailclose').on('click', function(event) {
         $('#sponsoring-form').fadeOut("slow");
     });
@@ -130,14 +147,19 @@ $(document).ready(function() {
     }
     
     $('.navtoggleup').on('click', function(event) {
-        $('.navigation a').fadeIn("slow");
+        $('.navigation a').fadeIn("fast");
         $('.navtoggleup').hide();
-        $('.navigation a').css({'display': 'block'});
-    });
-
-    $('.navtoggleup').on('click', function(event) {
         $('.navtoggledown').show();
+        $('.navigation a').css({'display': 'block'});
+        $('.headerbg').css({'height':'325px'});
+        $('.hrleftdown').css({'margin-top':'10px'});
     });
 
-
+    $('.navtoggledown').on('click', function(event) {
+        $('.navigation a').fadeOut(10);
+        $('.navtoggleup').show();
+        $('.navtoggledown').hide();
+        $('.headerbg').css({'height':'250px'});
+        $('.hrleftdown').css({'margin-top':'40px'});
+    });
 });

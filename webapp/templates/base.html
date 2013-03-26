@@ -20,8 +20,7 @@
         <a href="https://twitter.com/StolzeOpenair/" target="_blank"><img src="{{ STATIC_URL }}img/Twitter.jpg" /></a>
         <a href="http://vimeo.com/stolzeopenair" target="_blank"><img src="{{ STATIC_URL }}img/Vimeo.jpg" /></a>
       </div>
-
-
+      
       <div class="navigation">
         <div class="navigationleft">
           <hr class="hrlefttop">
@@ -32,14 +31,15 @@
           <div class="navtoggledown">
             <img src="{{ STATIC_URL }}img/down.png" />
           </div>
-          <a href="/">HOME</a>
-          <a href="/#bands">LINE-UP</a>
-          <a href="/#gallery">GALERIE</a>
-          <div class="navhidden">
-            <a href="">SPONSOREN</a>
-            <a href="">KONTAKT</a>
+          <div class="navresponsive">
+            <a href="/">HOME</a>
+            <a href="/#bands">LINE-UP</a>
+            <a href="/#gallery">GALERIE</a>
+            <div class="navhidden">
+              <a href="">SPONSOREN</a>
+              <a href="">KONTAKT</a>
+            </div>
           </div>
-          <br>
           <hr class="hrleftdown">
         </div>
         <div class="navigationright">
@@ -73,6 +73,7 @@
 <script src="{{ STATIC_URL }}js/application.js"></script>
 <script src="{{ STATIC_URL }}js/smoothscroll.js"></script>
 <script src="{{ STATIC_URL }}js/resize.js"></script>
+<script src="{{ STATIC_URL }}js/gallery_resize.js"></script>
 <!--<script src="{{ STATIC_URL }}js/newsslider.js"></script>-->
 </body>
 </html>

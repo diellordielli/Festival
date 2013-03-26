@@ -19,28 +19,30 @@
   </div>
   </div>
 <div class="regiongrey">
-  {% for news in newss %}
-    <div class="newstitle">
-      {{ news.name }}
-    </div>
-    <br>
-    <hr class="hrnews">
-    <div id="mehrinfos">
-      <p>Mehr Infos</p>
-    </div>
-    <div class="newsshow">
+  <div class="newsonly">
+    {% for news in newss %}
+      <div class="newstitle">
+        {{ news.name }}
+      </div>
       <br>
-      <div class="news">
-        {{ news.description|safe }}
+      <hr class="hrnews">
+      <div id="mehrinfos">
+        <p>Mehr Infos</p>
       </div>
-      <div class="newsimage">
-        {% if news.image %}
-          <img src = "{{ news.image|thumbnail:"530x350" }}">
-        {% endif %}</br></br>
+      <div class="newsshow">
+        <br>
+        <div class="news">
+          {{ news.description|safe }}
+        </div>
+        <div class="newsimage">
+          {% if news.image %}
+            <img src = "{{ news.image|thumbnail:"530x350" }}">
+          {% endif %}</br></br>
+        </div>
       </div>
-    </div>
-  {% endfor %}
-  <br clear="both">
+    {% endfor %}
+    <br clear="both">
+  </div>
 </div>
 
 <div class="regionwhite">
@@ -92,51 +94,49 @@
       <br clear="both">  
 </div>
 <br>
-<!--
+
 <br clear="both">
-<div id="gallery">
-    <h2>GALERIE</h2>
-</div>
-<hr class="overlay-fake" />
-<hr class="hrshadow2" />
-<div class="galleryall">
-  <div class="greybackground2">
-    <a id="navlefticon" href="#">
-      <img src="{{ STATIC_URL }}img/navigation-left.png" />
-    </a>
+<div class="regiongreyg">
+  <div id="gallery">
+      <h2>GALERIE</h2>
   </div>
-  <div class="greybackground3">
-    <a id="navrighticon" href="#">
-      <img src="{{ STATIC_URL }}img/navigation-right.png" />
-    </a>
-  </div>
-  <div class="greybackground container">
-    <div class="scroller">
-      {% for image in yearcovers %}
-        <div class="gallery">
-            {% if image.image %}
-              <a href="{{ image.year.get_gallery_url }}"><img src = "{{ image.image|cropscale:"872x379" }}"></a>
-            {% endif %}
-            <div class="galleryyear">
-              <p>Stolze Openair {{ image.year }}</p>
-            </div>
-        </div>
-      {% endfor %}
-      {% for image in yearcovers %}
-
-            {% endfor %}
-
-      <br clear="both">
+    <div class="greybackground2">
+      <a id="navlefticon" href="#">
+        <img src="{{ STATIC_URL }}img/navigation-left.png" />
+      </a>
+    </div>
+    <div class="greybackground3">
+      <a id="navrighticon" href="#">
+        <img src="{{ STATIC_URL }}img/navigation-right.png" />
+      </a>
+    </div>
+  <div class="galleryall">
+    <div class="greybackground container">
+      <div class="scroller">
+        {% for image in yearcovers %}
+          <div class="gallery">
+              {% if image.image %}
+                <a href="{{ image.year.get_gallery_url }}"><img src = "{{ image.image|cropscale:"872x379" }}"></a>
+              {% endif %}
+              <div class="galleryyear">
+                <p>Stolze Openair {{ image.year }}</p>
+              </div>
+          </div>
+        {% endfor %}
+        {% for image in yearcovers %}
+        {% endfor %}
+        <br clear="both">
+      </div>
+    </div>
+    <div class="slider-dots"> 
+      <div class="dotall">
+      <div class="dot" data-dotindex="0"/>
+      </div>
+    </div>
     </div>
   </div>
-  <div class="slider-dots"> 
-    <div class="dotall">
-    <div class="dot" data-dotindex="0"/>
-    </div>
-  </div>
-  </div>
+  <br clear="both">
 </div>
--->
 <div class="regionwhite">
   <div id="sponsor">
       <h2>SPONSOREN</h2>

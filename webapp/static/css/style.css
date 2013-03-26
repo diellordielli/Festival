@@ -497,7 +497,7 @@ hr.overlay-fake {
 
 .newsbg {
     position: relative;
-    margin-top: px;
+    margin-top: 0px;
     max-width: 1300px;
     width: 117.7%;
     height: 500px;
@@ -511,7 +511,6 @@ hr.overlay-fake {
     position: absolute;
     width: 9000px;
     margin-left: 140px;
-
 }
 
 .newsonly {

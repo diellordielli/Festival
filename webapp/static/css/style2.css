@@ -21,7 +21,7 @@ body {
     font-size: 18px;
 }
 
-.regiongrey {
+.regiongrey, .regiongreyg {
     width: 100%;
     max-width: 1300px;
     -webkit-box-shadow: 0px 7px 6px -3px grey;
@@ -29,6 +29,10 @@ body {
     box-shadow: 0px 9px 6px -3px grey;
     margin-bottom: 50px; 
     background-color: #dcdcdc;
+}
+
+.regiongreyg {
+    height: 588px;
 }
 
 .regionwhite {
@@ -117,6 +121,7 @@ body {
 .navtoggleup img {
     width: 25px;
     height: 25px;
+    margin-left: -100px;
 }
 
 
@@ -127,11 +132,10 @@ body {
 }
 
 .navtoggledown img {
-    position: absolute;
-    margin-top: -17px;
-    margin-left: -39px;
+    position: relative;
     width: 25px;
     height: 25px;
+    margin-left: -100px;
 }
 
 .mood {
@@ -189,6 +193,11 @@ body {
     background-color: #06ddb7;
 }
 
+.newsonly {
+    float: left;
+    background-color: #dcdcdc;
+}
+
 .newstitle {
     position: relative;
     margin-left: auto;
@@ -213,10 +222,23 @@ body {
 }
 
 .news {
-    width: 550px;
+    position: relative;
+    max-width: 550px;
+    height: auto;
+    width: 100%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+}
+
+.newsimage {
+    text-align: center;
+}
+
+.newsimage img {
+    max-width: 530px;
+    max-height: 350px;
+    width: 100%;
 }
 
 .newsshow {
@@ -300,6 +322,160 @@ body {
     color: #000000;
 }
 
+#navlefticon {
+    position: absolute;
+    margin-top: 250px;
+    margin-left: -6px;
+    display: none;
+}
+
+#navrighticon {
+    position: absolute;
+    margin-left: -6px;
+    margin-top: 250px;
+    display: none;
+}
+
+#navlefticon2 {
+    position: absolute;
+    margin-top: 220px;
+    margin-left: -6px;
+    display: none;
+}
+
+#navrighticon2 {
+    position: absolute;
+    margin-left: -6px;
+    margin-top: 220px;
+    display: none;
+}
+
+.slider-dots {
+    position: relative;
+    margin-top: -135px;
+    left: 10%;
+    text-align: center;
+    z-index: 8;
+}
+
+.dotall {
+    position: relative;
+    display: inline-block;
+    margin-right: -3px;
+}
+
+.dot.active {
+    opacity: 0.7;
+}
+
+.dot {
+    position: relative;
+    margin-top: 5px;
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    opacity: 0.3;
+    display: inline-block;
+    margin-right: 7px;
+    box-shadow: inset 0px 0px 4px 4px #000000;
+    -webkit-box-shadow: inset 0px 0px 4px 4px #000000;
+    cursor: pointer;
+}
+
+.galleryall {
+    max-width: 940px;
+    width: 100%;
+    margin-top: -100px;
+    margin-left: 90px;
+}
+
+.greybackground {
+    position: relative;
+    max-width: 1300px;
+    width: 126.5%;
+    height: 450px;
+    margin-bottom: 50px;
+    padding-bottom: 150px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.greybackground2, .greybackground3 {
+    max-width: 55px;
+    width: 100%;
+    height: 378px;
+    margin-top: -42px;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding-bottom: 150px;
+    background-color: #FFFFFF;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.greybackground4, .greybackground5 {
+    position: absolute;
+    max-width: 55px;
+    width: 100%;
+    height: 350px;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding-bottom: 150px;
+    background-color: #000;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.greybackground2 {
+    position: absolute;
+    float: left;
+    left: 0;
+    z-index: 2;
+}
+
+.greybackground3 {
+    position: absolute;
+    float: right;
+    right: 0;
+    z-index: 2;
+}
+
+.greybackground4 {
+    left: -13%;
+}
+
+.greybackground5 {
+    left: 110%;
+}
+
+.gallery {
+    float: left;
+    margin-top: 85px;
+    margin-left: 128px;
+    margin-right: 100px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.gallery img {
+    max-width: 872px;
+    max-height: 379px;
+    width: 100%;
+}
+
+.galleryyear {
+    margin-bottom: -10px;
+    font-size: 18px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #06ddb7;
+}
+
+.scroller {
+    position: absolute;
+    margin-right: 30px;
+}
 
 .grouper {
     position: relative;
@@ -593,7 +769,9 @@ body {
 
 .mailtext {
     margin-bottom: 40px;
-    width: 750px;
+    max-width: 750px;
+    height: auto;
+    width: 100%;
     line-height: 1.5;
 }
 
@@ -867,6 +1045,10 @@ label {
         font-size: 20px;
         margin-left: 40px;
     }
+
+    .headerbg {
+        height: 252px;
+    }
 }
 
 @media only screen and (max-width: 567px) {
@@ -898,6 +1080,10 @@ label {
     .navigation a {
         font-size: 19px;
         margin-left: 22px;
+    }
+
+    .headerbg {
+        height: 249px;
     }
 }
 
@@ -944,17 +1130,29 @@ label {
 @media only screen and (max-width: 355px) {
 
     .navtoggleup {
+        position: relative;
         display: inline-block;
+        margin-left: 100px;
     }
 
     .navtoggledown {
+        position: relative;
         display: none;
+        margin-left: 100px;
     }
 
     .navigation a {
         display: none;
+        margin-left: 60px;
     }
 
+    .navresponsive {
+        margin-top: -22px;
+    }
+
+    .hrleftdown {
+        margin-top: 38px;
+    }
 }
 
 @media only screen and (max-width: 726px) {
