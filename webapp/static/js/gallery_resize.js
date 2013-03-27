@@ -11,12 +11,14 @@ $(document).ready(function() {
 
     function resize() {
         var containerWidth = $('.regiongreyg').width(),
-            imageWidth = containerWidth * imageRatio;
-            containerHeight = (imageWidth * imageRatioh) + 230,  
+            imageWidth = containerWidth * imageRatio,
+            containerHeight = (imageWidth * imageRatioh) + 230; 
 
         $('.gallery img').width(imageWidth),
         $('.regiongreyg').height(containerHeight),
-        $('.greybackground2').height(containerHeight - 230),
-        $('.greybackground3').height(containerHeight - 230);
+        $('.greybackground2').height(containerHeight - 152),
+        $('.greybackground3').height(containerHeight - 152);
+
     }
+
 });

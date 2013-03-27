@@ -9,13 +9,15 @@ $(document).ready(function() {
         visibleImages = Math.floor($(".container").width() / imageWidth),
         separators = Math.floor(totalImages / visibleImages), 
         totalWidth = (imageWidth * totalImages),
-        visibleWidth = (visibleImages * imageWidth),
+        visibleWidth =  imageWidth,
         $dot = $('.dot'),
         imageDots = Math.ceil(totalImages/visibleImages);
 
     for (var i = 1; i < imageDots; i++){
         $dot.clone().data('dotindex', i).appendTo('.slider-dots'); 
     }
+
+        console.log(visibleWidth, imageWidth);
 
     $(window).on('resize', function(event) {
         //console.log(this, event, $(".container").width());
@@ -27,11 +29,13 @@ $(document).ready(function() {
 
     $('.greybackground3').on('click', function(event) {
         event.preventDefault();
+        var visibleWidth = $(".scroller > .gallery:first").outerWidth(true);
         var newLeft = $('.scroller').get(0).offsetLeft - visibleWidth;
 
         if (newLeft <= -totalWidth) {
             newLeft = 0;
         }
+        var visibleWidth = $(".scroller > .gallery:first").outerWidth(true);
         var navpos = -newLeft / visibleWidth;
 
         $('.dot').removeClass('active');
@@ -42,11 +46,13 @@ $(document).ready(function() {
 
     $('.greybackground2').on('click', function(event) {
         event.preventDefault();
+        var visibleWidth = $(".scroller > .gallery:first").outerWidth(true);
         var newLeft = $('.scroller').get(0).offsetLeft + visibleWidth;
 
         if (newLeft > 0) {
             newLeft = -separators * visibleWidth;
         }
+        var visibleWidth = $(".scroller > .gallery:first").outerWidth(true);
         var navpos = -newLeft / visibleWidth;
 
         $('.dot').removeClass('active');
@@ -58,6 +64,7 @@ $(document).ready(function() {
 
     $('.dot').on('click', function(event) {
         var dotindex = $(this).data('dotindex');
+        var visibleWidth = $(".scroller > .gallery:first").outerWidth(true);
         var dotplace = dotindex * visibleWidth;
         var newLeft = -dotplace;
         $('.scroller').animate({'left': newLeft}, carouselOptions.speed);
@@ -68,15 +75,15 @@ $(document).ready(function() {
     $('.regiongreyg').on('mouseenter', function(event) {
         $('#navlefticon').show();
         $('#navrighticon').show();
-        $('.greybackground2').css({'background-color': '0.9'});
-        $('.greybackground3').css({'background-color': '0.9'});
+        $('.greybackground2').css({'background-color': '#e8e8e8'});
+        $('.greybackground3').css({'background-color': '#e8e8e8'});
     });
 
     $('.regiongreyg').on('mouseleave', function(event) {
         $('#navlefticon').hide();
         $('#navrighticon').hide();
-        $('.greybackground2').css({'background-color': '#DCDCDC'});
-        $('.greybackground3').css({'background-color': '#DCDCDC'});
+        $('.greybackground2').css({'background-color': '#dcdcdc'});
+        $('.greybackground3').css({'background-color': '#dcdcdc'});
     });
 
     $('.helfercircle').on('click', function(event) {

@@ -2,8 +2,6 @@ $(document).ready(function() {
     var initSize = $('body').css("font-size"),
         mapAspectRatio = 0.45;
 
-    console.log(initSize);
-
     resize();
 
     $(window).resize(function() {
