@@ -78,3 +78,4 @@ $(document).ready(function() {
         $('.greybackground4').css({'opacity': '1'});
         $('.greybackground5').css({'opacity': '1'});
     });
+});

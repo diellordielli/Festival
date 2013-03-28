@@ -19,37 +19,39 @@
   </div>
   </div>
 <div class="regiongrey">
-  <div class="newsonly">
-    {% for news in newss %}
-      <div class="newstitle">
-        {{ news.name }}
-      </div>
-      <br>
-      <hr class="hrnews">
-      <div id="mehrinfos">
-        <p>Mehr Infos</p>
-      </div>
-      <div class="newsshow">
+  <div class="newsscroller">
+    <div class="newsonly">
+      {% for news in newss %}
+        <div class="newstitle">
+          {{ news.name }}
+        </div>
         <br>
-        <div class="news">
-          {{ news.description|safe }}
+        <hr class="hrnews">
+        <div id="mehrinfos">
+          <p>Mehr Infos</p>
         </div>
-        <div class="newsimage">
-          {% if news.image %}
-            <img src = "{{ news.image|thumbnail:"530x350" }}">
-          {% endif %}</br></br>
+        <div class="newsshow">
+          <br>
+          <div class="news">
+            {{ news.description|safe }}
+          </div>
+          <div class="newsimage">
+            {% if news.image %}
+              <img src = "{{ news.image|thumbnail:"530x350" }}">
+            {% endif %}</br></br>
+          </div>
         </div>
-      </div>
-    {% endfor %}
+      {% endfor %}
+      <br clear="both">
+    </div>
     <br clear="both">
   </div>
-  <br clear="both">
 </div>
 
-<div class="regionwhite">
   <div id="bands">
     <h2>LINE-UP</h2>
   </div>
+<div class="regionwhite">
   <div class="bandsingleall">
   {% regroup bands by get_stage_time|date:"l, j. F" as bands_by_day %}
   {% for days in bands_by_day %}
@@ -159,10 +161,10 @@
     <br clear="both">
   {% endfor %}
 </div>
-<div class="regionwhite">
   <div id="kontakt">
       <h2>KONTAKT</h2>
   </div>
+<div class="regionwhite">
   <div class="map">
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script><div  style="overflow:hidden;max-width:1300px;width:100%;height:100%;" id="gmeg_map_canvas"><div style="width:600px;height:500px" id="gmeg_map_canvas"></div><script>
     var gmegMap, gmegMarker, gmegInfoWindow, gmegLatLng;

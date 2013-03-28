@@ -18,12 +18,10 @@ $(document).ready(function() {
             $map.height($map.width() * mapAspectRatio);
             $('body').css("font-size", fontSize);
             $('.moodtitle').css("font-size", fontSize);
-            $('.newstitle').css("font-size", fontSize);
 
         } else {
             $('body').css("font-size", initSize);
             $('.moodtitle').css("font-size", initSize);
-            $('.newstitle').css("font-size", initSize);
         }
     }
 });
