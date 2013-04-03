@@ -56,9 +56,72 @@ $(document).ready(function() {
         $('#sponsoring-form').fadeOut("slow");
     });
 
-    $('#mehrinfos').on('click', function(event) {
-        $('.newsshow').fadeIn("slow");
-        $('#mehrinfos').css({'display': 'none'});
+    $('.mehrinfos').on('click', function(event) {
+        var currentHeight,
+            newsindex = $('.newsdot.active').data('newsdotindex'),
+            $currentNews = $('.newsonly').eq(newsindex);
+
+        $('.newsshow').show();
+        currentHeight = $currentNews.height();
+        $('.newsshow').hide();
+
+        $('.newsshow').slideDown("slow", function() {
+            $(window).trigger('resize');
+            $('.newsscroller').height(currentHeight);
+        });
+
+        $('.mehrinfos').css({'display': 'none'});
+        
+        $('.greybackground5').on('click', function(event) {
+            var currentHeight,
+                newsindex = $('.newsdot.active').data('newsdotindex'),
+                $currentNews = $('.newsonly').eq(newsindex);
+
+            $('.newsshow').show();
+            currentHeight = $currentNews.height();
+            $('.newsshow').hide();
+
+            $('.newsshow').slideDown("slow", function() {
+                $(window).trigger('resize');
+                $('.newsscroller').height(currentHeight);
+            });
+
+            $('.mehrinfos').css({'display': 'none'});
+        });
+
+        $('.greybackground4').on('click', function(event) {
+            var currentHeight,
+                newsindex = $('.newsdot.active').data('newsdotindex'),
+                $currentNews = $('.newsonly').eq(newsindex);
+
+            $('.newsshow').show();
+            currentHeight = $currentNews.height();
+            $('.newsshow').hide();
+
+            $('.newsshow').slideDown("slow", function() {
+                $(window).trigger('resize');
+                $('.newsscroller').height(currentHeight);
+            });
+
+            $('.mehrinfos').css({'display': 'none'});
+        });
+
+        $('.newsdot').on('click', function(event) {
+            var currentHeight,
+                newsindex = $('.newsdot.active').data('newsdotindex'),
+                $currentNews = $('.newsonly').eq(newsindex);
+
+            $('.newsshow').show();
+            currentHeight = $currentNews.height();
+            $('.newsshow').hide();
+
+            $('.newsshow').slideDown("slow", function() {
+                $(window).trigger('resize');
+                $('.newsscroller').height(currentHeight);
+            });
+
+            $('.mehrinfos').css({'display': 'none'});
+        });
     });
 
     function scroll_to_target(target){

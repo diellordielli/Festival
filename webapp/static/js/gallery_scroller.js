@@ -42,7 +42,6 @@ $(document).ready(function() {
         $(".scroller").width(totalWidth);
 
         $('.scroller').css('left', - navpos * stepWidth);
-        console.log(navpos);
     }
 
     for (var i = 1; i < totalImages; i++){
@@ -80,8 +79,6 @@ $(document).ready(function() {
 
         $('.dot').removeClass('active');
         $('.dot:eq('+navpos+')').addClass('active');
-
-        console.log(navpos, $('.dot:eq('+navpos+')').data('dotindex'));
 
         $('.scroller').animate({'left': newLeft}, carouselOptions.speed);
     });

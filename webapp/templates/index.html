@@ -18,36 +18,54 @@
     </div>
   </div>
   </div>
-<div class="regiongrey">
-  <div class="newsscroller">
-    <div class="newsonly">
-      {% for news in newss %}
-        <div class="newstitle">
-          {{ news.name }}
-        </div>
-        <br>
-        <hr class="hrnews">
-        <div id="mehrinfos">
-          <p>Mehr Infos</p>
-        </div>
-        <div class="newsshow">
-          <br>
-          <div class="news">
-            {{ news.description|safe }}
+  <div class="regiongrey">
+
+  <div class="greybackground4">
+    <a id="navlefticon2" href="#">
+      <img src="{{ STATIC_URL }}img/navigation-left.png" />
+    </a>
+  </div>
+  <div class="greybackground5">
+    <a id="navrighticon2" href="#">
+      <img src="{{ STATIC_URL }}img/navigation-right.png" />
+    </a>
+  </div>
+  <div class="newsbackground">
+    <div class="newsscroller">
+        {% for news in newss %}
+          <div class="newsonly">
+            <div class="newstitle">
+              {{ news.name }}
+            </div>
+            <br>
+            <hr class="hrnews">
+            <div class="mehrinfos">
+              <p>Mehr Infos</p>
+            </div>
+            <div class="newsshow">
+              <br>
+              <div class="news">
+                {{ news.description|safe }}
+              </div>
+              <div class="newsimage">
+                {% if news.image %}
+                  <img src = "{{ news.image|thumbnail:"530x350" }}">
+                {% endif %}</br></br>
+              </div>
+            </div>
+            <br clear="both">
           </div>
-          <div class="newsimage">
-            {% if news.image %}
-              <img src = "{{ news.image|thumbnail:"530x350" }}">
-            {% endif %}</br></br>
-          </div>
-        </div>
-      {% endfor %}
+        {% endfor %}
       <br clear="both">
     </div>
-    <br clear="both">
   </div>
 </div>
-
+  <div class="slider-newsdots"> 
+    <div class="newsdotall">
+      <div class="newsdot" data-newsdotindex="0"/>
+    </div>
+  </div>
+</div>
   <div id="bands">
     <h2>LINE-UP</h2>
   </div>

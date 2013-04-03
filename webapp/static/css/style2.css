@@ -32,7 +32,7 @@ body {
 
 .regiongrey {
     position: relative;
-    margin-top: -285px;
+    margin-top: 100px;
     padding-bottom: 50px;
     z-index: 1;
 }
@@ -65,6 +65,7 @@ body {
     position: absolute;
     margin-top: 20px;
     left: 84%;
+    z-index: 1;
 }
 
 .headerbg {
@@ -150,7 +151,6 @@ body {
 .mood {
     position: relative;
     width: 100%;
-    height: 100%;
     z-index: 2;
 }
 
@@ -203,21 +203,33 @@ body {
     background-color: #06ddb7;
 }
 
+.newsbackground {
+    position: relative;
+    max-width: 1300px;
+    width: 126.5%;
+    margin-top: -100px;
+    margin-bottom: 50px;
+    overflow: hidden;
+    background-color: #dcdcdc;
+    z-index: 1;
+}
+
 .newsscroller {
-    
+    overflow: hidden;
 }
 
 .newsonly {
     float: left;
-    margin-left: 70px;
-    background-color: #dcdcdc;
+    max-width: 1300px;
+    width: 100%;
 }
 
 .newstitle {
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 100%;
+    max-width: 750px;
     font-family:'Rockwell W01', Times, serif;
     color: #06DDB7;
     font-size: 70px;
@@ -228,7 +240,7 @@ body {
     cursor: pointer;     
 }
 
-#mehrinfos {
+.mehrinfos {
     font-size: 25px;
     color: #06DDB7;
     text-align: center;
@@ -258,6 +270,45 @@ body {
 
 .newsshow {
     display: none;
+}
+
+.slider-newsdots {
+    position: absolute;
+    margin-top: -130px;
+    left: 50%;
+    margin-left: -30px;
+    text-align: center;
+    z-index: 8;
+}
+
+.newsdotall {
+    position: relative;
+    display: inline-block;
+    margin-right: -3px;
+}
+
+.newsdot.active {
+    opacity: 0.7;
+}
+
+.newsdot {
+    position: relative;
+    margin-top: 5px;
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    opacity: 0.3;
+    display: inline-block;
+    margin-right: 7px;
+    box-shadow: inset 0px 0px 4px 4px #000000;
+    -webkit-box-shadow: inset 0px 0px 4px 4px #000000;
+    cursor: pointer;
+}
+
+.hrnews {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #bands h2, #gallery h2, #sponsor h2, #kontakt h2 {
@@ -361,7 +412,7 @@ body {
 
 #navlefticon2 {
     position: absolute;
-    margin-top: 220px;
+    margin-top: 0px;
     margin-left: -6px;
     display: none;
 }
@@ -369,7 +420,7 @@ body {
 #navrighticon2 {
     position: absolute;
     margin-left: -6px;
-    margin-top: 220px;
+    margin-top: 0px;
     display: none;
 }
 
@@ -424,6 +475,7 @@ body {
 }
 
 .greybackground2, .greybackground3 {
+    position: absolute;
     max-width: 55px;
     width: 100%;
     height: 378px;
@@ -432,44 +484,41 @@ body {
     margin-bottom: 50px;
     padding-bottom: 150px;
     background-color: #dcdcdc;
-    z-index: 1;
+    z-index: 2;
     cursor: pointer;
+}
+
+.greybackground2 {
+    float: left;
+    left: 0;
+}
+
+.greybackground3 {
+    float: right;
+    right: 0;
 }
 
 .greybackground4, .greybackground5 {
     position: absolute;
     max-width: 55px;
     width: 100%;
-    height: 350px;
+    height: 100%;
     margin-top: 0px;
     margin-right: auto;
     margin-bottom: 50px;
-    padding-bottom: 150px;
-    background-color: #000;
-    z-index: 1;
+    background-color: #dcdcdc;
+    z-index: 2;
     cursor: pointer;
 }
 
-.greybackground2 {
-    position: absolute;
+.greybackground4 {
     float: left;
     left: 0;
-    z-index: 2;
-}
-
-.greybackground3 {
-    position: absolute;
-    float: right;
-    right: 0;
-    z-index: 2;
-}
-
-.greybackground4 {
-    left: -13%;
 }
 
 .greybackground5 {
-    left: 110%;
+    float: right;
+    right: 0;
 }
 
 .gallery {
@@ -952,9 +1001,7 @@ label {
 
     .mood {
         position: relative;
-        padding: 15px 0px 50px 0px;
         width: 100%;
-        height: 451px;
     }
 
 }  
@@ -1012,6 +1059,42 @@ label {
 
 }
 
+@media only screen and (max-width: 845px) {
+    
+    .newstitle {
+        font-size: 60px;
+    }
+}
+
+@media only screen and (max-width: 755px) {
+    
+    .newstitle {
+        font-size: 55px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    
+    .newstitle {
+        font-size: 45px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .newstitle {
+        font-size: 35px;
+        max-width: 500px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    
+    .newstitle {
+        font-size: 33px;
+        max-width: 500px;
+    }
+}
 
 @media only screen and (max-width: 838px) {
     
