@@ -16,14 +16,17 @@ $(document).ready(function() {
     });
 
     function resize() {
-
         var regionGrey = $('.regiongrey').width(),
-            galleryImg = $('.newsonly').width();
+            newsWidth = Math.round(regionGrey * carouselOptions.imageRatio);
+            hrnews = newsWidth + 0.7
 
-        var marginleft = (regionGrey - galleryImg) / 2;
+        $('.hrnews').width(hrnews);
+        $('.newsonly').width(newsWidth);
+
+        var marginleft = (regionGrey - newsWidth) / 2;
         $('.newsonly').css('margin-left', marginleft + 'px');
 
-        var marginright = (regionGrey - galleryImg) / 2;
+        var marginright = (regionGrey - newsWidth) / 2;
         $('.newsonly').css('margin-right', marginright + 'px');
 
         // set superscope totalWidth

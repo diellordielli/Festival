@@ -220,8 +220,7 @@ body {
 
 .newsonly {
     float: left;
-    max-width: 1300px;
-    width: 100%;
+    width: 750px;
 }
 
 .newstitle {
@@ -1088,7 +1087,7 @@ label {
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 515px) {
     
     .newstitle {
         font-size: 33px;
@@ -1115,7 +1114,7 @@ label {
     }
 }
 
-@media only screen and (max-width: 802px) {
+@media only screen and (max-width: 803px) {
 
     .navigation a {
         margin-left: 53px;
@@ -1129,7 +1128,7 @@ label {
     }
 }
 
-@media only screen and (max-width: 687px) {
+@media only screen and (max-width: 688px) {
 
     .navigation a {
         margin-left: 35px;
@@ -1155,7 +1154,7 @@ label {
     }
 }
 
-@media only screen and (max-width: 567px) {
+@media only screen and (max-width: 569px) {
 
     .navigation a {
         font-size: 20px;
@@ -1163,7 +1162,7 @@ label {
     }
 }
 
-@media only screen and (max-width: 528px) {
+@media only screen and (max-width: 529px) {
 
     .navigation a {
         font-size: 20px;

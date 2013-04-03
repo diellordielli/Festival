@@ -67,7 +67,7 @@ $(document).ready(function() {
 
         $('.newsshow').slideDown("slow", function() {
             $(window).trigger('resize');
-            $('.newsscroller').height(currentHeight);
+            $('.newsscroller').animate({'height': currentHeight});
         });
 
         $('.mehrinfos').css({'display': 'none'});
@@ -83,8 +83,9 @@ $(document).ready(function() {
 
             $('.newsshow').slideDown("slow", function() {
                 $(window).trigger('resize');
-                $('.newsscroller').height(currentHeight);
+                $('.newsscroller').animate({'height': currentHeight});
             });
+
 
             $('.mehrinfos').css({'display': 'none'});
         });
@@ -100,8 +101,9 @@ $(document).ready(function() {
 
             $('.newsshow').slideDown("slow", function() {
                 $(window).trigger('resize');
-                $('.newsscroller').height(currentHeight);
+                $('.newsscroller').animate({'height': currentHeight});
             });
+
 
             $('.mehrinfos').css({'display': 'none'});
         });
@@ -117,8 +119,9 @@ $(document).ready(function() {
 
             $('.newsshow').slideDown("slow", function() {
                 $(window).trigger('resize');
-                $('.newsscroller').height(currentHeight);
+                $('.newsscroller').animate({'height': currentHeight});
             });
+
 
             $('.mehrinfos').css({'display': 'none'});
         });
