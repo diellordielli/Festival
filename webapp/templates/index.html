@@ -1,24 +1,24 @@
 {% extends "base.html" %}
 {% load feincms_thumbnails %}
 {% block content %}
-  <div class="mood">
-    {% if mood.image %}
-      <img src = "{{ mood.image.url|cropscale:"1300x451" }}">
-    {% endif %}
-    <div class="moodtitle">
-      {{ mood.description }}<br>
-      {{ mood.name }}
-    </div>
-    <div class="newsletter">
-      <div class="buttontitle">
-        NEWS-<br>
-        LETTER
+    <div class="mood">
+      {% if mood.image %}
+        <img src = "{{ mood.image.url|cropscale:"1300x400" }}">
+      {% endif %}
+      <div class="moodtitle">
+        {{ mood.description }}<br>
+        {{ mood.name }}
       </div>
-      <div class="newscircle" />
+      <div class="newsletter">
+        <div class="buttontitle">
+          NEWS-<br>
+          LETTER
+        </div>
+        <div class="newscircle" />
+      </div>
     </div>
   </div>
-  </div>
-  <div class="regiongrey">
+  <div class="regiongrey" id="news">
 
   <div class="greybackground4">
     <a id="navlefticon2" href="#">
@@ -85,12 +85,12 @@
             <div class="flipper">
               <div class="front">
                 {% if band.image %}
-                  <a href="{{ band.get_absolute_url }}">
+                  <a class="fancybox" rel="group" href={{ band.get_absolute_url }}>
                     <img src = "{{ band.image|cropscale:"271x181" }}">
                   </a>
                 {% endif %}
               </div>
-              <a href="{{ band.get_absolute_url }}">
+              <a class="fancybox" rel="group" href={{ band.get_absolute_url }}>
               <div class="back">
                 <div class="bandname">
                   {{ band.name }}
@@ -172,7 +172,7 @@
         <div class="sponsor">
           {% if sponsor.logo %}
             <a href="{{ sponsor.link }}" target="_blank"><img src = "{{ sponsor.logo|thumbnail:"180x9999" }}"></a>
-          {% endif %}</br></br>
+          {% endif %}
         </div>
       {% endfor %}
     </div>
@@ -185,7 +185,7 @@
 <div class="regionwhite">
   <div class="map">
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script><div  style="overflow:hidden;max-width:1300px;width:100%;height:100%;" id="gmeg_map_canvas"><div style="width:600px;height:500px" id="gmeg_map_canvas"></div><script>
-    var gmegMap, gmegMarker, gmegInfoWindow, gmegLatLng;
+    var gmegMap, gmegMarker, gmegLatLng;
 
     function gmegInitializeMap(){
       gmegLatLng = new google.maps.LatLng(47.38637228,8.54670882);
@@ -198,12 +198,9 @@
         });
 
       gmegMarker = new google.maps.Marker({map:gmegMap,position:gmegLatLng});
-      gmegInfoWindow = new google.maps.InfoWindow({
-        content:'<b>Stolze Wiese</b>'
-      });
-      gmegInfoWindow.open(gmegMap,gmegMarker);
     }
     google.maps.event.addDomListener(window,"load",gmegInitializeMap);
+   // google.maps.event.addDomListener(window,"resize",gmegInitializeMap);
     </script></div>
   </div>
   <div class="maptext">
@@ -215,8 +212,8 @@
     <li class="mappc">PC: 85-660691-2</li>
   </div>
   <div class="maplinks">
-    <a href="https://maps.google.ch/maps?daddr=Stolzestrasse+1,+Z%C3%BCrich&hl=de&ie=UTF8&ll=47.385936,8.546773&spn=0.006305,0.015814&sll=47.377455,8.536715&sspn=0.201798,0.506058&geocode=FbEO0wIduGeCACnVPN5ZdQqQRzEhb8HWu9N_Kw&dirflg=r&ttype=now&noexp=0&noal=0&sort=def&mra=ls&t=m&z=17&start=0" target="_blank">> Veloanfahrt planen⎮Google Maps</a>
-    <a href="http://online.fahrplan.zvv.ch/bin/query.exe/dn?currentCSS=theme_zvv&seqnr=3&ident=oo.0238101.1363607952&OK#focus" target="_blank">> Seilbahn Rigiblick⎮VBZ</a>
+    <a href="https://maps.google.ch/maps?daddr=Stolzestrasse+1,+Z%C3%BCrich&hl=de&ie=UTF8&ll=47.385936,8.546773&spn=0.006305,0.015814&sll=47.377455,8.536715&sspn=0.201798,0.506058&geocode=FbEO0wIduGeCACnVPN5ZdQqQRzEhb8HWu9N_Kw&dirflg=r&ttype=now&noexp=0&noal=0&sort=def&mra=ls&t=m&z=17&start=0" target="_blank">> Veloanfahrt planen | Google Maps</a>
+    <a href="http://www.zvv.ch/de/" target="_blank">> Seilbahn Rigiblick | VBZ</a>
   </div>
 
   <div class="contacttitle">
@@ -256,17 +253,21 @@
   <div class="emailtitle">
     RESSORTS
   </div>
-  {% for contact in contacts %}
-    <div class="emailsingle">
-      <a href="mailto:{{ contact.email }}">
-      <div class="onlycategory">
-        {{ contact.category }}:
+  <div class="emailall">
+    {% for contact in contacts %}
+      <div class="emailsingle">
+        <a href="mailto:{{ contact.email }}">
+        <div class="onlycategory">
+          {{ contact.category }}:
+        </div>
+        {{ contact.email }}
+        </a>
       </div>
-      {{ contact.email }}
-      </a>
-    </div>
-  {% endfor %}
+    {% endfor %}
+  </div>
+
   <hr class="hrend">
+
   <div id="helfer-form">
     <div class="mailclose">
       <img src="{{ STATIC_URL }}img/x.png" />

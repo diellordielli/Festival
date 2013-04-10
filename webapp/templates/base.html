@@ -3,10 +3,11 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/main.css">
   <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/normalize.css">
   <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/style2.css">
+  <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/jquery.fancybox.css">
   <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}webfontkit/stylesheet.css">
   <link type="text/css" rel="stylesheet" href="http://fast.fonts.com/cssapi/8b4ef91c-5f05-4c36-ae88-051dad5dee5d.css"/>
   <title>stolze-openair.ch</title>
@@ -36,8 +37,8 @@
             <a href="/#bands">LINE-UP</a>
             <a href="/#gallery">GALERIE</a>
             <div class="navhidden">
-              <a href="">SPONSOREN</a>
-              <a href="">KONTAKT</a>
+              <a href="/#sponsor">SPONSOREN</a>
+              <a href="/#kontakt">KONTAKT</a>
             </div>
           </div>
           <hr class="hrleftdown">
@@ -47,7 +48,6 @@
           <br>
           <a href="/#sponsor">SPONSOREN</a>
           <a href="/#kontakt">KONTAKT</a>
-          <br>
           <hr class="hrrightdown">
         </div>
       </div>
@@ -70,15 +70,14 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
+<script src="{{ STATIC_URL }}js/jquery.transit.js"></script>
+<script src="{{ STATIC_URL }}js/scale.js"></script>
 <script src="{{ STATIC_URL }}js/gallery_scroller.js"></script>
 <script src="{{ STATIC_URL }}js/resize.js"></script>
 <script src="{{ STATIC_URL }}js/smoothscroll.js"></script>
 <script src="{{ STATIC_URL }}js/application.js"></script>
 <script src="{{ STATIC_URL }}js/nav_reposition.js"></script>
 <script src="{{ STATIC_URL }}js/news_scroller.js"></script>
-<!--
 
-
--->
 </body>
 </html>

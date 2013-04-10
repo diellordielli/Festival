@@ -30,9 +30,11 @@ body {
     background-color: #dcdcdc;
 }
 
+.regiongrey#news {
+}
+
 .regiongrey {
     position: relative;
-    margin-top: 100px;
     padding-bottom: 50px;
     z-index: 1;
 }
@@ -44,7 +46,7 @@ body {
 
 .regionwhite {
     position: relative;
-    width: 100%;
+    width: 99.9%;
     max-width: 1300px;
     -webkit-box-shadow: 0px 7px 6px -3px grey;
     -moz-box-shadow: 0px 7px 6px -3px grey;
@@ -55,7 +57,7 @@ body {
 }
 
 .regionwhitenone {
-    width: 100%;
+    width: 99.2%;
     max-width: 1300px;
     margin-bottom: 50px;
     background-color: #FFFFFF;
@@ -63,31 +65,35 @@ body {
 
 .socialicons {
     position: absolute;
-    margin-top: 20px;
-    left: 84%;
-    z-index: 1;
+    margin-top: 7px;
+    right: 3%;
 }
 
 .headerbg {
     position: fixed;
-    height: 205px;
-    max-width: 1300px;
+    height: 140px;
+    max-width: 1310px;
     width: 100%;
     background-color: #FFFFFF;
     z-index: 9;
 }
 
 .logo {
-    position: fixed;
-    top: 2%;
+    position: absolute;
+    top: 1%;
     left: 50%;
-    margin-left: -76px;
+    margin-left: -63px;
+    max-width: 100px;
+    width: 122%;
+}
+
+.logo img {
     max-width: 161px;
-    width: 100%;
+    width: 125%;
 }
 
 .navigation {
-    margin-top: 85px;
+    margin-top: 20px;
     width: 100px;
 }
 
@@ -101,6 +107,7 @@ body {
 
 .navigationleft, .navigationright {
     position: absolute;
+    width: 39%;
 }
 
 .navigationleft a {
@@ -115,10 +122,13 @@ body {
     display: none;
 }
 
+.navresponsive {
+    width: 800px;
+}
+
 .hrlefttop, .hrleftdown, .hrrighttop, .hrrightdown {
-    position: fixed;
+    position: absolute;
     width: 100%;
-    max-width: 520px;
     background-color: #000000;
 }
 
@@ -148,17 +158,22 @@ body {
     margin-left: -100px;
 }
 
+
 .mood {
     position: relative;
-    width: 100%;
+    left: 1px;
+    top: 151px;
+    width: 1300px;
     z-index: 2;
+    /*margin-bottom: 255px;*/
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
 }
 
 .mood img {
-    max-width: 1300px;
-    max-height: 451px;
-    margin-top: 200px;
-    width: 100%;
+    height: 450px;
+    width: 1300px;
     -webkit-box-shadow: 0px 7px 6px -3px grey;
     -moz-box-shadow: 0px 7px 6px -3px grey;
     box-shadow: 0px 9px 6px -3px grey;
@@ -166,9 +181,9 @@ body {
 
 .moodtitle {
     position: absolute;
-    top: 25%;
+    top: 10%;
     left: 5%;
-    font-size: 2rem;
+    font-size: 70px;
     font-family: terminal_dosissemibold;
     text-align: center;
     text-transform: uppercase;
@@ -177,10 +192,10 @@ body {
 
 .newsletter {
     position: absolute;
-    top: 33%;
+    top: 24%;
     left: 48%;
-    width: 5em;
-    height: 5em;
+    width: 91px;
+    height: 91px;
 }
 
 .buttontitle {
@@ -206,7 +221,7 @@ body {
 .newsbackground {
     position: relative;
     max-width: 1300px;
-    width: 126.5%;
+    width: 100%;
     margin-top: -100px;
     margin-bottom: 50px;
     overflow: hidden;
@@ -273,7 +288,7 @@ body {
 
 .slider-newsdots {
     position: absolute;
-    margin-top: -130px;
+    margin-top: -150px;
     left: 50%;
     margin-left: -30px;
     text-align: center;
@@ -310,6 +325,20 @@ body {
     margin-right: auto;
 }
 
+#gallery {
+    position: relative;
+    top: -50px;
+}
+
+#sponsor {
+    position: relative;
+    top: -106px;
+}
+
+#kontakt {
+    margin-top: -85px;
+}
+
 #bands h2, #gallery h2, #sponsor h2, #kontakt h2 {
     position: relative;
     max-width: 1011px;
@@ -335,22 +364,19 @@ body {
 }
 
 #gallery h2 {
-    top: -50px;
     width: 200px;
     background-color: #DCDCDC;
     z-index: 5;
 }
 
 #sponsor h2 {
-    top: -60px;
-    margin-top: -17px;
+    margin-top: 30px;
+    margin-bottom: -10px;
     width: 220px;
     background-color: #FFFFFF;
 }
 
 #kontakt h2 {
-    top: 38px;
-    margin-top: -88px;
     width: 200px;
     background-color: #F1F0EF;
     z-index: 4;
@@ -426,7 +452,7 @@ body {
 .slider-dots {
     position: absolute;
     margin-top: -115px;
-    left: 50%;
+    left: 51%;
     margin-left: -70px;
     text-align: center;
     z-index: 8;
@@ -465,7 +491,7 @@ body {
 .greybackground {
     position: relative;
     max-width: 1300px;
-    width: 126.5%;
+    width: 100%;
     height: 450px;
     margin-bottom: 50px;
     padding-bottom: 150px;
@@ -549,7 +575,7 @@ body {
 .grouper {
     position: relative;
     padding: 83px 0px 0px 42px;
-    max-width: 1011px;
+    max-width: 350px;
     width: 100%;
     font-size: 25px;
     font-family: terminal_dosismedium;
@@ -561,7 +587,7 @@ body {
     position: relative;
     margin-left: 35px;
     max-width: 1011px;
-    width: 100%;
+    width: 50%;
     font-size: 25px;
     text-transform: uppercase;
 }
@@ -572,18 +598,19 @@ body {
 
 .sponsor {
     position: relative;
-    float: left;
     margin-top: 50px;
     margin-left: 25px;
-    margin-right: 20px;
+    margin-right: 30px;
     margin-bottom: 10px;
     padding: 10px 10px 0px 10px;        
     background-color: #FFFFFF;
     padding-bottom: 4px;
+    display: inline-block;
 }
 
 .map {
-    margin-top: -16px;
+    position: absolute;
+    margin-top: -50px;
     -webkit-filter: grayscale(90%);
     width: 100%;
     height: 451px;
@@ -592,11 +619,11 @@ body {
 
 .maptext {
     position: relative;
-    margin-top: -430px;
+    margin-top: 0px;
     margin-left: 90px;
     list-style: none;
     max-width: 1011px;
-    width: 100%;;
+    width: 75%;
     pointer-events: none;
 }
 
@@ -644,7 +671,8 @@ body {
 }
 
 .maplinks {
-    margin-top: 75px;
+    margin-top: 175px;
+    margin-left: 20px;
     margin-bottom: -200px;
     color: #7F0094;
     text-decoration: none;
@@ -660,6 +688,7 @@ body {
 
 .contacttitle {
     margin-top: 250px;
+    margin-left: 20px;
     font-family: terminal_dosismedium;
     font-size: 25px;
     text-transform: uppercase;
@@ -667,7 +696,8 @@ body {
 
 .person {
     margin-top: 35px;
-    width: 100%;
+    margin-left: 20px;
+    width: 85%;
     max-width: 1300px;
     font-family: terminal_dosismedium;
     font-size: 25px;
@@ -687,8 +717,8 @@ body {
 
 .contactbuttons {
     position: absolute;
-    margin-top: -50px;
-    left: 80%;
+    margin-top: -40px;
+    left: 77%;
 }
 
 .helfer {
@@ -787,10 +817,15 @@ body {
 }
 
 .emailtitle {
+    margin-left: 20px;
     font-family: terminal_dosismedium;
     font-size: 25px;
     text-transform: uppercase;
     padding-bottom: 35px;
+}
+
+.emailall {
+    margin-left: 20px;
 }
 
 .emailsingle {
@@ -815,17 +850,19 @@ body {
     margin-top: 300px;
     margin-bottom: 20px;
     width: 100%;
+    max-width: 1300px;
     background-color: #000000;
 }
 
 #helfer-form, #goenner-form, #presse-form, #sponsoring-form {
     display: none;
+    margin-left: 20px;
 }
 
 .mailclose {
     position: absolute;
-    margin-top: 50px;
-    left: 82%;
+    margin-top: 0px;
+    left: 80%;
     cursor: pointer;
 }
 
@@ -846,7 +883,8 @@ body {
 
 .formular {
     float: left;
-    width: 1011px;
+    max-width: 1011px;
+    width: 100%;
     text-transform: uppercase;
 }
 
@@ -964,13 +1002,48 @@ label {
     text-decoration: none;
 }
 
+.bandinfo {
+    padding: 0 70px;
+    position: relative;
+    background-color: #000000;
+}
+
+.bandsingleimg {
+    position: relative;
+    margin-top: 70px;
+    margin-left: 70px;
+}
+
+.bandsingletext {
+    float: left;
+    width: 70%;
+}
+
+.bandsingleinfo {
+    float: left;
+    width: 30%;
+}
+
+.bandname {
+    margin-top: 25px;
+    color: #06ddb7;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.bandhr {
+    margin-top: 5px;
+    border: 1px solid white;
+    width: 200px;
+}
+
+
+.bandtext {
+    margin-top: -5px;
+    color: #000000;
+}
+
 @media only screen and (max-width: 1320px) {
-    body {
-        overflow-x: hidden;
-    }
-    .regionwhite {
-        padding-left: 10px;
-    }
 
     .map {
         margin-left: -10px;
@@ -978,51 +1051,106 @@ label {
 }
 
 @media only screen and (max-width: 1300px) {
-    .socialicons {
-        position: fixed;
-        margin-top: 20px;
-        right: 3%;
+    
+    .navigation a {
+        margin-left: 45px;
     }
 
+}
+
+@media only screen and (max-width: 1207px) {
+    
+    .bandsingleall {
+        margin-left: 19%;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .maplinks {
+        margin-top: 140px;
+    }
+}
+
+@media only screen and (max-width: 1130px) {
+
+    .maplinks {
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 1065px) {
+    
+    .navigation a {
+        margin-left: 35px;
+    }
+
+}
+
+@media only screen and (max-width: 1045px) {
+    
+    .emailsingle {
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 1014px) {
+
+    .maplinks {
+        margin-top: 50px;
+    }
 }
 
 @media only screen and (max-width: 995px) {
     .sponsor {
         margin-right: 0px;
     }
-}  
+}   
 
-
-@media only screen and (max-width: 992px) {
-    body {
-        overflow-x: hidden;
+@media only screen and (max-width: 990px) {
+    
+    .emailsingle {
+        margin-right: 0px;
     }
-
-    .mood {
-        position: relative;
-        width: 100%;
-    }
-
-}  
+}
 
 @media only screen and (max-width: 978px) {
-
-    body {
-        overflow-x: hidden;
-    }
 
     .bandsingleall {
         position: relative;
         left: 50%;
         margin-left: -350px;        
-        width: 100%;
+        width: 700px;
     }
 }
 
-@media only screen and (max-width: 964px) {
+
+@media only screen and (max-width: 948px) {
+
+    .maplinks {
+        margin-top: 90px;
+    }
+}
+
+@media only screen and (max-width: 944px) {
+
+    .maptext {
+        top: -35px;
+        left: -20px;
+        line-height: 1.2;
+    }
     
-    .emailsingle {
-        margin-right: 20px;
+    .maptitle {
+        font-size: 45px;
+    }
+
+    .mapinfo, .mapaddress, .mapmail {
+        font-size: 30px;
+    }
+
+    .mappc {
+        font-size: 20px;
     }
 }
 
@@ -1033,11 +1161,11 @@ label {
     }
 
     .headerbg {
-        height: 260px;
+        height: 200px;
     }
 
     .navigation {
-        margin-top: 180px;
+        margin-top: 120px;
     }
 
     .navhidden {
@@ -1049,14 +1177,48 @@ label {
     }
 
     .hrlefttop {
-        max-width: 915px;
+        width: 915px;
     }
 
     .hrleftdown {
-        max-width: 915px;
+        width: 915px;
+    }
+
+    .mood {
+        top: 200px;
+    }
+
+    .slider-newsdots {
+        margin-top: -90px;
+    }
+
+    .navigation a {
+        margin-left: 65px;
+    }
+
+    #bands h2 {
+        margin-top: -55px;
+    }
+
+    .regiongrey {
+        margin-top: 45px;
     }
 
 }
+
+@media only screen and (max-width: 904px) {
+    .emailsingle {
+        margin-right: 109px;
+    }
+}
+
+@media only screen and (max-width: 881px) {
+    
+    .newstitle {
+        font-size: 60px;
+    }
+}
+
 
 @media only screen and (max-width: 845px) {
     
@@ -1065,45 +1227,12 @@ label {
     }
 }
 
-@media only screen and (max-width: 755px) {
-    
-    .newstitle {
-        font-size: 55px;
-    }
-}
-
-@media only screen and (max-width: 700px) {
-    
-    .newstitle {
-        font-size: 45px;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    
-    .newstitle {
-        font-size: 35px;
-        max-width: 500px;
-    }
-}
-
-@media only screen and (max-width: 515px) {
-    
-    .newstitle {
-        font-size: 33px;
-        max-width: 500px;
-    }
-}
-
 @media only screen and (max-width: 838px) {
     
-    .emailsingle {
-        margin-right: 109px;
-    }
 
     .contactbuttons {
-        margin-top: 0px;
-        left: 47%;
+        margin-top: -10px;
+        left: 57%;
     }
 }
 
@@ -1121,10 +1250,41 @@ label {
     }
 }
 
+@media only screen and (max-width: 800px) {
+
+    .maplinks {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 755px) {
+    
+    .newstitle {
+        font-size: 55px;
+    }
+}
+
 @media only screen and (max-width: 738px) {
 
     .navigation a {
         margin-left: 43px;
+    }
+}
+
+@media only screen and (max-width: 726px) {
+
+    .formfield {
+        width: 320px;
+    }
+
+    .button {
+        margin-left: 224px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    
+    .newstitle {
+        font-size: 45px;
     }
 }
 
@@ -1133,145 +1293,7 @@ label {
     .navigation a {
         margin-left: 35px;
     }
-}
 
-@media only screen and (max-width: 648px) {
-
-    .navigation a {
-        margin-left: 28px;
-    }
-}
-
-@media only screen and (max-width: 613px) {
-
-    .navigation a {
-        font-size: 20px;
-        margin-left: 40px;
-    }
-
-    .headerbg {
-        height: 252px;
-    }
-}
-
-@media only screen and (max-width: 569px) {
-
-    .navigation a {
-        font-size: 20px;
-        margin-left: 32px;
-    }
-}
-
-@media only screen and (max-width: 529px) {
-
-    .navigation a {
-        font-size: 20px;
-        margin-left: 27px;
-    }
-}
-
-@media only screen and (max-width: 504px) {
-
-    .navigation a {
-        font-size: 20px;
-        margin-left: 22px;
-    }
-}
-
-@media only screen and (max-width: 479px) {
-
-    .navigation a {
-        font-size: 19px;
-        margin-left: 22px;
-    }
-
-    .headerbg {
-        height: 249px;
-    }
-}
-
-@media only screen and (max-width: 460px) {
-
-    .navigation a {
-        font-size: 19px;
-        margin-left: 18px;
-    }
-}
-
-@media only screen and (max-width: 440px) {
-
-    .navigation a {
-        font-size: 18px;
-        margin-left: 18px;
-    }
-}
-
-@media only screen and (max-width: 420px) {
-
-    .navigation a {
-        font-size: 16px;
-        margin-left: 18px;
-    }
-}
-
-@media only screen and (max-width: 390px) {
-
-    .navigation a {
-        font-size: 16px;
-        margin-left: 14px;
-    }
-}
-
-@media only screen and (max-width: 370px) {
-
-    .navigation a {
-        font-size: 15px;
-        margin-left: 14px;
-    }
-}
-
-@media only screen and (max-width: 355px) {
-
-    .navtoggleup {
-        position: relative;
-        display: inline-block;
-        margin-left: 100px;
-    }
-
-    .navtoggledown {
-        position: relative;
-        display: none;
-        margin-left: 100px;
-    }
-
-    .navigation a {
-        display: none;
-        margin-left: 60px;
-    }
-
-    .navresponsive {
-        margin-top: -22px;
-    }
-
-    .hrleftdown {
-        margin-top: 38px;
-    }
-}
-
-@media only screen and (max-width: 726px) {
-
-
-
-    .formfield {
-        width: 600px;
-    }
-
-    .button {
-        margin-left: 224px;
-    }
-}
-
-@media only screen and (max-width: 687px) {
     .sponsor {
         margin-right: 35px;
     }
@@ -1282,7 +1304,7 @@ label {
         display: block;
     }
 
-    .contactbuttons {
+   /* .contactbuttons {
         margin-top: 155px;
 
     }
@@ -1321,27 +1343,84 @@ label {
         margin-top: -158px;
         margin-left: 24px;
         border-radius: 45px;
-    }
+    }*/
 
 }
 
-@media only screen and (max-width: 650px) {
 
-
-    body {
-        overflow-x: hidden;
-    }
+@media only screen and (max-width: 709px) {
 
     .bandsingleall {
         position: relative;
         left: 50%;
         margin-left: -190px;
-        width: 100%;
+        width: 79%;
+    }
+}
+
+@media only screen and (max-width: 668px) {
+    
+    .maptext {
+        line-height: 0.9;
+    }
+
+    .maptitle {
+        font-size: 40px;
+    }
+
+    .mapinfo, .mapaddress, .mapmail {
+        font-size: 25px;
+    }
+
+    .mappc {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+
+    .headerbg {
+        height: 157px;
+    }
+
+    .navigation {
+        margin-top: 85px;
+    }
+
+    .logo {
+        margin-left: -30px;
+    }
+
+    .logo img {
+        width: 90%;
+    }
+
+    .mood {
+        top: 165px;
+    }
+
+    #bands h2 {
+        margin-top: -50px;
+    }
+
+    .regiongrey {
+        margin-top: 10px;
+    }
+
+    .slider-newsdots {
+        margin-top: -130px;
+    }
+}
+
+@media only screen and (max-width: 648px) {
+
+    .navigation a {
+        margin-left: 28px;
     }
 }
 
 @media only screen and (max-width: 640px) {
-
+/*
     .helfercircle {
         position: absolute;
         width: 110px;
@@ -1369,20 +1448,50 @@ label {
         height: 90px;
         border-radius: 45px;
     }
+    */
 }
 
 @media only screen and (max-width: 613px) {
 
-    body {
-        overflow-x: hidden;
+    .navigation a {
+        font-size: 20px;
+        margin-left: 40px;
+    }
+
+    .mood {
+        top: 157px;
+    }
+
+    .headerbg {
+        height: 157px;
+    }
+
+    #bands h2 {
+        margin-top: -50px;
+    }
+
+    .regiongrey {
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .newstitle {
+        font-size: 35px;
+        max-width: 500px;
+    }
+}
+
+@media only screen and (max-width: 569px) {
+
+    .navigation a {
+        font-size: 20px;
+        margin-left: 32px;
     }
 }
 
 @media only screen and (max-width: 530px) {
-
-    body {
-        overflow-x: hidden;
-    }
 
     .navigationleft {
         margin-left: 0px;
@@ -1390,9 +1499,25 @@ label {
     }
 
     .sponsor {
-        margin-right: 5px;
+        margin-right: -25px;
     }
 
+}
+
+@media only screen and (max-width: 529px) {
+
+    .navigation a {
+        font-size: 20px;
+        margin-left: 27px;
+    }
+}
+
+@media only screen and (max-width: 515px) {
+    
+    .newstitle {
+        font-size: 33px;
+        max-width: 500px;
+    }
 }
 
 @media only screen and (max-width: 504px) {
@@ -1401,13 +1526,33 @@ label {
         display: block;
     }
 
+    .navigation a {
+        font-size: 20px;
+        margin-left: 22px;
+    }
+}
+
+@media only screen and (max-width: 498px) {
+    
+    .maptext {
+        line-height: 0.9;
+        left: -50px;
+    }
+
+    .maptitle {
+        font-size: 30px;
+    }
+
+    .mapinfo, .mapaddress, .mapmail {
+        font-size: 20px;
+    }
+
+    .mappc {
+        font-size: 15px;
+    }
 }
 
 @media only screen and (max-width: 482px) {
-
-    body {
-        overflow-x: hidden;
-    }
 
     .navigationleft {
         margin-left: 0px;
@@ -1416,14 +1561,249 @@ label {
 
 }
 
-@media only screen and (max-width: 441px) {
+@media only screen and (max-width: 479px) {
 
-    .emailsingle {
+    .navigation a {
+        font-size: 19px;
+        margin-left: 22px;
+    }
+
+    .headerbg {
+        height: 154px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+
+    .navigation a {
+        font-size: 19px;
+        margin-left: 18px;
+    }
+
+    .mood {
+        top: 155px;
+    }
+}
+
+@media only screen and (max-width: 446px) {
+    
+    .maptext {
+        line-height: 0.7;
+        left: -50px;
+    }
+
+    .maptitle {
+        font-size: 25px;
+    }
+
+    .mapinfo, .mapaddress, .mapmail {
         font-size: 15px;
     }
 
+    .mappc {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 441px) {
+
+    .emailsingle {
+        font-size: 12px;
+        width: 250px;
+    }
+
     .contactbuttons {
-        margin-top: 115px;
+        margin-top: 50px;
+        left: 53%;
+    }
+
+    .hrend {
+        margin-top: 330px;
+    }
+
+    .sponsor img {
+        width: 110px;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+
+    .navigation a {
+        font-size: 18px;
+        margin-left: 18px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+
+    .contactbuttons {
+        left: 81%;
+    }
+
+    .helfercircle {
+        width: 80px;
+        height: 80px;
+        margin-top: -78px;
+        left: -40%;
+    }
+
+    .helfer {
+        margin-top: 28px;
+        left: 13%;
+        font-size: 20px;
+    }
+
+    .goennercircle {
+        width: 80px;
+        height: 80px;
+        margin-top: 10px;
+        left: -40%;
+    }
+
+    .goenner {
+        margin-top: 29px;
+        left: 9%;
+        font-size: 20px;
+    }
+
+    .sponsoringcircle {
+        width: 80px;
+        height: 80px;
+        margin-top: 92px;
+        left: -36%;
+    }
+
+    .sponsoring {
+        margin-top: 27px;
+        left: 6%;
+        font-size: 13px;
+    }
+
+    .pressecircle {
+        width: 80px;
+        height: 80px;
+        margin-top: -165px;
+        left: -38%;
+    }
+
+    .presse {
+        margin-top: 30px;
+        text-align: center;
+        left: 12%;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+
+    .navigation a {
+        font-size: 16px;
+        margin-left: 18px;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+
+    .navigation a {
+        font-size: 16px;
+        margin-left: 14px;
+    }
+}
+
+@media only screen and (max-width: 381px) {
+
+    .maplinks {
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+
+    .navigation a {
+        font-size: 15px;
+        margin-left: 14px;
+    }
+}
+
+@media only screen and (max-width: 357px) {
+
+    .socialicons img {
+        width: 14px;
+    }
+
+    .navtoggleup {
+        position: relative;
+        display: inline-block;
+        margin-left: 100px;
+    }
+
+    .navtoggledown {
+        position: relative;
+        display: none;
+        margin-left: 100px;
+    }
+
+    .navigation {
+        margin-top: 50px;
+    }
+
+    .navigation a {
+        display: none;
+        margin-left: 60px;
+    }
+
+    .navresponsive {
+        margin-top: -22px;
+    }
+
+    .hrleftdown {
+        margin-top: 38px;
+    }
+
+    .headerbg {
+        height: 119px;
+    }
+
+    .logo {
+        position: absolute;
+        top: 1%;
+        left: 50%;
+        margin-left: -25px;
+        max-width: 65px;
+        width: 122%;
+    }
+
+    .socialicons {
+        width: 26%;
+        right: 0%;
+    }
+
+    .mood {
+        top: 119px;
+    }
+
+    .regiongrey {
+        margin-top: -136px;
+    }
+}
+
+@media only screen and (max-width: 353px) {
+    
+    .maptext {
+        line-height: 0.5;
+        left: -50px;
+    }
+
+    .maptitle {
+        font-size: 20px;
+    }
+
+    .mapinfo, .mapaddress, .mapmail {
+        font-size: 12px;
+    }
+
+    .mappc {
+        font-size: 10px;
     }
 }
 
@@ -1437,10 +1817,6 @@ label {
 }
 
 @media only screen and (max-width: 323px) {
-
-    body {
-        overflow-x: hidden;
-    }
 
     .bandsingle img {
         width: 100%;
@@ -1467,10 +1843,6 @@ label {
 
 @media only screen and (max-width: 294px) {
 
-    body {
-        overflow-x: hidden;
-    }
-    
     .bandsingleall {
         position: relative;
         left: 50%;
@@ -1500,7 +1872,7 @@ label {
     }
 
     .sponsor img {
-        width: 150px;
+        width: 100px;
     }
 
     .back {
@@ -1518,11 +1890,6 @@ label {
     }
 }
 
-@media only screen and (max-width: 282px) {
-
-    .maplinks {
-        font-size: 15px;
-    }
 
 @media only screen and (max-width: 221px) {
 
@@ -1530,5 +1897,4 @@ label {
         margin-right: 0px;
         font-size: 14px;
     }
-
 }

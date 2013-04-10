@@ -17,11 +17,9 @@ $(document).ready(function() {
             var fontSize = (width / 25) + 'px';
             $map.height($map.width() * mapAspectRatio);
             $('body').css("font-size", fontSize);
-            $('.moodtitle').css("font-size", fontSize);
 
         } else {
             $('body').css("font-size", initSize);
-            $('.moodtitle').css("font-size", initSize);
         }
     }
 });
