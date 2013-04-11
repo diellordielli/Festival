@@ -137,7 +137,7 @@ $(document).ready(function() {
         $('.navtoggleup').hide();
         $('.navtoggledown').show();
         $('.navigation a').css({'display': 'block'});
-        $('.headerbg').css({'height':'196px'});
+        $('.headerbg').css({'height':'179px'});
         $('.hrleftdown').css({'margin-top':'10px'});
     });
 
@@ -146,21 +146,25 @@ $(document).ready(function() {
         $('.navtoggleup').show();
         $('.navtoggledown').hide();
         $('.navigation a').css({'display': 'inline'});
-        $('.headerbg').css({'height':'121px'});
+        $('.headerbg').css({'height':'104px'});
         $('.hrleftdown').css({'margin-top':'40px'});
     });
 
     $('.navigation a').on('click', function(event) {
-        if ($(window).width() < 357) {
+        if ($(window).width() <= 357) {
            $('.navtoggledown').trigger('click');
         }
     });
 
 
     $(window).resize(function() {
-        if ($(window).width() > 357) {
+        if ($(window).width() >= 357) {
             $('.navigation a').css({'display': 'inline'});
             $('.navtoggleup').css({'display': 'none'});
+            $('.navtoggledown').css({'display': 'none'});
+        } else if ($(window).width() < 357) {
+            $('.navigation a').css({'display': 'block'});
+            $('.navtoggleup').css({'display': 'inline'});
             $('.navtoggledown').css({'display': 'none'});
         }
     });
