@@ -595,7 +595,7 @@ body {
     overflow: hidden;
 }
 
-.sponsor {
+.sponsor, .sponsorks {
     position: relative;
     margin-top: 50px;
     margin-left: 25px;
@@ -604,7 +604,21 @@ body {
     padding: 10px 10px 0px 10px;        
     background-color: #FFFFFF;
     padding-bottom: 4px;
-    display: inline-block;
+    display: block;
+    float: left;
+}
+
+.sponsorouter {
+    position: relative;
+    max-width: 1300px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sponsorinner {
+    position: relative;
+    left: 0px;
+    background: #FFFFFF;
 }
 
 .map {
@@ -1422,38 +1436,6 @@ label {
     }
 }
 
-@media only screen and (max-width: 640px) {
-/*
-    .helfercircle {
-        position: absolute;
-        width: 110px;
-        height: 110px;
-        border-radius: 55px;
-    }
-
-    .goennercircle {
-        position: absolute;
-        width: 110px;
-        height: 110px;
-        border-radius: 55px;  
-    }
-
-    .sponsoringcircle {
-        position: absolute;
-        width: 130px;
-        height: 130px;
-        border-radius: 65px;
-    }
-
-    .pressecircle {
-        position: absolute;
-        width: 90px;
-        height: 90px;
-        border-radius: 45px;
-    }
-    */
-}
-
 @media only screen and (max-width: 613px) {
 
     .navigation a {
@@ -1484,6 +1466,8 @@ label {
         font-size: 35px;
         max-width: 500px;
     }
+
+
 }
 
 @media only screen and (max-width: 569px) {
@@ -1744,13 +1728,13 @@ label {
 
     .navtoggleup {
         position: relative;
-        display: inline-block;
+        display: none;
         margin-left: 100px;
     }
 
     .navtoggledown {
         position: relative;
-        display: none;
+        display: inline-block;
         margin-left: 100px;
     }
 

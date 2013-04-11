@@ -133,40 +133,44 @@ $(document).ready(function() {
     }
 
     $('.navtoggleup').on('click', function(event) {
-        $('.navigation a').fadeIn(10);
+        $('.navigation a').fadeOut(10);
         $('.navtoggleup').hide();
         $('.navtoggledown').show();
-        $('.navigation a').css({'display': 'block'});
-        $('.headerbg').css({'height':'179px'});
-        $('.hrleftdown').css({'margin-top':'10px'});
+        $('.navigation a').css({'display': 'none'});
+        $('.headerbg').css({'height':'94px'});
+        $('.hrleftdown').css({'margin-top':'30px'});
     });
 
     $('.navtoggledown').on('click', function(event) {
-        $('.navigation a').fadeOut(10);
+        $('.navigation a').fadeIn(10);
         $('.navtoggleup').show();
         $('.navtoggledown').hide();
-        $('.navigation a').css({'display': 'inline'});
-        $('.headerbg').css({'height':'104px'});
-        $('.hrleftdown').css({'margin-top':'40px'});
+        $('.navigation a').css({'display': 'block'});
+        $('.headerbg').css({'height':'175px'});
+        $('.hrleftdown').css({'margin-top':'5px'});
     });
 
     $('.navigation a').on('click', function(event) {
         if ($(window).width() <= 357) {
-           $('.navtoggledown').trigger('click');
+           $('.navtoggleup').trigger('click');
         }
     });
 
-
-    $(window).resize(function() {
+    var checkResponsiveNav = function() {
         if ($(window).width() >= 357) {
-            $('.navigation a').css({'display': 'inline'});
-            $('.navtoggleup').css({'display': 'none'});
-            $('.navtoggledown').css({'display': 'none'});
+            $('.headerbg').attr('style', '');
+            $('.navigation a').attr('style', '');
+            $('.navtoggleup').attr('style', '');
+            $('.navtoggledown').attr('style', '');
+            $('.hrleftdown').attr('style', '');
         } else if ($(window).width() < 357) {
             $('.navigation a').css({'display': 'block'});
             $('.navtoggleup').css({'display': 'inline'});
             $('.navtoggledown').css({'display': 'none'});
         }
-    });
+    };
+
+    $(window).resize(checkResponsiveNav);
+    checkResponsiveNav();
 
 });

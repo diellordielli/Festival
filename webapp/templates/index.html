@@ -164,9 +164,24 @@
   </div>
   {% regroup sponsors by get_sponsor_category as sponsors_by_category %}
   {% for category in sponsors_by_category %}
+
     <div class="groupersponsors">
       {{ category.grouper }}
     </div>
+        {% if forloop.counter > 1 %}
+          <!-- kleine schwester code -->
+    <div class="sponsorouter">
+      <div class="sponsorinner">
+          {% for sponsor in category.list %}
+              <div class="sponsorks">
+                {% if sponsor.logo %}
+                  <a href="{{ sponsor.link }}" target="_blank"><img src = "{{ sponsor.logo|thumbnail:"180x9999" }}"></a>
+                {% endif %}
+              </div>
+          {% endfor %}
+      </div>
+    </div>    
+    {% else %}
     <div class="sponsorbackground">
       {% for sponsor in category.list %}
         <div class="sponsor">
@@ -177,6 +192,7 @@
       {% endfor %}
     </div>
     <br clear="both">
+    {% endif %}
   {% endfor %}
 </div>
   <div id="kontakt">
