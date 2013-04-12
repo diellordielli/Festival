@@ -3,7 +3,7 @@
 {% block content %}
     <div class="mood">
       {% if mood.image %}
-        <img src = "{{ mood.image.url|cropscale:"1300x400" }}">
+        <img src = "{{ mood.image.file.name|cropscale:"1300x400" }}">
       {% endif %}
       <div class="moodtitle">
         {{ mood.description }}<br>
@@ -85,12 +85,12 @@
             <div class="flipper">
               <div class="front">
                 {% if band.image %}
-                  <a class="fancybox" rel="group" href={{ band.get_absolute_url }}>
+                  <a href={{ band.get_absolute_url }}>
                     <img src = "{{ band.image|cropscale:"271x181" }}">
                   </a>
                 {% endif %}
               </div>
-              <a class="fancybox" rel="group" href={{ band.get_absolute_url }}>
+              <a href={{ band.get_absolute_url }}>
               <div class="back">
                 <div class="bandname">
                   {{ band.name }}
@@ -109,6 +109,8 @@
         </div>
       {% endfor %}
       <br clear="both">
+      <div class="ajax">
+      </div>
   {% endfor %}
       <br clear="both">
   </div>

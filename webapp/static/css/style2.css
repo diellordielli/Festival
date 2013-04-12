@@ -1018,7 +1018,6 @@ label {
 .bandinfo {
     padding: 0 70px;
     position: relative;
-    background-color: #000000;
 }
 
 .bandsingleimg {
@@ -1027,14 +1026,20 @@ label {
     margin-left: 70px;
 }
 
+.bandsingleimg img {
+    max-width: 923px;
+    width: 100%;
+}
+
 .bandsingletext {
     float: left;
-    width: 70%;
+    width: 68%;
 }
 
 .bandsingleinfo {
     float: left;
-    width: 30%;
+    width: 27%;
+    margin-top: 50px;
 }
 
 .bandname {
@@ -1049,11 +1054,39 @@ label {
     border: 1px solid white;
     width: 200px;
 }
+.hrvertical {
+    position: absolute;
+    float: left;
+    border-right: 1px solid #CCCCCC;
+    height: 100%;
+    width: 1px;
+    margin-top: -25px;
+}
 
+.hrhorizontal {
+    width: 79%;
+    margin-left: 67px;
+}
 
 .bandtext {
     margin-top: -5px;
     color: #000000;
+}
+
+.bandclose {
+    float: right;
+    margin-top: -5px;
+    margin-right: 45px;
+    cursor: pointer;
+}
+
+.innerband {
+    margin-left: 20px;
+    width: 140%;
+}
+
+.ajax {
+    margin-left: -25px;
 }
 
 @media only screen and (max-width: 1320px) {

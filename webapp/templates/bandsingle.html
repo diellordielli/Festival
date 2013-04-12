@@ -1,9 +1,11 @@
-{% extends "base.html" %}
 {% load feincms_thumbnails %}
 {% block band %}
+    <div class="bandclose">
+      <img src="{{ STATIC_URL }}img/x.png" />
+    </div>
     <div class="bandsingleimg">
       {% if band.image %}
-        <img src = "{{ band.image|cropscale:"869x343" }}">
+        <img src = "{{ band.image|cropscale:"923x343" }}">
       {% endif %}</br></br>
     </div>
     <br clear="both">
@@ -13,17 +15,19 @@
         {{ band.name }}</br></br>
         {{ band.description }}</br></br>
       </div>
-      <hr class="hr5">
       <div class="bandsingleinfo">
-        {% for year in band.bandyear_set.all %}
-            WO: {{ year.get_stage_display }}</br></br>
-            WANN: {{ year.time|date:"D, d M, H:i" }} Uhr</br></br>
-        {% endfor %}
-        GENRE: {{ band.genre }}
+        <hr class="hrvertical">
+          <div class="innerband">
+            {% for year in band.bandyear_set.all %}
+              WO: {{ year.get_stage_display }}</br></br>
+              WANN: {{ year.time|date:"D, d M, H:i" }} Uhr</br></br>
+            {% endfor %}
+            GENRE: {{ band.dotted_genres }}
+          </div>
       </div>
       <br clear="both">
     </div>
   <br clear="both">
-  <hr class="hr6">
+  <hr class="hrhorizontal">
 {% endblock %}
 
