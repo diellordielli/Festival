@@ -71,6 +71,7 @@ body {
 
 .headerbg {
     position: fixed;
+    margin-left: -2px;
     height: 140px;
     max-width: 1310px;
     width: 100%;
