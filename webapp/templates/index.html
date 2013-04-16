@@ -3,7 +3,7 @@
 {% block content %}
     <div class="mood">
       {% if mood.image %}
-        <img src = "{{ mood.image.file.name|cropscale:"1300x400" }}">
+        <img src = "{{ mood.image.file|cropscale:"1300x400" }}">
       {% endif %}
       <div class="moodtitle">
         {{ mood.description }}<br>
@@ -109,7 +109,7 @@
         </div>
       {% endfor %}
       <br clear="both">
-      <div class="ajax">
+      <div class="ajaxbands">
       </div>
   {% endfor %}
       <br clear="both">
@@ -133,24 +133,24 @@
         <img src="{{ STATIC_URL }}img/navigation-right.png" />
       </a>
     </div>
-  <div class="galleryall">
-    <div class="greybackground container">
-      <div class="scroller">
-        {% for image in yearcovers %}
-          <div class="gallery">
-              {% if image.image %}
-                <a href="{{ image.year.get_gallery_url }}"><img src = "{{ image.image|cropscale:"872x379" }}"></a>
-              {% endif %}
-              <div class="galleryyear">
-                <p>Stolze Openair {{ image.year }}</p>
-              </div>
-          </div>
-        {% endfor %}
-        {% for image in yearcovers %}
-        {% endfor %}
-        <br clear="both">
+    <div class="galleryall">
+      <div class="greybackground container">
+        <div class="scroller">
+          {% for image in yearcovers %}
+            <div class="gallery">
+                {% if image.image %}
+                  <a href="{{ image.year.get_gallery_url }}"><img src = "{{ image.image|cropscale:"872x379" }}"></a>
+                {% endif %}
+                <div class="galleryyear">
+                  <p>Stolze Openair {{ image.year }}</p>
+                </div>
+            </div>
+          {% endfor %}
+          {% for image in yearcovers %}
+          {% endfor %}
+          <br clear="both">
+        </div>
       </div>
-    </div>
     </div>
   </div>
   <br clear="both">
