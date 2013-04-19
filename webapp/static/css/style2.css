@@ -69,6 +69,10 @@ body {
     right: 3%;
 }
 
+.socialicons a {
+    text-decoration: none;
+}
+
 .headerbg {
     position: fixed;
     margin-left: -2px;
@@ -196,6 +200,7 @@ body {
     left: 48%;
     width: 91px;
     height: 91px;
+    display: none;
 }
 
 .buttontitle {
@@ -519,7 +524,7 @@ body {
 
 .greybackground3 {
     float: right;
-    right: 0;
+    right: 0px;
 }
 
 .greybackground4, .greybackground5 {
@@ -542,7 +547,7 @@ body {
 
 .greybackground5 {
     float: right;
-    right: 0;
+    right: 0px;
 }
 
 .gallery {
@@ -719,6 +724,11 @@ body {
     padding-bottom: 50px;
 }
 
+.person a {
+    text-decoration: none;
+    color: #06ddb7;
+}
+
 .personsingle {
     float: left;
     margin-right: 48px;
@@ -782,9 +792,9 @@ body {
 
 .sponsoring {
     position: absolute;
-    margin-top: 40px;
+    margin-top: 50px;
     text-align: center;
-    left: 7%;
+    left: 6%;
     font-size: 23px;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -826,6 +836,30 @@ body {
     left: -15%;
     border-radius: 45px;
     background-color: #dcdcdc;
+    cursor: pointer;    
+}
+
+.newslettertext {
+    position: absolute;
+    margin-top: 28px;
+    left: 10%;
+    font-size: 38px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    line-height: 43px;
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    text-decoration: none;
+}
+
+.newslettercircle {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    left: -50%;
+    border-radius: 75px;
+    background-color: #7F0094;
     cursor: pointer;    
 }
 
@@ -939,6 +973,14 @@ label {
     -moz-border-radius:  20px;
 }
 
+.helfercomment, .goennercomment {
+    margin-top: 10px;
+    border: none;
+    background: #DADADC;
+    -webkit-border-radius: 20px;
+    -moz-border-radius:  20px;
+}
+
 .submit input {
     width: 85px;
     padding: 0px;
@@ -1023,12 +1065,10 @@ label {
 .bandsingleimg {
     position: relative;
     margin-top: 70px;
-    margin-left: 70px;
 }
 
 .bandsingleimg img {
-    max-width: 923px;
-    width: 100%;
+    width: 923px;
 }
 
 .bandsingletext {
@@ -1084,11 +1124,32 @@ label {
 
 .innerband {
     margin-left: 20px;
-    width: 140%;
+    width: 70%;
 }
 
 .ajaxbands {
+    position: relative; 
     margin-left: -25px;
+}
+
+.ajaxgallery {
+    position: relative;
+    display: block;
+    max-width: 1300px;
+    width: 100%;
+    left: 3%;
+}
+
+.gallerysingle {
+    position: relative;
+    float: left;
+    margin-top: 85px;
+    margin-left: 30px;
+    margin-bottom: -50px;
+    width: 271px;
+    height: 181px;
+    padding: 10px 30px 10px 0px;        
+    background-color: #FFFFFF;
 }
 
 @media only screen and (max-width: 1320px) {
@@ -1199,6 +1260,14 @@ label {
 
     .mappc {
         font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 923px) {
+
+    .bandsingleimg img {
+        max-width: 923px;
+        width: 100%; 
     }
 }
 
@@ -1314,6 +1383,11 @@ label {
     .newstitle {
         font-size: 55px;
     }
+
+    .onlycategory {
+        display: block;
+    }
+
 }
 
 @media only screen and (max-width: 738px) {
@@ -1352,9 +1426,6 @@ label {
 }
 
 @media only screen and (max-width: 679px) {
-    .onlycategory {
-        display: block;
-    }
 
    /* .contactbuttons {
         margin-top: 155px;
@@ -1720,6 +1791,20 @@ label {
         margin-top: 30px;
         text-align: center;
         left: 12%;
+        font-size: 20px;
+    }
+
+    .newslettercircle {
+        width: 80px;
+        height: 80px;
+        margin-top: 94px;
+        left: -35%;
+    }
+
+    .newslettertext {
+        margin-top: 17px;
+        left: 13%;
+        line-height: 22px;
         font-size: 20px;
     }
 }

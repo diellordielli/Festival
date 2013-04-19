@@ -1,9 +1,5 @@
 $(document).ready(function() {
 
-    $('.bandclose img').on('click', function(event){
-        $('.ajax').css({'display': 'none'});
-    });
-
     $('.helfercircle').on('click', function(event) {
         $('#goenner-form').hide();
         $('#presse-form').hide();

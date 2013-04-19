@@ -24,6 +24,9 @@
             {% endfor %}
             GENRE: {{ band.dotted_genres }}
           </div>
+          {% for bandlinks in bandlinks %}
+            {{ bandlinks.link }}
+          {% endfor %}
       </div>
       <br clear="both">
     </div>

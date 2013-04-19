@@ -68,8 +68,10 @@ def get_gallery(request, year):
     year = Year.objects.get(year=year)
     images = year.image_set.all()
     thisyears = Year.objects.filter(year=now.year)
+    bandlinks = BandLinks.objects.all()
 
     return render(request, 'gallery.html', {
         'images': images,
         'thisyears': thisyears,
+        'bandlinks': bandlinks,
     })

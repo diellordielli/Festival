@@ -1,14 +1,21 @@
 $(document).ready(function(){
-    $(".gallery img").click(function(event){
+    $(".gallery a").click(function(event){
         event.preventDefault();
 
         var $this = $(this),
             url = $(this).attr('href');
 
         $.get(url, function(data){
-            var closestAjax = $this.closest('.bandsingle').nextAll('.ajaxgallery').first();
+            var galleryContent = $('.ajaxgallery');
            
-            closestAjax.append(data).hide().slideDown(300);
+            galleryContent.html(data).hide().slideDown(300);
+
+            $('.bandclose').on('click', function(event){
+                galleryContent.slideUp(300);
+            });
         });
     });
+
+    $(".fancybox").fancybox();
+
 });

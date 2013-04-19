@@ -161,6 +161,8 @@
     </div>
 </div>
 <div class="regionwhite">
+  <div class="ajaxgallery">
+  </div>
   <div id="sponsor">
       <h2>SPONSOREN</h2>
   </div>
@@ -209,7 +211,7 @@
       gmegLatLng = new google.maps.LatLng(47.38637228,8.54670882);
       gmegMap = new google.maps.Map(
         document.getElementById("gmeg_map_canvas"),
-        { zoom:17,
+        { zoom:15,
           center: new google.maps.LatLng(47.386481239430026, 8.544766900673263),
           scrollwheel: false,
           mapTypeId:google.maps.MapTypeId.ROADMAP
@@ -240,7 +242,9 @@
   <div class="person">
     {% for person in persons %}
       <div class="personsingle">
-        {{ person.firstname }}
+        <a href="mailto:{{ person.email }}">
+          {{ person.firstname }}
+        </a>
       </div>
     {% endfor %}
       <br clear="both">
@@ -259,12 +263,17 @@
     <div class="sponsoringcircle">
       <div class="sponsoring">
         SPONSORING
-        DOSSIER
       </div>
     </div>
     <div class="pressecircle">
       <div class="presse">
         PRESSE
+      </div>
+    </div>
+    <div class="newslettercircle">
+      <div class="newslettertext">
+        NEWS-
+        LETTER
       </div>
     </div>
   </div>
@@ -314,6 +323,11 @@
           <label for="id_bdaytime">Geburtsdatum:</label>
           <input type="date" id="id_bdaytime" name="bdaytime" />
         </div>
+        <div class="formfield">
+          <label for="id_helfercomment">Kommentar:</label>
+          <textarea class="helfercomment" cols="63" rows="10"> 
+          </textarea>
+        </div>
       </form>
     </div>
     <div class="submit">
@@ -347,6 +361,11 @@
         <div class="formfield">
           <label for="id_bdaytime">Geburtsdatum:</label>
           <input type="date" id="id_bdaytime" name="bdaytime" />
+        </div>
+        <div class="formfield">
+          <label for="id_goennercomment">Kommentar:</label>
+          <textarea class="goennercomment" cols="63" rows="10"> 
+          </textarea>
         </div>
       </form>
     </div>

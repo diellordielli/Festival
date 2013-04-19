@@ -17,9 +17,15 @@
   <div class="page">
     <div class="headerbg">
       <div class="socialicons">
-        <a href="http://www.facebook.com/stolze.openair" target="_blank"><img src="{{ STATIC_URL }}img/Facebook.jpg" /></a>
-        <a href="https://twitter.com/StolzeOpenair/" target="_blank"><img src="{{ STATIC_URL }}img/Twitter.jpg" /></a>
-        <a href="http://vimeo.com/stolzeopenair" target="_blank"><img src="{{ STATIC_URL }}img/Vimeo.jpg" /></a>
+        <a href="http://www.facebook.com/stolze.openair" target="_blank">
+          <img src="{{ STATIC_URL }}img/Facebook.jpg" />
+        </a>
+        <a href="https://twitter.com/StolzeOpenair/" target="_blank">
+          <img src="{{ STATIC_URL }}img/Twitter.jpg" />
+        </a>
+        <a href="http://vimeo.com/stolzeopenair" target="_blank">
+          <img src="{{ STATIC_URL }}img/Vimeo.jpg" />
+        </a>
       </div>
       
       <div class="navigation">
@@ -81,6 +87,17 @@
 <script src="{{ STATIC_URL }}js/sponsorslider.js"></script>
 <script src="{{ STATIC_URL }}js/ajax_bands.js"></script>
 <script src="{{ STATIC_URL }}js/ajax_gallery.js"></script>
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="{{ STATIC_URL }}lib/jquery.fancybox.css?v=2.1.4" type="text/css" media="screen" />
+<script type="text/javascript" src="{{ STATIC_URL }}lib/jquery.fancybox.pack.js?v=2.1.4"></script>
+
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet" href="{{ STATIC_URL }}lib/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+<script type="text/javascript" src="{{ STATIC_URL }}lib/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}lib/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
+
+<link rel="stylesheet" href="{{ STATIC_URL }}lib/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+<script type="text/javascript" src="{{ STATIC_URL }}lib/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 
 </body>
 </html>
