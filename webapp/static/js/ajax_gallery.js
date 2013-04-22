@@ -10,7 +10,7 @@ $(document).ready(function(){
            
             galleryContent.html(data).hide().slideDown(300);
 
-            $('.bandclose').on('click', function(event){
+            $('.galleryclose').on('click', function(event){
                 galleryContent.slideUp(300);
             });
         });

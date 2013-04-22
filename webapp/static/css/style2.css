@@ -1060,6 +1060,8 @@ label {
 .bandinfo {
     padding: 0 70px;
     position: relative;
+    left: -70px;
+    width: 100%;
 }
 
 .bandsingleimg {
@@ -1103,11 +1105,6 @@ label {
     margin-top: -25px;
 }
 
-.hrhorizontal {
-    width: 79%;
-    margin-left: 67px;
-}
-
 .bandtext {
     margin-top: -5px;
     color: #000000;
@@ -1117,27 +1114,36 @@ label {
     position: relative;
     float: right;
     margin-top: -5px;
-    margin-right: 45px;
+    margin-right: 4px;
     cursor: pointer;
     z-index: 10;
 }
 
 .innerband {
     margin-left: 20px;
-    width: 70%;
+    width: 100%;
 }
 
 .ajaxbands {
     position: relative; 
-    margin-left: -25px;
+    margin-left: 45px;
+    width: 84%;
 }
 
 .ajaxgallery {
     position: relative;
     display: block;
     max-width: 1300px;
-    width: 100%;
-    left: 3%;
+    width: 77%;
+    left: 12%;
+    margin-bottom: 200px;
+}
+
+.galleryclose {
+    position: absolute;
+    float: right;
+    right: 0%;
+    cursor: pointer;
 }
 
 .gallerysingle {
@@ -1167,10 +1173,27 @@ label {
 
 }
 
+@media only screen and (max-width: 1295px) {
+    
+    .ajaxgallery {
+        width: 88%;
+        left: 11%;
+    }
+
+}
+
 @media only screen and (max-width: 1207px) {
     
     .bandsingleall {
         margin-left: 19%;
+    }
+
+    .ajaxbands {
+        left: -135px;
+    }
+
+    .innerband {
+        width: 100%;
     }
 
 }
@@ -1182,11 +1205,32 @@ label {
     }
 }
 
+@media only screen and (max-width: 1182px) {
+
+    .ajaxgallery {
+        left: 7%;
+    }
+}
+
 @media only screen and (max-width: 1130px) {
 
     .maplinks {
         margin-top: 100px;
     }
+
+    .ajaxgallery {
+        width: 89%;
+    }
+
+}
+
+@media only screen and (max-width: 1117px) {
+    
+    .ajaxgallery {
+        width: 70%;
+        left: 21%;
+    }
+
 }
 
 @media only screen and (max-width: 1065px) {
@@ -1204,6 +1248,14 @@ label {
     }
 }
 
+@media only screen and (max-width: 1038px) {
+    
+    .ajaxbands {
+        left: -180px;
+    }
+}
+
+
 @media only screen and (max-width: 1014px) {
 
     .maplinks {
@@ -1215,6 +1267,12 @@ label {
     .sponsor {
         margin-right: 0px;
     }
+
+    .ajaxgallery {
+        left: 15%;
+        width: 81%;
+    }
+
 }   
 
 @media only screen and (max-width: 990px) {
@@ -1228,9 +1286,13 @@ label {
 
     .bandsingleall {
         position: relative;
-        left: 50%;
+        left: 48%;
         margin-left: -350px;        
         width: 700px;
+    }
+
+    .ajaxbands {
+        left: -130px;
     }
 }
 
@@ -1268,6 +1330,10 @@ label {
     .bandsingleimg img {
         max-width: 923px;
         width: 100%; 
+    }
+
+    .ajaxbands {
+        left: 0px;
     }
 }
 
@@ -1364,6 +1430,14 @@ label {
     }
 }
 
+@media only screen and (max-width: 808px) {
+
+    .ajaxgallery {
+        width: 85%;
+        left: 8%;
+    }
+}
+
 @media only screen and (max-width: 803px) {
 
     .navigation a {
@@ -1375,6 +1449,14 @@ label {
 
     .maplinks {
         margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 781px) {
+
+    .ajaxgallery {
+        left: 5%;
+        width: 94%;
     }
 }
 
@@ -1395,6 +1477,14 @@ label {
     .navigation a {
         margin-left: 43px;
     }
+
+    .helfercomment, .goennercomment {
+        width: 150%;
+    }
+
+    .submit input {
+        margin-left: 0%;
+    }
 }
 
 @media only screen and (max-width: 726px) {
@@ -1407,6 +1497,28 @@ label {
         margin-left: 224px;
     }
 }
+
+@media only screen and (max-width: 709px) {
+    
+    .bandsingleall {
+        width: 77%;
+    }
+
+    .ajaxbands {
+        left: -115px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 704px) {
+    
+    .ajaxgallery {
+        left: 25%;
+        width: 70%;
+    }
+}
+
+
 @media only screen and (max-width: 700px) {
     
     .newstitle {
@@ -1477,7 +1589,7 @@ label {
         position: relative;
         left: 50%;
         margin-left: -190px;
-        width: 79%;
+        width: 77%;
     }
 }
 
@@ -1533,12 +1645,24 @@ label {
     .slider-newsdots {
         margin-top: -130px;
     }
+
+    .ajaxbands {
+        left: -90px;
+    }
 }
 
 @media only screen and (max-width: 648px) {
 
     .navigation a {
         margin-left: 28px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+
+    .ajaxbands {
+        left: -85px;
+        width: 103%;
     }
 }
 
@@ -1572,8 +1696,13 @@ label {
         font-size: 35px;
         max-width: 500px;
     }
+}
 
-
+@media only screen and (max-width: 584px) {
+    
+    .ajaxgallery {
+        left: 20%;
+    }
 }
 
 @media only screen and (max-width: 569px) {
@@ -1581,6 +1710,14 @@ label {
     .navigation a {
         font-size: 20px;
         margin-left: 32px;
+    }
+}
+
+@media only screen and (max-width: 541px) {
+
+    .emailsingle {
+        font-size: 12px;
+        width: 238px;
     }
 }
 
@@ -1610,6 +1747,10 @@ label {
     .newstitle {
         font-size: 33px;
         max-width: 500px;
+    }
+
+    .helfercomment, .goennercomment {
+        width: 100%;
     }
 }
 
@@ -1646,6 +1787,14 @@ label {
 
     .mappc {
         font-size: 15px;
+    }
+
+    .ajaxbands {
+        left: -60px;
+    }
+
+    .ajaxgallery {
+        left: 15%;
     }
 }
 
@@ -1715,7 +1864,7 @@ label {
     }
 
     .hrend {
-        margin-top: 330px;
+        margin-top: 380px;
     }
 
     .sponsor img {
@@ -1807,6 +1956,10 @@ label {
         line-height: 22px;
         font-size: 20px;
     }
+
+    .ajaxgallery {
+        left: 10%;
+    }
 }
 
 @media only screen and (max-width: 420px) {
@@ -1814,6 +1967,12 @@ label {
     .navigation a {
         font-size: 16px;
         margin-left: 18px;
+    }
+
+    .ajaxbands {
+        left: -40px;
+        width: 114%;
+        font-size: 12px;
     }
 }
 
@@ -1823,6 +1982,14 @@ label {
         font-size: 16px;
         margin-left: 14px;
     }
+
+    .ajaxbands {
+        left: -40px;
+    }
+
+    .ajaxgallery {
+        left: 7%;
+    }
 }
 
 @media only screen and (max-width: 381px) {
@@ -1830,6 +1997,15 @@ label {
     .maplinks {
         margin-top: 0px;
     }
+
+}
+
+@media only screen and (max-width: 376px) {
+
+    .ajaxbands {
+        left: -17px;
+    }
+
 }
 
 @media only screen and (max-width: 370px) {
@@ -1904,6 +2080,10 @@ label {
     #bands h2 {
         margin-top: -120px;
     }
+
+    .ajaxgallery {
+        left: 3%;
+    }
 }
 
 @media only screen and (max-width: 353px) {
@@ -1924,6 +2104,17 @@ label {
     .mappc {
         font-size: 10px;
     }
+
+    .helfercomment, .goennercomment {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+
+    .ajaxbands {
+        left: -5px;
+    }
 }
 
 @media only screen and (max-width: 336px) {
@@ -1935,6 +2126,10 @@ label {
 
     .formfield {
         width: 270px;
+    }
+
+    .ajaxgallery {
+        left: -1%;
     }
 }
 
@@ -1960,6 +2155,18 @@ label {
 
     .button {
         margin-left: 88px;
+    }
+
+    .ajaxbands {
+        left: 5px;
+    }
+}
+
+@media only screen and (max-width: 310px) {
+
+    .ajaxgallery {
+        left: -4%;
+        width: 100%;
     }
 }
 
