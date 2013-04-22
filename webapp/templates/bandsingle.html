@@ -24,9 +24,36 @@
             {% endfor %}
             GENRE: {{ band.dotted_genres }}
           </div>
-          {% for link in band.bandlinks_set.all %}
-              <ul>{{ link.type }}</ul>
-          {% endfor %}
+          <div class="bandlinks">
+            {% for link in band.bandlinks_set.all %}
+              {% if link.type == "FB" %}
+              <div class="bandfb">
+                <img src="{{ STATIC_URL }}img/Facebook.jpg" />
+              </div>
+              {% elif link.type == "MS" %}
+              <div class="bandms">
+                <img src="{{ STATIC_URL }}img/myspace.png" />
+              </div>
+              {% elif link.type == "YT" %}
+              <div class="bandyt">
+                <img src="{{ STATIC_URL }}img/youtube.png" />
+              </div>
+              {% elif link.type == "SC" %}
+              <div class="bandsc">
+                <img src="{{ STATIC_URL }}img/soundcloud.png" />
+              </div>
+              {% elif link.type == "WS" %}
+              <div class="bandwb">
+                <img src="{{ STATIC_URL }}img/website.png" />
+              </div>
+              {% elif link.type == "TT" %}
+              <div class="bandtt">
+                <img src="{{ STATIC_URL }}img/Twitter.png" />
+              </div>
+              {% endif %}
+                <ul>{{ link.type.link }}</ul>
+            {% endfor %}
+          </div>
       </div>
       <br clear="both">
     </div>
