@@ -121,6 +121,7 @@ body {
 
 .navigationright {
     left: 60%;
+    top: -3px;
 }
 
 .navhidden {
@@ -128,6 +129,7 @@ body {
 }
 
 .navresponsive {
+    margin-top: 14px;
     width: 800px;
 }
 
@@ -135,6 +137,11 @@ body {
     position: absolute;
     width: 100%;
     background-color: #000000;
+}
+
+.hrrighttop {
+    position: relative;
+    bottom: -23px;
 }
 
 .navtoggleup {
@@ -191,6 +198,7 @@ body {
     font-family: terminal_dosissemibold;
     text-align: center;
     text-transform: uppercase;
+    line-height: 75px;
     color: #7f0094;
 }
 
@@ -236,6 +244,7 @@ body {
 
 .newsscroller {
     overflow: hidden;
+    margin-top: 90px;
 }
 
 .newsonly {
@@ -249,12 +258,13 @@ body {
     margin-right: auto;
     width: 100%;
     max-width: 750px;
-    font-family:'Rockwell W01', Times, serif;
+    font-family:'Rockwell W01';
     color: #06DDB7;
     font-size: 70px;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 5px;
+    line-height: 75px;
     text-align: center;
     cursor: pointer;     
 }
@@ -325,6 +335,8 @@ body {
 }
 
 .hrnews {
+    margin-top: 5px;
+    margin-bottom: -15px;
     width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -712,10 +724,19 @@ body {
     text-transform: uppercase;
 }
 
+.teamimg {
+    text-align: center;
+}
+
+.teamimg img {
+    max-width: 913px;
+    width: 100%;
+}
+
 .person {
     margin-top: 35px;
     margin-left: 20px;
-    width: 85%;
+    width: auto;
     max-width: 1300px;
     font-family: terminal_dosismedium;
     font-size: 25px;
@@ -857,7 +878,7 @@ body {
     width: 150px;
     height: 150px;
     margin-top: 10px;
-    left: -50%;
+    left: -60%;
     border-radius: 75px;
     background-color: #7F0094;
     cursor: pointer;    
@@ -1166,7 +1187,6 @@ label {
 
 .bandfb img, .bandms img, .bandyt img, .bandsc img, .bandwb img, .bandtt img {
     width: 25px;
-
 }
 
 .bandlinks {
@@ -1380,6 +1400,7 @@ label {
     }
 
     .hrleftdown {
+        margin-top: 11px;
         width: 915px;
     }
 
@@ -1405,6 +1426,10 @@ label {
 
     .logo img {
         width: 90px;
+    }
+
+    .navresponsive {
+        margin-top: 7px;
     }
 
 }
@@ -1474,6 +1499,10 @@ label {
         left: 5%;
         width: 94%;
     }
+
+    .onlycategory {
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 755px) {
@@ -1481,11 +1510,6 @@ label {
     .newstitle {
         font-size: 55px;
     }
-
-    .onlycategory {
-        display: block;
-    }
-
 }
 
 @media only screen and (max-width: 738px) {
@@ -2175,6 +2199,10 @@ label {
 
     .ajaxbands {
         left: 5px;
+    }
+
+    .bandfb img, .bandms img, .bandyt img, .bandsc img, .bandwb img, .bandtt img {
+        width: 25px;
     }
 }
 

@@ -76,6 +76,18 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
+<link rel="stylesheet" href="{{ STATIC_URL }}css/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+<script>
+  $(function() {
+    $( "#datepicker" ).datepicker({
+      changeMonth: true,
+      changeYear: true
+    });
+  });
+</script>
+
 <script src="{{ STATIC_URL }}js/jquery.transit.js"></script>
 <script src="{{ STATIC_URL }}js/scale.js"></script>
 <script src="{{ STATIC_URL }}js/gallery_scroller.js"></script>
@@ -98,6 +110,8 @@
 
 <link rel="stylesheet" href="{{ STATIC_URL }}lib/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
 <script type="text/javascript" src="{{ STATIC_URL }}lib/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+
 
 </body>
 </html>

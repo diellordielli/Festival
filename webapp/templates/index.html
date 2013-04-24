@@ -19,7 +19,6 @@
     </div>
   </div>
   <div class="regiongrey" id="news">
-
   <div class="greybackground4">
     <a id="navlefticon2" href="#">
       <img src="{{ STATIC_URL }}img/navigation-left.png" />
@@ -37,7 +36,6 @@
             <div class="newstitle">
               {{ news.name }}
             </div>
-            <br>
             <hr class="hrnews">
             <div class="mehrinfos">
               <p>Mehr Infos</p>
@@ -179,7 +177,7 @@
           {% for sponsor in category.list %}
               <div class="sponsorks">
                 {% if sponsor.logo %}
-                  <a href="{{ sponsor.link }}" target="_blank"><img src = "{{ sponsor.logo|thumbnail:"180x9999" }}"></a>
+                  <a href="{{ sponsor.link }}" target="_blank"><img src = "{{ sponsor.logo|thumbnail:"100x9999" }}"></a>
                 {% endif %}
               </div>
           {% endfor %}
@@ -211,7 +209,7 @@
       gmegLatLng = new google.maps.LatLng(47.38637228,8.54670882);
       gmegMap = new google.maps.Map(
         document.getElementById("gmeg_map_canvas"),
-        { zoom:15,
+        { zoom:17,
           center: new google.maps.LatLng(47.386481239430026, 8.544766900673263),
           scrollwheel: false,
           mapTypeId:google.maps.MapTypeId.ROADMAP
@@ -238,6 +236,9 @@
 
   <div class="contacttitle">
     WIR ARBEITEN GERNE WIE TIERE
+  </div>
+  <div class="teamimg">
+    <img src="{{ STATIC_URL }}img/teamfoto.png" />
   </div>
   <div class="person">
     {% for person in persons %}
@@ -320,8 +321,8 @@
           <input type="email" id="id_usremail" name="usremail" />
         </div>
         <div class="formfield">
-          <label for="id_bdaytime">Geburtsdatum:</label>
-          <input type="date" id="id_bdaytime" name="bdaytime" />
+          <label for="id_datepicker">Geburtsdatum:</label>
+          <input type="text" id="datepicker" />
         </div>
         <div class="formfield">
           <label for="id_helfercomment">Kommentar:</label>
@@ -375,8 +376,8 @@
           <input type="email" id="id_usremail" name="usremail" />
         </div>
         <div class="formfield">
-          <label for="id_bdaytime">Geburtsdatum:</label>
-          <input type="date" id="id_bdaytime" name="bdaytime" />
+          <label for="date">Geburtsdatum:</label>
+          <input type="text" id="date" name="date" />
         </div>
         <div class="formfield">
           <label for="id_goennercomment">Kommentar:</label>
