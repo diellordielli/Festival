@@ -77,13 +77,13 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
 <link rel="stylesheet" href="{{ STATIC_URL }}css/jquery-ui.css" />
-<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+<script src="{{ STATIC_URL }}js/jquery-ui.js"></script>
 <script>
   $(function() {
-    $( "#datepicker" ).datepicker({
+    $( ".datepicker" ).datepicker({
       changeMonth: true,
-      changeYear: true
+      changeYear: true,
+      yearRange: "1900:2013"
     });
   });
 </script>

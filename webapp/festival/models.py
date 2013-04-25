@@ -70,8 +70,7 @@ class Year(models.Model):
     start = models.DateField()
     end = models.DateField()
     logo = models.ImageField(upload_to="years", blank=True)
-    bands = models.ManyToManyField(Band,
-        related_name="years", through="BandYear")
+    bands = models.ManyToManyField(Band, related_name="years", through="BandYear")
 
     class Meta:
         ordering = ["year"]

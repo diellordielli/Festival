@@ -67,6 +67,7 @@ body {
     position: absolute;
     margin-top: 7px;
     right: 3%;
+    z-index: 2;
 }
 
 .socialicons a {
@@ -1085,12 +1086,12 @@ label {
     width: 100%;
 }
 
-.bandsingleimg {
+#bandsingleimg {
     position: relative;
     margin-top: 70px;
 }
 
-.bandsingleimg img {
+#bandsingleimg img {
     width: 923px;
 }
 
@@ -1145,13 +1146,13 @@ label {
     width: 100%;
 }
 
-.ajaxbands {
+#ajaxbands {
     position: relative; 
     margin-left: 45px;
     width: 84%;
 }
 
-.ajaxgallery {
+#ajaxgallery {
     position: relative;
     display: block;
     max-width: 1300px;

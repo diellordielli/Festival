@@ -3,7 +3,7 @@
     <div class="bandclose">
       <img src="{{ STATIC_URL }}img/x.png" />
     </div>
-    <div class="bandsingleimg">
+    <div id="bandsingleimg">
       {% if band.image %}
         <img src = "{{ band.image|cropscale:"923x343" }}">
       {% endif %}</br></br>

@@ -1,28 +1,59 @@
 <!DOCTYPE HTML>
     <html lang="en">
     <head>
+        <style type="text/css">
 
+
+            .socialicons {
+                position: relative;
+                left: 73%;
+            }
+
+            .socialicons a {
+                text-decoration: none;
+            }
+
+            .mood {
+                width: 100%;
+                position: absolute;
+                text-align: center;
+            }
+
+            .mail {
+                position: absolute;
+                width: auto;
+                z-index: 10;
+            }
+
+            .mail a {
+                text-decoration: none;
+                font-size: 25px;
+                color: #7f0094;
+            }
+
+        </style>
     </head>
     <body>
-
+        <div class="page">
         <div class="socialicons">
             <a href="http://www.facebook.com/stolze.openair" target="_blank">
-              <img src="{{ STATIC_URL }}img/Facebook.jpg" />
+              <img src="/home/dd/Projects/stolze-openair.ch/webapp/static/img/Facebook.jpg" />
             </a>
             <a href="https://twitter.com/StolzeOpenair/" target="_blank">
-              <img src="{{ STATIC_URL }}img/Twitter.jpg" />
+              <img src="/home/dd/Projects/stolze-openair.ch/webapp/static/img/Twitter.jpg" />
             </a>
             <a href="http://vimeo.com/stolzeopenair" target="_blank">
-              <img src="{{ STATIC_URL }}img/Vimeo.jpg" />
+              <img src="/home/dd/Projects/stolze-openair.ch/webapp/static/img/Vimeo.jpg" />
             </a>
         </div>
         <div class="mood">
-            <img src = "{{ STATIC_URL }}img/Vimeo.jpg">
+            <img src = "/home/dd/Projects/stolze-openair.ch/webapp/static/img/layer.jpg">
         </div>
-        <div class="title" style= "font-size: 50px;">
-            <p>Stolze Openair 2013</p>
-            <p>31. Mai & 1. Juni</p>
-            <p>Fragen an: mail@stolze-openair.ch</p>
+        <div class="mail">
+            <a href="mailto:mail@stolze-openair.ch">
+                mail@stolze-openair.ch
+            </a>
+        </div>
         </div>
     </body>
 </html>

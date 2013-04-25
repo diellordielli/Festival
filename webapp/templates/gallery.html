@@ -1,5 +1,6 @@
 {% load feincms_thumbnails %}
 {% block gallery %}
+<div id="gallerylink">
     <div class="galleryclose">
       <img src="{{ STATIC_URL }}img/x.png" />
     </div>
@@ -13,4 +14,5 @@
         </div>
     {% endfor %}
     <br clear="both">
+</div>
 {% endblock %}
