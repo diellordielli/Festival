@@ -991,14 +991,18 @@ label {
     font-size: 80%;
     border: none;
     background: #DADADC;
+    border-radius:  20px;
     -webkit-border-radius: 20px;
     -moz-border-radius:  20px;
+    -o-border-radius:  20px;
+    -ms-border-radius:  20px;
 }
 
 .helfercomment, .goennercomment {
     margin-top: 10px;
     border: none;
     background: #DADADC;
+    border-radius:  20px;
     -webkit-border-radius: 20px;
     -moz-border-radius:  20px;
 }
@@ -1014,6 +1018,7 @@ label {
 
 /* entire container, keeps perspective */
 .flip-container {
+    perspective: 1000;
     -webkit-perspective: 1000;
     -moz-perspective: 1000;
     -o-perspective: 1000;
@@ -1044,12 +1049,14 @@ label {
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
     transform-style: preserve-3d;
     position: relative;
 }
 
 /* hide back of pane during swap */
 .front,.back {
+    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -o-backface-visibility: hidden;
@@ -1092,6 +1099,7 @@ label {
 }
 
 #bandsingleimg img {
+    max-width: 100%;
     width: 923px;
 }
 
@@ -1118,6 +1126,7 @@ label {
     border: 1px solid white;
     width: 200px;
 }
+
 .hrvertical {
     position: absolute;
     float: left;
@@ -1212,7 +1221,7 @@ label {
 
 @media only screen and (max-width: 1295px) {
     
-    .ajaxgallery {
+    #ajaxgallery {
         width: 88%;
         left: 11%;
     }
@@ -1225,7 +1234,7 @@ label {
         margin-left: 19%;
     }
 
-    .ajaxbands {
+    #ajaxbands {
         left: -135px;
     }
 
@@ -1244,7 +1253,7 @@ label {
 
 @media only screen and (max-width: 1182px) {
 
-    .ajaxgallery {
+    #ajaxgallery {
         left: 7%;
     }
 }
@@ -1255,7 +1264,7 @@ label {
         margin-top: 100px;
     }
 
-    .ajaxgallery {
+    #ajaxgallery {
         width: 89%;
     }
 
@@ -1263,7 +1272,7 @@ label {
 
 @media only screen and (max-width: 1117px) {
     
-    .ajaxgallery {
+    #ajaxgallery {
         width: 70%;
         left: 21%;
     }
@@ -1287,7 +1296,7 @@ label {
 
 @media only screen and (max-width: 1038px) {
     
-    .ajaxbands {
+    #ajaxbands {
         left: -180px;
     }
 }
@@ -1305,7 +1314,7 @@ label {
         margin-right: 0px;
     }
 
-    .ajaxgallery {
+    #ajaxgallery {
         left: 15%;
         width: 81%;
     }
@@ -1328,7 +1337,7 @@ label {
         width: 700px;
     }
 
-    .ajaxbands {
+    #ajaxbands {
         left: -130px;
     }
 }
@@ -1369,7 +1378,7 @@ label {
         width: 100%; 
     }
 
-    .ajaxbands {
+    #ajaxbands {
         left: 0px;
     }
 }
@@ -1474,7 +1483,7 @@ label {
 
 @media only screen and (max-width: 808px) {
 
-    .ajaxgallery {
+    #ajaxgallery {
         width: 85%;
         left: 8%;
     }
@@ -1496,7 +1505,7 @@ label {
 
 @media only screen and (max-width: 781px) {
 
-    .ajaxgallery {
+    #ajaxgallery {
         left: 5%;
         width: 94%;
     }
@@ -1545,7 +1554,7 @@ label {
         width: 77%;
     }
 
-    .ajaxbands {
+    #ajaxbands {
         left: -115px;
         width: 100%;
     }
@@ -1553,7 +1562,7 @@ label {
 
 @media only screen and (max-width: 704px) {
     
-    .ajaxgallery {
+    #ajaxgallery {
         left: 25%;
         width: 70%;
     }
@@ -1687,7 +1696,7 @@ label {
         margin-top: -130px;
     }
 
-    .ajaxbands {
+    #ajaxbands {
         left: -90px;
     }
 }
@@ -1701,7 +1710,7 @@ label {
 
 @media only screen and (max-width: 640px) {
 
-    .ajaxbands {
+    #ajaxbands {
         left: -85px;
         width: 103%;
     }
@@ -1729,6 +1738,7 @@ label {
     .regiongrey {
         margin-top: -125px;
     }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -1741,7 +1751,7 @@ label {
 
 @media only screen and (max-width: 584px) {
     
-    .ajaxgallery {
+    #ajaxgallery {
         left: 20%;
     }
 }
@@ -1830,11 +1840,11 @@ label {
         font-size: 15px;
     }
 
-    .ajaxbands {
+    #ajaxbands {
         left: -60px;
     }
 
-    .ajaxgallery {
+    #ajaxgallery {
         left: 15%;
     }
 }
@@ -1998,7 +2008,7 @@ label {
         font-size: 20px;
     }
 
-    .ajaxgallery {
+    #ajaxgallery {
         left: 10%;
     }
 }
@@ -2010,7 +2020,7 @@ label {
         margin-left: 18px;
     }
 
-    .ajaxbands {
+    #ajaxbands {
         left: -40px;
         width: 114%;
         font-size: 12px;
@@ -2024,11 +2034,11 @@ label {
         margin-left: 14px;
     }
 
-    .ajaxbands {
+    #ajaxbands {
         left: -40px;
     }
 
-    .ajaxgallery {
+    #ajaxgallery {
         left: 7%;
     }
 }
@@ -2043,7 +2053,7 @@ label {
 
 @media only screen and (max-width: 376px) {
 
-    .ajaxbands {
+    #ajaxbands {
         left: -17px;
     }
 
@@ -2122,7 +2132,7 @@ label {
         margin-top: -120px;
     }
 
-    .ajaxgallery {
+    #ajaxgallery {
         left: 3%;
     }
 }
@@ -2153,7 +2163,7 @@ label {
 
 @media only screen and (max-width: 340px) {
 
-    .ajaxbands {
+    #ajaxbands {
         left: -5px;
     }
 }
@@ -2169,7 +2179,7 @@ label {
         width: 270px;
     }
 
-    .ajaxgallery {
+    #ajaxgallery {
         left: -1%;
     }
 }
@@ -2198,7 +2208,7 @@ label {
         margin-left: 88px;
     }
 
-    .ajaxbands {
+    #ajaxbands {
         left: 5px;
     }
 
@@ -2209,7 +2219,7 @@ label {
 
 @media only screen and (max-width: 310px) {
 
-    .ajaxgallery {
+    #ajaxgallery {
         left: -4%;
         width: 100%;
     }
