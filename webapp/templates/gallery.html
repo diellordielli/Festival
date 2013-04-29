@@ -28,9 +28,9 @@
 
     <div class="categorybands">
         {% for image in images %}
-            {% if image.image %}
+            {% if image.choice == "Bands" %}
             <div class="gallerysingle">
-                    {% if image.choice == "Bands" %}
+                    {% if image.image %}
                     <a class="fancybox" rel="group" href="{{ image.image.url }}">
                         <img src = "{{ image.image|cropscale:"271x181" }}">
                     </a>

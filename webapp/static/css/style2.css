@@ -1306,6 +1306,15 @@ label {
         left: 21%;
     }
 
+    .festivalchoice {
+        position: absolute;
+        left: 25%;
+    }
+
+    .bandchoice {
+        left: 4%;
+    }
+
 }
 
 @media only screen and (max-width: 1065px) {
@@ -1594,6 +1603,15 @@ label {
     #ajaxgallery {
         left: 25%;
         width: 70%;
+    }
+
+    .festivalchoice {
+        position: absolute;
+        left: 41%;
+    }
+
+    .bandchoice {
+        left: 12%;
     }
 }
 

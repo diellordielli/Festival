@@ -65,6 +65,14 @@ $(document).ready(function() {
         $('.dot:eq('+navpos+')').addClass('active');
 
         $('.scroller').animate({'left': newLeft}, carouselOptions.speed);
+
+        $('#ajaxgallery').slideUp();
+
+        galleryContent.slideUp(300);
+
+        target = $('#gallery');
+        scroll_to_target(target);
+
     });
 
     $('.greybackground2').on('click', function(event) {
@@ -81,6 +89,14 @@ $(document).ready(function() {
         $('.dot:eq('+navpos+')').addClass('active');
 
         $('.scroller').animate({'left': newLeft}, carouselOptions.speed);
+
+        $('#ajaxgallery').slideUp();
+
+        galleryContent.slideUp(300);
+
+        target = $('#gallery');
+        scroll_to_target(target);
+
     });
 
 
@@ -91,6 +107,13 @@ $(document).ready(function() {
         $('.scroller').animate({'left': newLeft}, carouselOptions.speed);
         $('.dot').removeClass('active');
         $(this).addClass('active');
+        
+        $('#ajaxgallery').slideUp();
+
+        galleryContent.slideUp(300);
+
+        target = $('#gallery');
+        scroll_to_target(target);
     });
 
     $('.regiongreyg').on('mouseenter', function(event) {
