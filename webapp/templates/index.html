@@ -89,18 +89,18 @@
                 {% endif %}
               </div>
               <a href={{ band.get_absolute_url }}>
-              <div class="back">
-                <div class="bandname">
-                  {{ band.name }}
-                </div>  
-                <hr class="bandhr">
-                <div class="bandtext">
-                  {% for year in band.bandyear_set.all %}
-                    {{ year.get_stage_display }}
-                  {% endfor %}<br>
-                  Genre: {{ band.dotted_genres }}
+                <div class="back">
+                  <div class="bandname">
+                    {{ band.name }}
+                  </div>
+                  <hr class="bandhr">
+                  <div class="bandtext">
+                    {% for year in band.bandyear_set.all %}
+                      {{ year.get_stage_display }}
+                    {% endfor %}<br>
+                    Genre: {{ band.dotted_genres }}
+                  </div>
                 </div>
-              </div>
               </a>
             </div>
           </div>
@@ -110,9 +110,9 @@
       <div id="ajaxbands">
       </div>
   {% endfor %}
-      <br clear="both">
+    <br clear="both">
   </div>
-      <br clear="both">  
+  <br clear="both">  
 </div>
 <br>
 
