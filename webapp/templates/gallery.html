@@ -7,9 +7,11 @@
     {% for image in images %}
         <div class="gallerysingle">
             {% if image.image %}
-                    <a class="fancybox" rel="group" href="{{ image.image.url }}">
-                        <img src = "{{ image.image|cropscale:"271x181" }}">
-                    </a>
+                {% if image.choice == "Festival" %}
+                <a class="fancybox" rel="group" href="{{ image.image.url }}">
+                    <img src = "{{ image.image|cropscale:"271x181" }}">
+                </a>
+                {% endif %}
             {% endif %}
         </div>
     {% endfor %}
