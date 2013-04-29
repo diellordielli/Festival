@@ -11,6 +11,7 @@ $(window).load(function() {
     function animate() {
         $('.sponsorinner').css('left', 0);
         $('.sponsorinner').animate({'left': -sponsorscroller / 2}, 10000, 'linear', animate);
+
     }
 
     animate();
