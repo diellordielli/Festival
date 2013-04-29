@@ -5,9 +5,9 @@ from django.contrib.auth.models import User
 
 class ImageAdmin(admin.ModelAdmin):
     model = models.Image
-    list_display = ('name', 'band', 'year', 'is_yearcover',)
+    list_display = ('name', 'choice', 'year', 'is_yearcover',)
     search_fields = ('name', 'band', 'year',)
-    list_filter = ('name', 'band', 'year',)
+    list_filter = ('year', 'name', 'band',)
 
 
 admin.site.register(models.Image, ImageAdmin)
