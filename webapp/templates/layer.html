@@ -4,56 +4,47 @@
         <style type="text/css">
 
 
-            .socialicons {
-                position: relative;
-                left: 73%;
-            }
-
-            .socialicons a {
-                text-decoration: none;
+            .page {
+                width: 100%;
+                max-width: 1300px;
+                margin: 150px auto;
             }
 
             .mood {
-                width: 100%;
                 position: absolute;
-                text-align: center;
+            }
+
+            .mood img {
+                width: 1300px;
             }
 
             .mail {
                 position: absolute;
-                width: auto;
+                top: 38%;
+                left: 17%;
                 z-index: 10;
             }
 
             .mail a {
                 text-decoration: none;
-                font-size: 25px;
+                font-family: 'Dosis', sans-serif;
+                font-size: 35px;
+                font-weight: 100;
                 color: #7f0094;
             }
 
         </style>
-    </head>
+        <link href='http://fonts.googleapis.com/css?family=Dosis:600' rel='stylesheet' type='text/css'>    </head>
     <body>
         <div class="page">
-        <div class="socialicons">
-            <a href="http://www.facebook.com/stolze.openair" target="_blank">
-              <img src="/home/dd/Projects/stolze-openair.ch/webapp/static/img/Facebook.jpg" />
-            </a>
-            <a href="https://twitter.com/StolzeOpenair/" target="_blank">
-              <img src="/home/dd/Projects/stolze-openair.ch/webapp/static/img/Twitter.jpg" />
-            </a>
-            <a href="http://vimeo.com/stolzeopenair" target="_blank">
-              <img src="/home/dd/Projects/stolze-openair.ch/webapp/static/img/Vimeo.jpg" />
-            </a>
-        </div>
-        <div class="mood">
-            <img src = "/home/dd/Projects/stolze-openair.ch/webapp/static/img/layer.jpg">
-        </div>
-        <div class="mail">
-            <a href="mailto:mail@stolze-openair.ch">
-                mail@stolze-openair.ch
-            </a>
-        </div>
+            <div class="mood">
+                <div class="mail">
+                    <a href="mailto:mail@stolze-openair.ch">
+                        mail@stolze-openair.ch
+                    </a>
+                </div>
+                <img src = "/home/dd/Projects/stolze-openair.ch/webapp/static/img/stolze.jpg">
+            </div>
         </div>
     </body>
 </html>
