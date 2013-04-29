@@ -10,17 +10,21 @@ $(document).ready(function(){
            
             closestAjax.html(data).slideDown(300);
 
-            target = $('#bandsingleimg');
+            target = $(closestAjax);
             scroll_to_target(target);
 
             $('.bandclose').on('click', function(event){
                 closestAjax.slideUp(300);
+
+                target = $('#bands');
+                scroll_to_target(target);
+
             });
         });
 
         function scroll_to_target(target){
-           $('html,body').animate({
-                 scrollTop: target.offset().top - 160
+           $('html,body').delay('300').animate({
+                 scrollTop: target.offset().top - 170
             }, 1000);
         }
     });
