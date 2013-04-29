@@ -15,12 +15,20 @@ class Category(models.Model):
 
 
 class Image(models.Model):
+    FESTIVAL = "Festival"
+    BANDS = "Bands"
+
+    LINK_TYPES = (
+        (FESTIVAL, 'Festival'),
+        (BANDS, 'Bands'),
+    )
+
+    choice = models.CharField(max_length=20, choices=LINK_TYPES, blank=True)
     name = models.CharField(max_length=200)
     description = models.TextField(blank=True)
     image = models.ImageField(upload_to="gallery")
     date = models.DateTimeField()
-    band = models.ForeignKey(Band,
-        related_name="images", null=True, blank=True)
+    band = models.ForeignKey(Band, related_name="images", null=True, blank=True)
     year = models.ForeignKey(Year)
     categories = models.ManyToManyField(Category, blank=True)
     is_yearcover = models.BooleanField(default=False)
@@ -31,4 +39,4 @@ class Image(models.Model):
                     .update(is_yearcover=False)
 
     def __unicode__(self):
-        return u"%s %s %s" % (self.name, self.band, self.description)
+        return u"%s %s %s %s" % (self.choice,  self.name, self.band, self.description)
