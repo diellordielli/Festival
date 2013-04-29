@@ -106,5 +106,4 @@ $(document).ready(function() {
         $('.greybackground2').css({'background-color': '#dcdcdc'});
         $('.greybackground3').css({'background-color': '#dcdcdc'});
     });
-
 });
