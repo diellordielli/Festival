@@ -12,7 +12,7 @@ class Image(models.Model):
         (BANDS, 'Bands'),
     )
 
-    choice = models.CharField(max_length=20, choices=LINK_TYPES, blank=True)
+    choice = models.CharField(max_length=20, choices=LINK_TYPES)
     name = models.CharField(max_length=200)
     description = models.TextField(blank=True)
     image = models.ImageField(upload_to="gallery")

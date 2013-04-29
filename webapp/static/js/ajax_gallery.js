@@ -20,6 +20,22 @@ $(document).ready(function(){
                 scroll_to_target(target);
 
             });
+
+            $('.bandchoice').click(function(event){
+                event.preventDefault();
+                $('.categoryfestival').slideUp();
+                $('.categorybands').slideDown();
+                $('.bandchoice').css({'color': '#06ddb7'});
+                $('.festivalchoice').css({'color': '#000'});
+            });
+
+            $('.festivalchoice').click(function(event){
+                event.preventDefault();
+                $('.categorybands').slideUp();
+                $('.categoryfestival').slideDown();
+                $('.festivalchoice').css({'color': '#06ddb7'});
+                $('.bandchoice').css({'color': '#000'});
+            });
         });
 
         function scroll_to_target(target){

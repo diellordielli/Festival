@@ -1189,6 +1189,35 @@ label {
     background-color: #FFFFFF;
 }
 
+.festivalchoice, .bandchoice {
+    display: inline-block;
+    font-size: 25px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.festivalchoice {
+    position: relative;
+    left: 29%;
+}
+
+.bandchoice {
+    position: relative;
+    left: 3%;
+    color: #06ddb7;
+}
+
+.categoryfestival {
+    position: relative;
+    top: -100px;
+    display: none;
+}
+
+.categorybands {
+    position: relative;
+    top: -100px;
+}
+
 .bandfb, .bandms, .bandyt, .bandsc, .bandwb, .bandtt {
     float: left;
     width: 40px;

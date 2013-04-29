@@ -4,17 +4,41 @@
     <div class="galleryclose">
       <img src="{{ STATIC_URL }}img/x.png" />
     </div>
-    {% for image in images %}
-        <div class="gallerysingle">
-            {% if image.image %}
-                {% if image.choice == "Festival" %}
-                <a class="fancybox" rel="group" href="{{ image.image.url }}">
-                    <img src = "{{ image.image|cropscale:"271x181" }}">
-                </a>
-                {% endif %}
+    <div class="bandchoice">
+        <p>Bands</p>
+    </div>
+ 
+    <div class="festivalchoice">
+        <p>Festival</p>
+    </div>
+
+    <div class="categoryfestival">
+        {% for image in images %}
+            {% if image.choice == "Festival" %}
+            <div class="gallerysingle">
+                {% if image.image %}
+                    <a class="fancybox" rel="group" href="{{ image.image.url }}">
+                        <img src = "{{ image.image|cropscale:"271x181" }}">
+                    </a>
+                    {% endif %}
+            </div>
             {% endif %}
-        </div>
-    {% endfor %}
+        {% endfor %}
+    </div>
+
+    <div class="categorybands">
+        {% for image in images %}
+            {% if image.image %}
+            <div class="gallerysingle">
+                    {% if image.choice == "Bands" %}
+                    <a class="fancybox" rel="group" href="{{ image.image.url }}">
+                        <img src = "{{ image.image|cropscale:"271x181" }}">
+                    </a>
+                {% endif %}
+            </div>
+            {% endif %}
+        {% endfor %}
+    </div>
     <br clear="both">
 </div>
 {% endblock %}
