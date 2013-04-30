@@ -4,6 +4,7 @@ $(document).ready(function() {
         $('#goenner-form').hide();
         $('#presse-form').hide();
         $('#sponsoring-form').hide();
+        $('#newsletter-form').hide();
         $('#helfer-form').fadeIn("slow", function(){
             target = $('#helfer-form');
             scroll_to_target(target);
@@ -14,6 +15,7 @@ $(document).ready(function() {
         $('#helfer-form').hide();
         $('#presse-form').hide();
         $('#sponsoring-form').hide();
+        $('#newsletter-form').hide();
         $('#goenner-form').fadeIn("slow", function(){
             target = $('#goenner-form');
             scroll_to_target(target);
@@ -24,6 +26,7 @@ $(document).ready(function() {
         $('#goenner-form').hide();
         $('#helfer-form').hide();
         $('#sponsoring-form').hide();
+        $('#newsletter-form').hide();
         $('#presse-form').fadeIn("slow", function(){
             target = $('#presse-form');
             scroll_to_target(target);
@@ -34,8 +37,20 @@ $(document).ready(function() {
         $('#goenner-form').hide();
         $('#presse-form').hide();
         $('#helfer-form').hide();
+        $('#newsletter-form').hide();
         $('#sponsoring-form').fadeIn("slow", function(){
             target = $('#sponsoring-form');
+            scroll_to_target(target);
+        });        
+    });
+
+    $('.newslettercircle').on('click', function(event) {
+        $('#goenner-form').hide();
+        $('#presse-form').hide();
+        $('#helfer-form').hide();
+        $('#sponsoring-form').hide();
+        $('#newsletter-form').fadeIn("slow", function(){
+            target = $('#newsletter-form');
             scroll_to_target(target);
         });        
     });
@@ -54,6 +69,10 @@ $(document).ready(function() {
     
     $('.mailclose').on('click', function(event) {
         $('#sponsoring-form').fadeOut("slow");
+    });
+    
+    $('.mailclose').on('click', function(event) {
+        $('#newsletter-form').fadeOut("slow");
     });
 
     $('.mehrinfos').on('click', function(event) {
