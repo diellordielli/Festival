@@ -140,6 +140,13 @@ INSTALLED_APPS = (
     'south',
 )
 
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST_USER = os.environ.get('SENDGRID_USERNAME', '')
+EMAIL_HOST_PASSWORD = os.environ.get('SENDGRID_PASSWORD', '')
+EMAIL_USE_TLS = True
+SERVER_EMAIL = 'django@stolze-openair.ch'
+DEFAULT_FROM_EMAIL = 'bot@stolze-openair.ch'
+
 if DEBUG:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 

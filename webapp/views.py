@@ -93,7 +93,7 @@ def contact(request):
             'Neue Formulareingabe %s auf stolze-openair.ch' % post['Formular'],
             message,
             'bot@stolze-openair.ch',
-            ['dd@feinheit.ch'],
+            ['dd@feinheit.ch'],  # mail@stolze-openair.ch
             fail_silently=False)
         return HttpResponseRedirect('/thanks/')
     return HttpResponseRedirect('/')
