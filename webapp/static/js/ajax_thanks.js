@@ -1,14 +1,14 @@
 $(document).ready(function(){
-    $(".submit").click(function(event){
+    $('form').on('submit', function(event){
         event.preventDefault();
 
         var $this = $(this),
-            url = $(this).attr('href');
+            url = $(this).attr('action');
 
-        $.get(url, function(data){
-            var thanks = $('#ajaxthanks');
-           
-            thanks.html(data).hide().slideDown(300);
+        $this.slideUp(100);
+
+        $.post(url, $this.serialize(), function(data){     
+            $this.html(data).slideDown(300);
         });
     });
 });
