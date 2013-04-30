@@ -30,8 +30,6 @@ $(document).ready(function(){
         });
 
         function scroll_to_target(target){
-            console.log(target, target.offset().top);
-
            $('body').delay('300').animate({
                  scrollTop: target.offset().top - 170
             }, 1000);
