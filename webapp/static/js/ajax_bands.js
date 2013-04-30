@@ -8,13 +8,13 @@ $(document).ready(function(){
         $.get(url, function(data){
             var closestAjax = $this.closest('.bandsingle').nextAll('#ajaxbands').first();
            
-            closestAjax.html(data).slideDown(300);
+            closestAjax.hide().html(data).slideDown(300);
 
             target = $(closestAjax);
             scroll_to_target(target);
 
             $('.bandclose').on('click', function(event){
-                closestAjax.slideUp(300);
+                closestAjax.slideUp(300).html("");
 
                 target = $('#bands');
                 scroll_to_target(target);

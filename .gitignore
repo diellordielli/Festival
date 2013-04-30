@@ -2,7 +2,7 @@
 *.*~
 *.db
 *.json
-/static
 /upload
+/static
 /venv
 webapp/static/webfontkit
