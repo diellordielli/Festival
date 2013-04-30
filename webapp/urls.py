@@ -25,6 +25,12 @@ urlpatterns = patterns('',
 
     # Gallery
     url(r'^gallery/(?P<year>\d+)/$', 'webapp.views.get_gallery', name='get_gallery'),
+
+    # Forms
+    url(r'^contact/$', 'webapp.views.contact', name='contact'),
+
+    url(r'^thanks/$', 'webapp.views.thanks', name='thanks'),
+
 )
 
 if settings.DEBUG:
