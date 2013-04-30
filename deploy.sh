@@ -1,3 +1,3 @@
 #!/bin/bash
 git push heroku master
-heroku run ./manage.py collectstatic
+foreman run python manage.py collectstatic --noinput

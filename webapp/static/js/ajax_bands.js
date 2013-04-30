@@ -6,12 +6,12 @@ $(document).ready(function(){
             url = $(this).attr('href');
 
         $.get(url, function(data){
-            var closestAjax = $this.closest('.bandsingle').nextAll('#ajaxbands').first();
+            var closestAjax = $this.closest('.bandsingle').nextAll('.ajaxbands').first();
            
-            closestAjax.hide().html(data).slideDown(300);
+            scroll_to_target(closestAjax);
 
-            target = $(closestAjax);
-            scroll_to_target(target);
+            closestAjax.hide().html(data).slideDown(1500);
+            closestAjax.get(0).offsetHeight
 
             $('.bandclose').on('click', function(event){
                 closestAjax.slideUp(300).html("");
@@ -25,7 +25,7 @@ $(document).ready(function(){
         function scroll_to_target(target){
            $('html,body').delay('300').animate({
                  scrollTop: target.offset().top - 170
-            }, 1000);
+            }, 800);
         }
     });
 });

@@ -1175,7 +1175,7 @@ label {
     width: 100%;
 }
 
-#ajaxbands {
+.ajaxbands {
     position: relative; 
     margin-left: 45px;
     width: 84%;
