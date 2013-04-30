@@ -1,7 +1,8 @@
 from datetime import datetime
 
 from django.shortcuts import render
-
+from django.core.mail import send_mail
+from django.http import HttpResponseRedirect
 
 from .sponsors.models import Sponsor, Category, SponsorCategoryYear
 from .gallery.models import Image
@@ -74,4 +75,30 @@ def get_gallery(request, year):
         'images': images,
         'thisyears': thisyears,
         'bandlinks': bandlinks,
+    })
+
+
+def contact(request):
+    message = ''
+
+    if request.method == 'POST':
+        post = request.POST.copy()
+
+        post.pop('csrfmiddlewaretoken')
+        for entry in post:
+            message += entry + ':\n'
+            message += post[entry].strip() + '\n\n'
+
+        send_mail(
+            'Neue Formulareingabe %s auf stolze-openair.ch' % post['Formular'],
+            message,
+            'bot@stolze-openair.ch',
+            ['dd@feinheit.ch'],
+            fail_silently=False)
+        return HttpResponseRedirect('/thanks/')
+    return HttpResponseRedirect('/')
+
+
+def thanks(request):
+    return render(request, 'thanks.html', {
     })
