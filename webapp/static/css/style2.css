@@ -426,6 +426,10 @@ body {
     text-transform: uppercase;
 }
 
+.bandname a, .bandhr a, .bandtext a, .back a {
+    text-decoration: none;
+}
+
 .bandhr {
     margin-top: 5px;
     margin-left: 35px;
@@ -850,6 +854,14 @@ body {
     text-decoration: none;
 }
 
+.presse a {
+    text-decoration: none;
+}
+
+.pressecircle a {
+    text-decoration: none;
+}
+
 .pressecircle {
     position: relative;
     width: 90px;
@@ -1052,6 +1064,11 @@ label {
     -o-transform-style: preserve-3d;
     transform-style: preserve-3d;
     position: relative;
+    text-decoration: none;
+}
+
+.flipper a {
+    text-decoration: none;
 }
 
 /* hide back of pane during swap */
@@ -1062,6 +1079,7 @@ label {
     -o-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
     position: absolute;
+    text-decoration: none;
 }
 
 /* front pane, placed above back */
@@ -1492,6 +1510,7 @@ label {
     
     .newstitle {
         font-size: 60px;
+        line-height: 60px;
     }
 }
 
@@ -1620,6 +1639,7 @@ label {
     
     .newstitle {
         font-size: 45px;
+        line-height: 50px;
     }
 }
 
@@ -1793,6 +1813,7 @@ label {
     .newstitle {
         font-size: 35px;
         max-width: 500px;
+        line-height: 40px;
     }
 }
 
@@ -1843,8 +1864,9 @@ label {
 @media only screen and (max-width: 515px) {
     
     .newstitle {
-        font-size: 33px;
+        font-size: 30px;
         max-width: 500px;
+        line-height: 35px;
     }
 
     .helfercomment, .goennercomment {
@@ -2022,8 +2044,8 @@ label {
     }
 
     .sponsoring {
-        margin-top: 27px;
-        left: 6%;
+        margin-top: 33px;
+        left: 9%;
         font-size: 13px;
     }
 
@@ -2229,6 +2251,11 @@ label {
     #ajaxgallery {
         left: -1%;
     }
+
+    .galleryyear {
+        margin-left: 5px;
+        font-size: 15px;
+    }
 }
 
 @media only screen and (max-width: 323px) {
@@ -2307,6 +2334,7 @@ label {
     }
 
     .back {
+        text-decoration: none;
         width: 190px;
         height: 127px;
         font-size: 15px;
