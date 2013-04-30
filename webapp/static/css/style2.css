@@ -57,10 +57,12 @@ body {
 }
 
 .regionwhitenone {
-    width: 99.2%;
+    position: relative;
+    width: 99.9%;
     max-width: 1300px;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
     background-color: #FFFFFF;
+    z-index: 4;
 }
 
 .socialicons {
@@ -935,7 +937,7 @@ body {
     background-color: #000000;
 }
 
-#helfer-form, #goenner-form, #presse-form, #sponsoring-form {
+#helfer-form, #goenner-form, #newsletter-form, #sponsoring-form {
     display: none;
     margin-left: 20px;
 }
@@ -1837,6 +1839,10 @@ label {
     .emailsingle {
         font-size: 12px;
         width: 238px;
+    }
+
+    .mailclose {
+        margin-top: -40px;
     }
 }
 

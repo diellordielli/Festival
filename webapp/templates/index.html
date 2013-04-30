@@ -9,6 +9,8 @@
         {{ mood.description }}<br>
         {{ mood.name }}
       </div>
+      <div id="ajaxthanks">
+      </div>
       <div class="newsletter">
         <div class="buttontitle">
           NEWS-<br>
@@ -200,7 +202,7 @@
   <div id="kontakt">
       <h2>KONTAKT</h2>
   </div>
-<div class="regionwhite">
+<div class="regionwhitenone">
   <div class="map">
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script><div  style="overflow:hidden;max-width:1300px;width:100%;height:100%;" id="gmeg_map_canvas"><div style="width:600px;height:500px" id="gmeg_map_canvas"></div><script>
     var gmegMap, gmegMarker, gmegLatLng;
@@ -266,13 +268,13 @@
         SPONSORING
       </div>
     </div>
-    <div class="pressecircle">
-      <a href="https://www.dropbox.com/sh/sxzfwzidgk9znex/f1eiYZfSgG" target="_blank">
-        <div class="presse">
-          PRESSE
-        </div>
-      </a>
-    </div>
+    <a href="https://www.dropbox.com/sh/sxzfwzidgk9znex/f1eiYZfSgG" target="_blank">
+      <div class="pressecircle">
+          <div class="presse">
+            PRESSE
+          </div>
+      </div>
+    </a>
     <div class="newslettercircle">
       <div class="newslettertext">
         NEWS-
@@ -309,33 +311,34 @@
       <p>helfer stolze openairhelfer stolze openairhelfer stolze openairhelfer stolze openairhelfer stolze openairhelfer stolze openairhelfer stolze openairhelfer stolze openairhelfer stolze openairhelfer stolze openairhelfer stolze openairhelfer stolze openairhelfer stolze openairhelfer stolze openairhelfer stolze openairhelfer stolze openairhelfer stolze openairhelfer stolze openairhelfer stolze openair</p>
     </div>
     <div class="formular">
-      <form>
+      <form action="/contact/" method="post">{% csrf_token %}
+      <input type="hidden" name="Formular" value="Helfer" />
         <div class="formfield">
           <label for="id_second_name">Name:</label>
-          <input type="text" id="id_second_name" name="second_name" size="24" />
+          <input type="text" id="id_second_name" name="second_name" size="24" required/>
         </div>
         <div class="formfield">
           <label for="id_first_name">Vorname:</label>
-          <input type="text" id="id_first_name" name="first_name" size="24" />
+          <input type="text" id="id_first_name" name="first_name" size="24" required/>
         </div>
         <div class="formfield">
           <label for="id_usremail">Email:</label>
-          <input type="email" id="id_usremail" name="usremail" />
+          <input type="email" id="id_usremail" name="usremail" required/>
         </div>
         <div class="formfield">
           <label for="id_datepicker">Geburtsdatum:</label>
-          <input type="text" class="datepicker" />
+          <input type="text" class="datepicker" name="datepicker" required/>
         </div>
         <div class="formfield">
           <label for="id_helfercomment">Kommentar:</label>
-          <textarea class="helfercomment" cols="63" rows="10"> 
+          <textarea class="helfercomment" cols="63" rows="10" name="message"> 
           </textarea>
         </div>
-      </form>
-    </div>
     <div class="submit">
       <p><input type="submit" class="button" value="Senden" /></p> 
     </div>      
+      </form>
+    </div>
   </div>
   <div id="goenner-form">
     <div class="mailclose">
@@ -348,7 +351,64 @@
       <p>gönner stolze openair gönner stolze openair gönner stolze openair gönner stolze openair gönner stolze openair gönner stolze openair gönner stolze openair gönner stolze openair gönner stolze openair gönner stolze openair gönner stolze openair gönner stolze openair gönner stolze openair gönner stolze openair gönner stolze openair gönner stolze openair gönner stolze openair gönner stolze openair gönner stolze openair gönner stolze openair gönner stolze openair </p>
     </div>
     <div class="formular">
-      <form>
+      <form action="/contact/" method="post">{% csrf_token %}
+        <input type="hidden" name="Formular" value="Gönner" />
+        <div class="formfield">
+          <label for="id_second_name">Name:</label>
+          <input type="text" id="id_second_name" name="second_name" size="24" required/>
+        </div>
+        <div class="formfield">
+          <label for="id_first_name">Vorname:</label>
+          <input type="text" id="id_first_name" name="first_name" size="24" required/>
+        </div>
+        <div class="formfield">
+          <label for="id_address">Adresse:</label>
+          <input type="text" id="id_address" name="address" size="24" required/>
+        </div>
+        <div class="formfield">
+          <label for="id_number">Hausnummer:</label>
+          <input type="number" id="id_number" name="number" size="4" required/>
+        </div>
+        <div class="formfield">
+          <label for="id_postnumber">PLZ:</label>
+          <input type="number" id="id_postnumber" name="postnumber" size="24" required/>
+        </div>
+        <div class="formfield">
+          <label for="id_city">Stadt:</label>
+          <input type="text" id="id_city" name="city" size="24" required/>
+        </div>
+        <div class="formfield">
+          <label for="id_usremail">Email:</label>
+          <input type="email" id="id_usremail" name="usremail" />
+        </div>
+        <div class="formfield">
+          <label for="id_datepicker2">Geburtsdatum:</label>
+          <input type="text" class="datepicker" name="datepicker"/>
+        </div>
+        <div class="formfield">
+          <label for="id_goennercomment">Kommentar:</label>
+          <textarea class="goennercomment" cols="63" rows="10"> 
+          </textarea>
+        </div>
+        <div class="submit">
+          <p><input type="submit" class="button" value="Senden" /></p> 
+        </div>      
+      </form>
+    </div>
+  </div>
+  <div id="newsletter-form">
+    <div class="mailclose">
+      <img src="{{ STATIC_URL }}img/x.png" />
+    </div>
+    <div class="mailtitle">
+      <p>NEWSLETTER STOLZE OPENAIR</p>
+    </div>
+    <div class="mailtext">
+      <p>newsletter newsletter newsletter newsletter newsletter newsletter newsletter newsletter newsletter newsletter </p>
+    </div>
+    <div class="formular">
+      <form action="/contact/" method="post">{% csrf_token %}
+      <input type="hidden" name="Formular" value="Newsletter" />
         <div class="formfield">
           <label for="id_second_name">Name:</label>
           <input type="text" id="id_second_name" name="second_name" size="24" />
@@ -358,39 +418,23 @@
           <input type="text" id="id_first_name" name="first_name" size="24" />
         </div>
         <div class="formfield">
-          <label for="id_address">Adresse:</label>
-          <input type="text" id="id_address" name="address" size="24" />
-        </div>
-        <div class="formfield">
-          <label for="id_number">Hausnummer:</label>
-          <input type="number" id="id_number" name="number" size="4" />
-        </div>
-        <div class="formfield">
-          <label for="id_postnumber">PLZ:</label>
-          <input type="number" id="id_postnumber" name="postnumber" size="24" />
-        </div>
-        <div class="formfield">
-          <label for="id_city">Stadt:</label>
-          <input type="text" id="id_city" name="city" size="24" />
-        </div>
-        <div class="formfield">
           <label for="id_usremail">Email:</label>
-          <input type="email" id="id_usremail" name="usremail" />
+          <input type="email" id="id_usremail" name="usremail" required/>
         </div>
         <div class="formfield">
-          <label for="id_datepicker2">Geburtsdatum:</label>
-          <input type="text" class="datepicker" />
+          <label for="id_phone">Telefonnummer:</label>
+          <input type="number" class="id_phone" name="phone"/>
         </div>
         <div class="formfield">
-          <label for="id_goennercomment">Kommentar:</label>
-          <textarea class="goennercomment" cols="63" rows="10"> 
+          <label for="id_helfercomment">Kommentar:</label>
+          <textarea class="helfercomment" cols="63" rows="10" name="message"> 
           </textarea>
         </div>
-      </form>
-    </div>
     <div class="submit">
       <p><input type="submit" class="button" value="Senden" /></p> 
     </div>      
+      </form>
+    </div>
   </div>      
   </div>
 </div>
