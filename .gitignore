@@ -1,7 +1,8 @@
 *.pyc
 *.*~
 *.db
-/upload
 *.json
-venv
+/static
+/upload
+/venv
 webapp/static/webfontkit
