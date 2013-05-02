@@ -164,6 +164,11 @@ class CropscaleThumbnailer(Thumbnailer):
         buf = StringIO()
         if image.mode not in ('RGBA', 'RGB', 'L'):
             image = image.convert('RGBA')
+
+        # PIL cannot handle psds!
+        if format == 'PSD':
+            return storage.url(original)
+
         image.save(buf, format or 'jpeg', quality=100)
         raw_data = buf.getvalue()
         buf.close()
