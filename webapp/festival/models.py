@@ -7,7 +7,7 @@ class Band(models.Model):
     description = models.TextField(blank=True)
     genre = models.CharField(max_length=200, help_text="Trenne Genres mit '/'")
     image = models.ImageField(upload_to="bands", blank=True)
-    slug = models.SlugField(default="-")
+    slug = models.SlugField(default="-", unique=True)
 
     def __unicode__(self):
         return u"%s" % (self.name)
