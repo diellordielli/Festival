@@ -1245,6 +1245,7 @@ label {
 
 .bandfb img, .bandms img, .bandyt img, .bandsc img, .bandwb img, .bandtt img {
     width: 32px;
+    padding-bottom: 10px;
 }
 
 .bandlinks {
