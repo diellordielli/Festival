@@ -6,6 +6,8 @@ $(document).ready(function(){
             url = $(this).attr('href'),
             closestAjax = $this.closest('.bandsingle').nextAll('.ajaxbands').first();
 
+        $this.closest('.bandsingle').addClass('loading');
+
         $.get(url, function(data){
             closestAjax.hide().html(data).slideDown(1500, function() {
                 closestAjax.get(0).style.display='none';
