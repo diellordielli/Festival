@@ -6,7 +6,7 @@ from . import models
 
 class YearAdmin(admin.ModelAdmin):
     model = models.Year
-    list_display = ('year', 'start', 'end',)
+    list_display = ('year', 'start', 'end', 'logo')
     search_fields = ('year',)
     list_filter = ('year',)
 
@@ -28,7 +28,7 @@ class BandAdmin(admin.ModelAdmin):
         BandYearInline,
     ]
 
-    list_display = ('name', 'description', 'genre', 'get_band_years')
+    list_display = ('name', 'description', 'genre', 'get_band_years', 'image')
     search_fields = ('name', 'genre')
     list_filter = ('genre', 'bandyear__year', 'bandyear__stage')
     prepopulated_fields = {"slug": ("name",)}
