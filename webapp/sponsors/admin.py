@@ -13,7 +13,7 @@ class SponsorAdmin(admin.ModelAdmin):
     inlines = [
         SponsorCategoryYearInline,
     ]
-    list_display = ('name', 'link','get_sponsor_years')
+    list_display = ('name', 'link','get_sponsor_years', 'logo')
     search_fields = ('name',)
     list_filter = ('years', 'sponsorcategoryyear__category')
 
