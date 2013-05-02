@@ -8,7 +8,8 @@ DEBUG = any((cmd in sys.argv for cmd in ('runserver', 'shell', 'dbshell', 'sql',
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    # ('dd', 'dd@feinheit.ch'),
+    #('Feinheit Dev', 'dev@feinheit.ch'),
+    ('dd', 'dd@feinheit.ch'),
 )
 
 MANAGERS = ADMINS
