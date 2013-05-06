@@ -621,6 +621,9 @@ body {
 
 .sponsor, .sponsorks {
     position: relative;
+    float: left;
+    width: 200px;
+    height: 200px;
     margin-top: 50px;
     margin-left: 25px;
     margin-right: 30px;
@@ -629,7 +632,6 @@ body {
     background-color: #FFFFFF;
     padding-bottom: 4px;
     display: block;
-    float: left;
 }
 
 .sponsorouter {
@@ -1616,13 +1618,21 @@ label {
     }
 }
 
-
 @media only screen and (max-width: 700px) {
     
     .newstitle {
         font-size: 45px;
         line-height: 50px;
     }
+
+    .greybackground2, .greybackground3, .greybackground4, .greybackground5 {
+        background-color: #E8E8E8;
+    }
+
+    .navlefticon, .navlefticon2, .navrighticon, .navrighticon2 {
+        display: inline;
+    }
+
 }
 
 @media only screen and (max-width: 688px) {
