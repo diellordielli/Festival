@@ -1283,10 +1283,6 @@ label {
         margin-left: 19%;
     }
 
-    #ajaxbands {
-        left: -135px;
-    }
-
     .innerband {
         width: 100%;
     }
@@ -1354,9 +1350,6 @@ label {
 
 @media only screen and (max-width: 1038px) {
     
-    #ajaxbands {
-        left: -180px;
-    }
 }
 
 
@@ -1395,9 +1388,6 @@ label {
         width: 700px;
     }
 
-    #ajaxbands {
-        left: -130px;
-    }
 }
 
 
@@ -1434,10 +1424,6 @@ label {
     .bandsingleimg img {
         max-width: 923px;
         width: 100%; 
-    }
-
-    #ajaxbands {
-        left: 0px;
     }
 }
 
@@ -1613,8 +1599,8 @@ label {
         width: 77%;
     }
 
-    #ajaxbands {
-        left: -115px;
+    .ajaxbands {
+        left: -15%;
         width: 100%;
     }
 }
@@ -1655,52 +1641,6 @@ label {
         margin-right: 35px;
     }
 }
-
-@media only screen and (max-width: 679px) {
-
-   /* .contactbuttons {
-        margin-top: 155px;
-
-    }
-
-    .helfercircle {
-        position: absolute;
-        width: 110px;
-        height: 110px;
-        margin-top: -64px;
-        margin-left: 20px;
-        border-radius: 55px;
-    }
-
-    .goennercircle {
-        position: absolute;
-        width: 110px;
-        height: 110px;
-        margin-top: 50px;
-        margin-left: 25px;
-        border-radius: 55px;
-    }
-
-    .sponsoringcircle {
-        position: absolute;
-        width: 130px;
-        height: 130px;
-        margin-left: 20px;
-        margin-top: 166px;
-        border-radius: 65px;
-    }
-
-    .pressecircle {
-        position: absolute;
-        width: 90px;
-        height: 90px;
-        margin-top: -158px;
-        margin-left: 24px;
-        border-radius: 45px;
-    }*/
-
-}
-
 
 @media only screen and (max-width: 709px) {
 
@@ -1765,9 +1705,6 @@ label {
         margin-top: -130px;
     }
 
-    #ajaxbands {
-        left: -90px;
-    }
 }
 
 @media only screen and (max-width: 648px) {
@@ -1779,10 +1716,6 @@ label {
 
 @media only screen and (max-width: 640px) {
 
-    #ajaxbands {
-        left: -85px;
-        width: 103%;
-    }
 }
 
 @media only screen and (max-width: 613px) {
@@ -1915,10 +1848,6 @@ label {
         font-size: 15px;
     }
 
-    #ajaxbands {
-        left: -60px;
-    }
-
     #ajaxgallery {
         left: 15%;
     }
@@ -1974,6 +1903,11 @@ label {
 
     .mappc {
         font-size: 12px;
+    }
+
+    .ajaxbands {
+        left: -8%;
+        width: 100%;
     }
 }
 
@@ -2094,11 +2028,13 @@ label {
         font-size: 16px;
         margin-left: 18px;
     }
+}
 
-    #ajaxbands {
-        left: -40px;
-        width: 114%;
-        font-size: 12px;
+@media only screen and (max-width: 390px) {
+
+    .ajaxbands {
+        left: -3%;
+        width: 100%;
     }
 }
 
@@ -2107,10 +2043,6 @@ label {
     .navigation a {
         font-size: 16px;
         margin-left: 14px;
-    }
-
-    #ajaxbands {
-        left: -40px;
     }
 
     #ajaxgallery {
@@ -2127,10 +2059,6 @@ label {
 }
 
 @media only screen and (max-width: 376px) {
-
-    #ajaxbands {
-        left: -17px;
-    }
 
 }
 
@@ -2238,9 +2166,6 @@ label {
 
 @media only screen and (max-width: 340px) {
 
-    #ajaxbands {
-        left: -5px;
-    }
 }
 
 @media only screen and (max-width: 336px) {
@@ -2288,12 +2213,13 @@ label {
         margin-left: 88px;
     }
 
-    #ajaxbands {
-        left: 5px;
-    }
-
     .bandfb img, .bandms img, .bandyt img, .bandsc img, .bandwb img, .bandtt img {
         width: 25px;
+    }
+
+    .ajaxbands {
+        left: 6%;
+        width: 100%;
     }
 }
 
@@ -2302,6 +2228,13 @@ label {
     #ajaxgallery {
         left: -4%;
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 294px) {
+    .ajaxbands {
+        left: -13%;
+        width: 86%;
     }
 }
 

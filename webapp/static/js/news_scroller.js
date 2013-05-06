@@ -44,7 +44,6 @@ $(document).ready(function() {
     }
 
     $newsdot.addClass('active');
-    
 
     $('.greybackground5').on('click', function(event) {
         event.preventDefault();
@@ -60,6 +59,7 @@ $(document).ready(function() {
         $('.newsdot:eq('+navpos+')').addClass('active');
 
         $('.newsscroller').animate({'margin-left': newLeft}, carouselOptions.speed);
+
     });
 
     $('.greybackground4').on('click', function(event) {
@@ -69,7 +69,7 @@ $(document).ready(function() {
         if (newLeft > 0) {
             newLeft = -(totalImages -1) * stepWidth;
         }
-        
+
         navpos = -newLeft / stepWidth;
 
         $('.newsdot').removeClass('active');
