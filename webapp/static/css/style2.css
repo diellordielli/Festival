@@ -1348,11 +1348,6 @@ label {
     }
 }
 
-@media only screen and (max-width: 1038px) {
-    
-}
-
-
 @media only screen and (max-width: 1014px) {
 
     .maplinks {
@@ -1389,7 +1384,6 @@ label {
     }
 
 }
-
 
 @media only screen and (max-width: 948px) {
 
@@ -1712,10 +1706,6 @@ label {
     .navigation a {
         margin-left: 28px;
     }
-}
-
-@media only screen and (max-width: 640px) {
-
 }
 
 @media only screen and (max-width: 613px) {
@@ -2058,10 +2048,6 @@ label {
 
 }
 
-@media only screen and (max-width: 376px) {
-
-}
-
 @media only screen and (max-width: 370px) {
 
     .navigation a {
@@ -2162,10 +2148,6 @@ label {
     .helfercomment, .goennercomment {
         width: 75%;
     }
-}
-
-@media only screen and (max-width: 340px) {
-
 }
 
 @media only screen and (max-width: 336px) {
@@ -2291,7 +2273,6 @@ label {
         margin-top: -148px;
     }
 }
-
 
 @media only screen and (max-width: 221px) {
 
