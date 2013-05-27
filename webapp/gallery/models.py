@@ -24,7 +24,7 @@ class Image(models.Model):
     def clean(self):
         if self.is_yearcover:
             self.year.image_set.filter(is_yearcover=True)\
-                    .update(is_yearcover=False)
+                .update(is_yearcover=False)
 
     def __unicode__(self):
         return u"%s %s %s %s" % (self.choice,  self.name, self.band, self.description)
