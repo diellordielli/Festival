@@ -1671,6 +1671,17 @@ label {
     .mappc {
         font-size: 15px;
     }
+
+    .sponsor img {
+        width: 110px;
+    }
+
+    .sponsor {
+        margin-right: -100px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        height: 80px;
+    }
 }
 
 @media only screen and (max-width: 660px) {
@@ -1920,16 +1931,6 @@ label {
         margin-top: 380px;
     }
 
-    .sponsor img {
-        width: 110px;
-    }
-
-    .sponsor {
-        margin-right: -100px;
-        margin-bottom: 0px;
-        margin-top: 0px;
-        height: 80px;
-    }
 }
 
 @media only screen and (max-width: 440px) {
