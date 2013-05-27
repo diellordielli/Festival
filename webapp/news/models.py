@@ -10,6 +10,7 @@ class News(models.Model):
 
     class Meta:
         verbose_name_plural = "News"
+        ordering = ['-time']
 
     def __unicode__(self):
         return u"%s %s" % (self.name, self.description)

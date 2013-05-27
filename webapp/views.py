@@ -23,7 +23,7 @@ def home(request):
     bands = Band.objects.filter(years=current_year).order_by('bandyear__time')
     bandyears = BandYear.objects.all()
     bandlinks = BandLinks.objects.all()
-    newss = News.objects.all()
+    newss = News.objects.order_by('-time')
     mood = Mood.objects.latest('id')
     years = Year.objects.all()
     thisyears = Year.objects.filter(year=now.year)
