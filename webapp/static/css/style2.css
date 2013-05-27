@@ -449,14 +449,12 @@ body {
     position: absolute;
     margin-top: 0px;
     margin-left: -6px;
-    display: none;
 }
 
 #navrighticon {
     position: absolute;
     margin-left: -6px;
     margin-top: 0px;
-    display: none;
 }
 
 #navlefticon2 {
@@ -531,7 +529,7 @@ body {
     margin-right: auto;
     margin-bottom: 50px;
     padding-bottom: 150px;
-    background-color: #dcdcdc;
+    background-color: #e8e8e8;
     z-index: 2;
     cursor: pointer;
 }
@@ -1787,7 +1785,7 @@ label {
     }
 
     .sponsor {
-        margin-right: -25px;
+        margin-right: -100px;
     }
 
 }
