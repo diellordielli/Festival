@@ -4,6 +4,7 @@ from ..festival.models import Year
 
 
 class Sponsor(models.Model):
+    ordering = models.IntegerField(default=0)
     name = models.CharField(max_length=200)
     logo = models.ImageField(upload_to="sponsors")
     link = models.URLField(max_length=200)

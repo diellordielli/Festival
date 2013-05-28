@@ -14,6 +14,7 @@ class Contact(models.Model):
 
 
 class Person(models.Model):
+    ordering = models.IntegerField(default=0)
     firstname = models.CharField(max_length=200)
     lastname = models.CharField(max_length=200)
     email = models.EmailField(max_length=75)
