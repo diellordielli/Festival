@@ -637,7 +637,7 @@ body {
 
 .sponsorks {
     margin-top: 0px;
-    width: 90px;
+    width: 70px;
     height: 50px;
 }
 
@@ -721,6 +721,13 @@ body {
     width: 100%;
     font-family: terminal_dosisregular;
     text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+}
+
+.mappc a {
+    color: #000;
+    text-decoration: none;
 }
 
 .maplinks {
@@ -2137,11 +2144,11 @@ label {
     }
 
     .mood {
-        top: 119px;
+        top: 94px;
     }
 
     .regiongrey {
-        margin-top: -136px;
+        margin-top: -161px;
     }
 
     #bands h2 {

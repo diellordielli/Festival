@@ -16,6 +16,7 @@ $(window).load(function() {
     }
 
     var checkResponsiveSlider = function() {
+        console.log('checkResponsiveSlider', $(window).width());
 
         var sponsorscrollerresponsive = $('.sponsorinner').css({'max-width': '660px'});
 
@@ -33,8 +34,8 @@ $(window).load(function() {
     };
 
     $(window).resize(checkResponsiveSlider);
-    checkResponsiveSlider();
 
     animate();
+    checkResponsiveSlider();
 
 });
