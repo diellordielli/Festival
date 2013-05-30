@@ -51,7 +51,7 @@ body {
     -webkit-box-shadow: 0px 7px 6px -3px grey;
     -moz-box-shadow: 0px 7px 6px -3px grey;
     box-shadow: 0px 9px 6px -3px grey;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
     background-color: #FFFFFF;
     z-index: 4;
 }
@@ -461,14 +461,14 @@ body {
     position: absolute;
     margin-top: 0px;
     margin-left: -6px;
-    display: none;
+    display: inline;
 }
 
 #navrighticon2 {
     position: absolute;
     margin-left: -6px;
     margin-top: 0px;
-    display: none;
+    display: inline;
 }
 
 .slider-dots {
@@ -620,16 +620,24 @@ body {
 .sponsor, .sponsorks {
     position: relative;
     float: left;
-    width: 200px;
-    height: 120px;
     margin-top: 50px;
     margin-left: 25px;
     margin-right: 30px;
     margin-bottom: 10px;
-    padding: 10px 10px 0px 10px;        
+    padding: 10px 10px 0px 10px;     
     background-color: #FFFFFF;
     padding-bottom: 4px;
     display: block;
+}
+
+.sponsor {
+    width: 200px;
+    height: 120px;
+}
+
+.sponsorks {
+    width: 90px;
+    height: 80px;
 }
 
 .sponsorouter {
@@ -645,13 +653,20 @@ body {
     background: #FFFFFF;
 }
 
+.sponsorinner.responsive {
+    width: 660px;
+}
+
 .map {
     position: absolute;
     margin-top: -50px;
-    -webkit-filter: grayscale(90%);
     width: 100%;
     height: 451px;
     opacity: 0.6;
+    -webkit-filter: grayscale(90%);
+    -moz-filter: grayscale(90%);
+    -ms-filter: grayscale(90%);
+    -o-filter: grayscale(90%);
 }
 
 .maptext {
