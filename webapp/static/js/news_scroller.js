@@ -7,7 +7,7 @@ var carouselOptions = {
 $(document).ready(function() {
     // gets updated on resize and on page load
     $('.greybackground4').css({'background-color': '#e8e8e8'});
-    $('.greybackground5').css({'background-color': '#e8e8e8'})
+    $('.greybackground5').css({'background-color': '#e8e8e8'});
 
     var totalWidth, totalImages, stepWidth, navpos = 0,
         $newsdot = $('.newsdot');

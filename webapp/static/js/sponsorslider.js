@@ -15,12 +15,12 @@ $(window).load(function() {
 
     }
 
-    var checkResponsiveNav = function() {
+    var checkResponsiveSlider = function() {
 
         var sponsorscrollerresponsive = $('.sponsorinner').css({'max-width': '660px'});
 
         if ($(window).width() < 660) {
-            $('.sponsorinner').stop().animate({ left: 0 });
+            $('.sponsorinner').stop(true, false).animate({ left: 0 });
             $('.sponsorinner').css({'max-width': sponsorscrollerresponsive});
             $('.sponsorinner').css({'width':'100%'})
             clone.hide();
@@ -32,8 +32,8 @@ $(window).load(function() {
         }
     };
 
-    $(window).resize(checkResponsiveNav);
-    checkResponsiveNav();
+    $(window).resize(checkResponsiveSlider);
+    checkResponsiveSlider();
 
     animate();
 
